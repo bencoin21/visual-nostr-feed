@@ -1,5 +1,6 @@
 import { SimplePool, type Event as NostrEvent } from "nostr-tools";
 import { imageClassifier } from "./image-classifier.js";
+import { CONFIG } from "./config.js";
 
 export interface NostrFeedItem {
   id: string;
@@ -28,6 +29,7 @@ export class NostrService {
   private imageCache: string[] = []; // Cache of last 100 image URLs
   private connectionRetries = 0;
   private maxRetries = 5;
+  private maxCacheSize = CONFIG.maxCacheSize; // Maximum number of cached images
   private currentSubscription: any = null;
   private lastEventTime = Date.now();
   private isInitializing = false;
@@ -260,7 +262,7 @@ export class NostrService {
       // Only skip if we've seen this image very recently (within last 30 minutes)
       const recentlySeen = Array.from(this.imageCache).find(cacheItem => 
         cacheItem.url === img && 
-        (Date.now() - cacheItem.timestamp) < 1800000 // 30 minutes
+        (Date.now() - cacheItem.timestamp) < CONFIG.duplicateTimeWindow
       );
       
       if (recentlySeen) {

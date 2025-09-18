@@ -6,7 +6,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "PORT=4420 bun --hot index.tsx"
+    "dev": "PORT=4420 bun --hot index.tsx",
+    "start": "bun run index.tsx",
+    "build": "bun build index.tsx --outdir ./dist",
+    "config": "echo 'Edit src/config.ts to adjust timing and behavior settings'"
   },
   "devDependencies": {
     "@types/bun": "latest"

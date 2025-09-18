@@ -2,6 +2,7 @@
 import { e } from "@kitajs/html";
 import type { NostrFeedItem } from "./nostr-service.js";
 import { IMAGE_CATEGORIES } from "./image-classifier.js";
+import { CONFIG, ConfigHelpers } from "./config.js";
 
 export function Layout(props: { title?: string; children?: React.ReactNode }) {
   const { title = "Visual Nostr Feed", children } = props;
@@ -328,6 +329,31 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
         <script src="/static/fixi/fixi.js"></script>
         <script src="/static/fixi/extensions.js"></script>
         
+        {/* Configuration for client-side */}
+        <script>{`
+          // Make CONFIG available on client-side
+          window.CONFIG = ${JSON.stringify(CONFIG)};
+          
+          // ConfigHelpers for client-side
+          window.ConfigHelpers = {
+            getLoadingDelay: function(mode, index, cachedCount) {
+              cachedCount = cachedCount || 0;
+              if (mode === 'slider') {
+                return (cachedCount * window.CONFIG.sliderLoadSpeed) + (index * 1500);
+              }
+              return (cachedCount * 100) + (index * 200);
+            },
+            
+            getBatchDelay: function(batchIndex) {
+              return batchIndex * window.CONFIG.batchDelay;
+            },
+            
+            isImageExpired: function(timestamp) {
+              return (Date.now() - timestamp) > window.CONFIG.maxImageAge;
+            }
+          };
+        `}</script>
+        
         {/* Visual Feed Script */}
         <script>{`
           let seenImages = new Set();
@@ -362,7 +388,7 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
           // Continuous rotation system with drag & drop
           const stackSize = 80; // Slightly larger for better spread
           const stacks = new Map(); // Track stacks of images per position
-          const maxBackgroundImages = 150; // Optimal number for performance
+          const maxBackgroundImages = CONFIG.maxBackgroundImages;
           const maxStackHeight = 6; // Reduced stack height for better visibility
           let imageCounter = 0;
           let globalZIndex = 100; // Track highest z-index for new images
@@ -380,22 +406,7 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
           const rotations = ['rotate-1', 'rotate-2', 'rotate-3', 'rotate-4', 'rotate-5', 'rotate-6'];
           const sizes = ['size-small', 'size-medium', 'size-large'];
           
-          // Configuration
-          const config = {
-            imageDisplayTime: 4000,
-            cachedImageDisplayTime: 1000, // Fast display for cached images
-            imageLoadTimeout: 10000,
-            maxRetries: 3,
-            stuckDetectionTime: 15000, // 15 seconds without activity = stuck
-            heartbeatInterval: 5000,
-            rotationInterval: 30000, // Check for rotation every 30 seconds
-            maxImageAge: 300000, // 5 minutes max age for images
-            sliderSpeed: 8, // Much slower pixels per scroll step
-            autoScrollSpeed: 4000, // Much slower auto-scroll: every 4 seconds
-            scrollSensitivity: 0.4, // Less sensitive mouse control
-            sliderLoadSpeed: 1000, // Much slower: 1 image per second
-            manualScrollSpeed: 12 // Slower manual scrolling
-          };
+          // Configuration imported from central config file
           
           function log(message, data = null) {
             console.log('[VisualFeed]', message, data || '');
@@ -572,7 +583,7 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
               
               // CONTINUOUS ROTATION: Always remove oldest image when adding new one
               const existingImages = document.querySelectorAll('.discovery-image');
-              if (existingImages.length >= maxBackgroundImages) {
+              if (existingImages.length >= CONFIG.maxBackgroundImages) {
                 // Remove the single oldest image
                 const sortedImages = Array.from(existingImages).sort((a, b) => {
                   const aTime = parseInt(a.getAttribute('data-timestamp')) || 0;
@@ -651,8 +662,8 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
               });
               
               // Keep history manageable
-              if (imageHistory.length > maxBackgroundImages * 2) {
-                imageHistory = imageHistory.slice(-maxBackgroundImages);
+              if (imageHistory.length > CONFIG.maxBackgroundImages * 2) {
+                imageHistory = imageHistory.slice(-CONFIG.maxBackgroundImages);
               }
               
               // Store event data for click handling
@@ -892,7 +903,7 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
           function checkForStuckState() {
             const timeSinceActivity = Date.now() - lastActivityTime;
             
-            if (timeSinceActivity > config.stuckDetectionTime) {
+            if (timeSinceActivity > CONFIG.stuckDetectionTime) {
               log('Detected stuck state, attempting recovery');
               
               // Clear any timeouts
@@ -979,7 +990,7 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
               const currentImages = document.querySelectorAll('.discovery-image').length;
               log('Status check - Current images:', currentImages, 'Queue:', imageQueue.length, 'Cached:', cachedImageQueue.length, 'History:', imageHistory.length);
             }
-          }, config.heartbeatInterval);
+          }, CONFIG.heartbeatInterval);
           
           // Layout switching functions
           function switchToFullscreen() {
@@ -1338,8 +1349,8 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
               }, 1000); // 1 second delay before sliding
             }
             
-            // Keep more images in slider for better access (max 60 instead of 35)
-            if (sliderImages.length > 60) {
+            // Keep more images in slider for better access
+            if (sliderImages.length > CONFIG.maxSliderImages) {
               const oldImage = sliderImages.shift();
               if (oldImage && oldImage.parentNode) {
                 oldImage.style.opacity = '0';
@@ -1379,7 +1390,7 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
                 // Much slower auto-scroll
                 scrollSlider(-0.5); // Half-speed scrolling
               }
-            }, config.autoScrollSpeed); // Every 4 seconds
+            }, CONFIG.autoScrollSpeed); // Every 4 seconds
           }
           
           function scrollSlider(direction) {
@@ -1388,7 +1399,7 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
             const sliderStrip = document.getElementById('slider-strip');
             if (!sliderStrip) return;
             
-            const scrollAmount = config.sliderSpeed * direction;
+            const scrollAmount = CONFIG.sliderSpeed * direction;
             sliderPosition += scrollAmount;
             
             // Smooth scrolling with bounds checking
@@ -1407,20 +1418,20 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
             const mouseRelativeX = (mouseX - containerCenter) / (containerRect.width / 2);
             
             // Dead zone in center (±30%)
-            if (Math.abs(mouseRelativeX) < config.scrollSensitivity) {
+            if (Math.abs(mouseRelativeX) < CONFIG.scrollSensitivity) {
               scrollDirection = 0;
               return;
             }
             
             // Determine scroll direction and speed - much slower manual control
-            if (mouseRelativeX < -config.scrollSensitivity) {
+            if (mouseRelativeX < -CONFIG.scrollSensitivity) {
               // Mouse on left side - scroll left (show newer images)
               scrollDirection = -1;
-              scrollSlider(-config.manualScrollSpeed / 10); // Much slower manual scroll
-            } else if (mouseRelativeX > config.scrollSensitivity) {
+              scrollSlider(-CONFIG.manualScrollSpeed / 10); // Much slower manual scroll
+            } else if (mouseRelativeX > CONFIG.scrollSensitivity) {
               // Mouse on right side - scroll right (show older images)
               scrollDirection = 1;
-              scrollSlider(config.manualScrollSpeed / 10); // Much slower manual scroll
+              scrollSlider(CONFIG.manualScrollSpeed / 10); // Much slower manual scroll
             }
           }
           
@@ -1512,16 +1523,16 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
                     return;
                   }
                   
-                  // Much slower loading: 1 image per second (1000ms intervals)
+                  // Controlled loading based on config
                   setTimeout(() => {
                     addToSlider(url, eventId, correctCategory, category);
                     el.style.display = 'none';
-                  }, index * 1000); // Much slower: 1 image per second
+                  }, index * CONFIG.sliderLoadSpeed); // Much slower: 1 image per second
                 }
               });
             } else {
               // FULLSCREEN MODE: Faster batch loading
-              const batchSize = 20;
+              const batchSize = CONFIG.batchSize;
               const totalBatches = Math.ceil(cachedImages.length / batchSize);
               
               for (let batch = 0; batch < totalBatches; batch++) {
@@ -1552,7 +1563,7 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
                       el.style.display = 'none';
                     }
                   }
-                }, batch * 1000); // 1 second between batches
+                }, window.ConfigHelpers.getBatchDelay(batch));
               }
             }
             
@@ -1575,10 +1586,8 @@ export function Layout(props: { title?: string; children?: React.ReactNode }) {
                   log('Failed to parse event data for new image');
                 }
                 
-                // Add after cached images - much slower for slider mode
-                const delay = currentLayout === 'slider' ? 
-                  (cachedImages.length * 1000) + (index * 1500) : // Much slower for slider: 1.5 seconds between each
-                  (cachedImages.length * 100) + (index * 200);     // Normal for fullscreen
+                // Add after cached images - timing based on layout and config
+                const delay = window.ConfigHelpers.getLoadingDelay(currentLayout, index, cachedImages.length);
                 
                 setTimeout(() => {
                   if (currentLayout === 'fullscreen') {

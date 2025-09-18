@@ -80,6 +80,42 @@ bun run dev
 
 ## ⚙️ Configuration
 
+### **🎛️ Central Configuration**
+All timing and behavior settings are centralized in `src/config.ts`:
+
+```typescript
+export const CONFIG = {
+  // Image Display Timing
+  imageDisplayTime: 4000,              // 4 seconds per image
+  sliderLoadSpeed: 1000,               // 1 second between images in slider
+  autoScrollSpeed: 4000,               // 4 seconds auto-scroll interval
+  
+  // Performance Limits
+  maxBackgroundImages: 150,            // Max images in fullscreen
+  maxSliderImages: 60,                 // Max images in slider
+  maxCacheSize: 400,                   // Server-side cache limit
+  
+  // Animation & Interaction
+  sliderSpeed: 8,                      // Pixels per scroll step
+  scrollSensitivity: 0.4,              // Mouse sensitivity
+  // ... more settings
+};
+```
+
+### **🚀 Performance Profiles**
+Pre-configured settings for different use cases:
+
+```typescript
+// Relaxed: Slow, peaceful browsing
+export const CONFIG = PERFORMANCE_PROFILES.relaxed;
+
+// Fast: Quick, dynamic experience  
+export const CONFIG = PERFORMANCE_PROFILES.fast;
+
+// Demo: Optimized for presentations
+export const CONFIG = PERFORMANCE_PROFILES.demo;
+```
+
 ### **Nostr Relays**
 Default configured relays in `src/nostr-service.ts`:
 - `wss://relay.damus.io`
@@ -92,11 +128,6 @@ Image categories in `src/image-classifier.ts`:
 - 📰 **News**: News and current events  
 - 😂 **Memes**: Humorous content
 - 🔞 **NSFW**: Adult content
-
-### **Performance Settings**
-- **Cache Size**: 400 images (server), 150 images (browser)
-- **Loading Speed**: 2-4 images/second in slider mode
-- **Auto-Scroll**: 4 second interval
 
 ## 🛠️ Development
 

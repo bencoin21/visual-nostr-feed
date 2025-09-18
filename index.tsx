@@ -75,6 +75,24 @@ Bun.serve({
       }
     },
     
+    "/static/*": {
+      GET: (req) => {
+        const url = new URL(req.url);
+        const filePath = url.pathname.replace('/static/', '');
+        const file = Bun.file(`public/static/${filePath}`);
+        
+        // Set appropriate content type
+        const ext = filePath.split('.').pop();
+        const contentType = ext === 'js' ? 'application/javascript' : 
+                           ext === 'css' ? 'text/css' : 
+                           'text/plain';
+        
+        return new Response(file, {
+          headers: { 'Content-Type': contentType }
+        });
+      }
+    },
+
     "/nostr/stream": req => {
       const url = new URL(req.url);
       log(req.method, url.pathname + url.search, "(open nostr stream)");
