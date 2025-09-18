@@ -1,5 +1,7 @@
 {
-  "name": "hypermedia-starter",
+  "name": "visual-nostr-feed",
+  "description": "Interactive visual Nostr client with dual-layout and AI-powered image categorization",
+  "version": "1.0.0",
   "module": "index.tsx",
   "type": "module",
   "private": true,

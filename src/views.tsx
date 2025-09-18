@@ -1788,7 +1788,7 @@ export function DiscoveryFeed({ items, cachedImagesWithData = [] }: {
         {/* Preview Area (80% of screen) */}
         <div className="preview-area">
           <div className="preview-placeholder">
-            Hover over images below to preview
+            Hover over images below for preview
           </div>
           <img id="preview-image" className="preview-image" src="" alt="Preview" />
         </div>
@@ -1803,7 +1803,7 @@ export function DiscoveryFeed({ items, cachedImagesWithData = [] }: {
 
       {/* Loading indicator */}
       {items.length === 0 && cachedImagesWithData.length === 0 && (
-        <div className="loading">Loading categorized discovery feed...</div>
+        <div className="loading">Loading visual discovery feed...</div>
       )}
     </div>
   );

@@ -1,102 +1,102 @@
 # 🎨 Visual Nostr Discovery Feed
 
-Ein interaktiver, visueller Nostr-Client mit innovativem Dual-Layout und KI-gestützter Bildkategorisierung.
+An interactive, visual Nostr client with innovative dual-layout and AI-powered image categorization.
 
 ## ✨ Features
 
 ### 🖼️ **Dual-Layout System**
-- **Fullscreen Mode**: Kategorisierungs-Spiel mit Drag & Drop
-- **Slider Mode**: Horizontaler Bildstream mit Hover-Preview
+- **Fullscreen Mode**: Categorization game with drag & drop
+- **Slider Mode**: Horizontal image stream with hover preview
 
-### 🤖 **KI-Bildkategorisierung**
-- Automatische Kategorisierung: Früchte/Natur, News, Memes, NSFW
-- Gamification: Nutzer ziehen Bilder in die richtige Kategorie
-- Farbkodierte Rahmen je nach Kategorie
+### 🤖 **AI Image Categorization**
+- Automatic categorization: Fruits/Nature, News, Memes, NSFW
+- Gamification: Users drag images to the correct category
+- Color-coded frames based on category
 
-### 🎮 **Interaktive Features**
-- **Drag & Drop**: Bilder zwischen Kategorien verschieben
-- **3D-Layering**: Tiefeneffekte mit Z-Index-Management
-- **Smart Positioning**: Intelligente Platzierung mit minimaler Überlappung
-- **Hover Effects**: Preview-Modus im Slider
+### 🎮 **Interactive Features**
+- **Drag & Drop**: Move images between categories
+- **3D Layering**: Depth effects with Z-index management
+- **Smart Positioning**: Intelligent placement with minimal overlap
+- **Hover Effects**: Preview mode in slider
 
 ### 🔄 **Real-time Updates**
-- **Server-Sent Events (SSE)**: Live-Updates ohne Polling
-- **Circular Cache**: 400-Bild-Rotation auf Server-Seite
-- **Browser Cache**: Persistente Bilder zwischen Layout-Wechseln
+- **Server-Sent Events (SSE)**: Live updates without polling
+- **Circular Cache**: 400-image rotation on server side
+- **Browser Cache**: Persistent images between layout switches
 
-## 🚀 Schnellstart
+## 🚀 Quick Start
 
 ```bash
-# Dependencies installieren
+# Install dependencies
 bun install
 
-# Development Server starten
+# Start development server
 bun run dev
 
-# Öffnen: http://localhost:4420
+# Open: http://localhost:4420
 ```
 
-## 🏗️ Architektur
+## 🏗️ Architecture
 
-### **Hypermedia-First Ansatz**
+### **Hypermedia-First Approach**
 - **Backend**: Bun.serve + Server-Side JSX (KitaJS)
-- **Frontend**: Minimales JavaScript für Interaktivität
-- **Real-time**: Server-Sent Events für Live-Updates
-- **Progressive Enhancement**: Funktioniert mit und ohne JavaScript
+- **Frontend**: Minimal JavaScript for interactivity
+- **Real-time**: Server-Sent Events for live updates
+- **Progressive Enhancement**: Works with and without JavaScript
 
 ### **Tech Stack**
-- **Runtime**: Bun (statt Node.js)
-- **Rendering**: Server-Side JSX mit `@kitajs/html`
-- **Styling**: Vanilla CSS mit 3D-Transforms
+- **Runtime**: Bun (instead of Node.js)
+- **Rendering**: Server-Side JSX with `@kitajs/html`
+- **Styling**: Vanilla CSS with 3D transforms
 - **Real-time**: Native SSE (Server-Sent Events)
-- **Protocol**: Nostr für dezentrale Social Media Feeds
+- **Protocol**: Nostr for decentralized social media feeds
 
-## 📁 Projektstruktur
+## 📁 Project Structure
 
 ```
 ├── index.tsx              # Bun Server + Routing
 ├── src/
 │   ├── views.tsx          # JSX Components + Client-Side Logic
 │   ├── nostr-service.ts   # Nostr Protocol Integration
-│   └── image-classifier.ts # KI-Bildkategorisierung
+│   └── image-classifier.ts # AI Image Categorization
 ├── public/                # Static Assets
 ├── package.json           # Bun Dependencies
 └── tsconfig.json         # TypeScript Config
 ```
 
-## 🎯 Layout Modi
+## 🎯 Layout Modes
 
-### **Fullscreen Mode** (Standard)
-- Bilder erscheinen in zufälligen Kategorien
-- Nutzer zieht sie in die richtige Kategorie (Spiel)
-- Farbkodierte Rahmen zeigen Kategorie-Zugehörigkeit
-- 3D-Stacking mit Hover-Effekten
+### **Fullscreen Mode** (Default)
+- Images appear in random categories
+- Users drag them to the correct category (game)
+- Color-coded frames show category membership
+- 3D stacking with hover effects
 
 ### **Slider Mode**
-- 80% oberer Bereich: Hover-Preview (Vollbild)
-- 20% unterer Bereich: Horizontaler Bildstream
-- Automatisches Scrollen (pausiert bei Hover)
-- Manuelle Scroll-Kontrolle mit Maus
+- 80% upper area: Hover preview (fullscreen)
+- 20% lower area: Horizontal image stream
+- Auto-scrolling (pauses on hover)
+- Manual scroll control with mouse
 
-## ⚙️ Konfiguration
+## ⚙️ Configuration
 
 ### **Nostr Relays**
-Standardmäßig konfigurierte Relays in `src/nostr-service.ts`:
+Default configured relays in `src/nostr-service.ts`:
 - `wss://relay.damus.io`
 - `wss://nos.lol`
 - `wss://relay.nostr.band`
 
-### **Kategorien**
-Bildkategorien in `src/image-classifier.ts`:
-- 🍎 **Fruits/Nature**: Natürliche Inhalte
-- 📰 **News**: Nachrichten und aktuelle Ereignisse  
-- 😂 **Memes**: Humoristische Inhalte
-- 🔞 **NSFW**: Erwachsenen-Inhalte
+### **Categories**
+Image categories in `src/image-classifier.ts`:
+- 🍎 **Fruits/Nature**: Natural content
+- 📰 **News**: News and current events  
+- 😂 **Memes**: Humorous content
+- 🔞 **NSFW**: Adult content
 
 ### **Performance Settings**
-- **Cache-Größe**: 400 Bilder (Server), 150 Bilder (Browser)
-- **Loading-Speed**: 2-4 Bilder/Sekunde im Slider-Modus
-- **Auto-Scroll**: 4 Sekunden Intervall
+- **Cache Size**: 400 images (server), 150 images (browser)
+- **Loading Speed**: 2-4 images/second in slider mode
+- **Auto-Scroll**: 4 second interval
 
 ## 🛠️ Development
 
@@ -112,38 +112,38 @@ bun start
 ```
 
 ### **Debugging**
-- Browser DevTools: Client-Side Logs
-- Terminal: Server-Side Logs + SSE Events
-- Network Tab: SSE Stream Monitoring
+- Browser DevTools: Client-side logs
+- Terminal: Server-side logs + SSE events
+- Network Tab: SSE stream monitoring
 
 ## 🌐 Deployment
 
-Optimiert für Linux-Server mit:
-- **Systemd Service** für Prozess-Management
-- **Nginx Reverse Proxy** für SSL + Performance
-- **Firewall-Konfiguration** für Sicherheit
+Optimized for Linux servers with:
+- **Systemd Service** for process management
+- **Nginx Reverse Proxy** for SSL + performance
+- **Firewall Configuration** for security
 
-Siehe Deployment-Guide für detaillierte Anweisungen.
+See deployment guide for detailed instructions.
 
-## 🎨 Design Prinzipien
+## 🎨 Design Principles
 
 ### **Hypermedia-Driven**
-- Server rendert HTML, Client bleibt "dumm"
-- State und Logik leben server-seitig
-- Progressive Enhancement
+- Server renders HTML, client stays "dumb"
+- State and logic live server-side
+- Progressive enhancement
 
 ### **Performance-First**
-- Minimales JavaScript Bundle
-- Effiziente 3D CSS-Transforms
-- Smart Caching-Strategien
+- Minimal JavaScript bundle
+- Efficient 3D CSS transforms
+- Smart caching strategies
 
 ### **User Experience**
-- Intuitive Drag & Drop Interaktionen
-- Flüssige Animationen und Übergänge
-- Responsive Design für alle Bildschirmgrößen
+- Intuitive drag & drop interactions
+- Smooth animations and transitions
+- Responsive design for all screen sizes
 
 ---
 
-**Ein moderner Nostr-Client mit klassischen Hypermedia-Prinzipien** 🚀
+**A modern Nostr client with classic hypermedia principles** 🚀
 
-Gebaut mit ❤️ und Bun
+Built with ❤️ and Bun
