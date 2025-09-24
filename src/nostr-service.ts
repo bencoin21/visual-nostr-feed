@@ -1,6 +1,7 @@
 import { SimplePool, type Event as NostrEvent } from "nostr-tools";
 import { imageClassifier } from "./image-classifier.js";
 import { CONFIG } from "./config.js";
+import { timeMachine, type TimeMachineImage } from "./time-machine.js";
 
 export interface NostrFeedItem {
   id: string;
@@ -26,7 +27,7 @@ export class NostrService {
   private updateCallbacks: ((item: NostrFeedItem) => void)[] = [];
   private seenImages = new Set<string>(); // Track seen images to avoid duplicates
   private seenEventIds = new Set<string>(); // Track seen event IDs to avoid duplicates
-  private imageCache: string[] = []; // Cache of last 100 image URLs
+  private imageCache: Array<{url: string, correctCategory: string, timestamp: number}> = []; // Cache of image data
   private connectionRetries = 0;
   private maxRetries = 5;
   private maxCacheSize = CONFIG.maxCacheSize; // Maximum number of cached images
@@ -289,7 +290,24 @@ export class NostrService {
     );
 
     // Add new images to cache with event data and correct categories
-    classifiedImages.forEach(img => this.addToImageCache(img.url, event, img.correctCategory));
+    classifiedImages.forEach(img => {
+      this.addToImageCache(img.url, event, img.correctCategory);
+      
+      // Also add to time machine
+      timeMachine.addImage({
+        url: img.url,
+        timestamp: event.created_at * 1000, // Convert to milliseconds
+        eventId: event.id,
+        eventData: {
+          id: event.id,
+          pubkey: event.pubkey,
+          content: event.content,
+          created_at: event.created_at
+        },
+        correctCategory: img.correctCategory,
+        category: img.category
+      });
+    });
 
     // Get author profile info (optional, since we're not showing text)
     const author = await this.getAuthorInfo(event.pubkey);
@@ -326,7 +344,8 @@ export class NostrService {
 
       if (profiles.length > 0) {
         try {
-          const profile = JSON.parse(profiles[0].content);
+          const profileData = JSON.parse(profiles[0].content);
+          const profile = (profileData as any) || {};
           const authorInfo = {
             name: profile.name || profile.display_name,
             picture: profile.picture
@@ -341,7 +360,7 @@ export class NostrService {
       }
     } catch (error) {
       // Don't log timeout errors as they're expected
-      if (!error.message?.includes('timeout')) {
+      if (!(error as Error).message?.includes('timeout')) {
         console.warn("Failed to fetch profile for", pubkey.slice(0, 8), error);
       }
     }
@@ -438,7 +457,7 @@ export class NostrService {
         
         if (cacheData && cacheData.images && Array.isArray(cacheData.images)) {
           // Handle both old format (strings) and new format (objects)
-          this.imageCache = cacheData.images.map(item => {
+          this.imageCache = cacheData.images.map((item: any) => {
             if (typeof item === 'string') {
               // Old format - convert to new format
               return {
@@ -452,7 +471,7 @@ export class NostrService {
           
           // Only mark recent images as seen (allow old ones to reappear)
           const recentThreshold = Date.now() - 3600000; // 1 hour ago
-          this.imageCache.forEach(item => {
+          this.imageCache.forEach((item: any) => {
             if (item.timestamp > recentThreshold) {
               this.seenImages.add(item.url);
             }
@@ -473,6 +492,46 @@ export class NostrService {
     }
   }
 
+  // Time machine integration methods
+  getTimeMachineImages(timeRange?: { start: number; end: number }): TimeMachineImage[] {
+    if (timeRange) {
+      return timeMachine.getImagesForTimeRange(timeRange);
+    }
+    return timeMachine.getCurrentImages();
+  }
+
+  getTimeMachinePeriods(): Array<{start: number, end: number, count: number, label: string}> {
+    return timeMachine.getTimePeriods(60); // 1-hour periods
+  }
+
+  getCurrentTimeRange(): { start: number; end: number } {
+    return timeMachine.getCurrentTimeRange();
+  }
+
+  travelToTimeRange(timeRange: { start: number; end: number }): TimeMachineImage[] {
+    return timeMachine.travelToTimeRange(timeRange);
+  }
+
+  travelBackwards(minutes: number): TimeMachineImage[] {
+    return timeMachine.travelBackwards(minutes);
+  }
+
+  travelForwards(minutes: number): TimeMachineImage[] {
+    return timeMachine.travelForwards(minutes);
+  }
+
+  jumpToNow(): TimeMachineImage[] {
+    return timeMachine.jumpToNow();
+  }
+
+  travelToDate(date: Date, timespanMinutes: number = 60): TimeMachineImage[] {
+    return timeMachine.travelToDate(date, timespanMinutes);
+  }
+
+  findImageByEventId(eventId: string): TimeMachineImage | null {
+    return timeMachine.findImageByEventId(eventId);
+  }
+
   async cleanup() {
     console.log("🔌 Cleaning up Nostr service...");
     
@@ -481,6 +540,9 @@ export class NostrService {
         this.currentSubscription.close();
       }
       this.pool.close(this.relays);
+      
+      // Cleanup time machine
+      timeMachine.destroy();
     } catch (error) {
       console.error("Error during cleanup:", error);
     }

@@ -1,5 +1,6 @@
-import { Layout, DiscoveryFeed, CategorizedImageItem, NostrPostDetail } from "./src/views.tsx";
+import { Layout, ModernDiscoveryFeed, NostrPostDetail } from "./src/views.tsx";
 import { nostrService } from "./src/nostr-service.js";
+import { timeMachine } from "./src/time-machine.js";
 
 // Initialize Nostr service
 console.log("🚀 Starting Visual Nostr Feed...");
@@ -35,13 +36,37 @@ Bun.serve({
       const url = new URL(req.url);
       log(req.method, url.pathname + url.search);
       
-      // Fetch Nostr feed items and cached images with data
+      // Always use masonry mode (removed mode switching)
+      const displayMode = 'masonry';
+      
+      // Fetch Nostr feed items and get time machine images for current time range
       const feedItems = await nostrService.getFeedItems(20);
-      const cachedImagesWithData = nostrService.getCachedImagesWithData();
+      const timeMachineImages = nostrService.getTimeMachineImages();
+      const currentTimeRange = nostrService.getCurrentTimeRange();
+      const availablePeriods = nostrService.getTimeMachinePeriods();
+      
+      // Convert time machine images to the format expected by the UI
+      const cachedImagesWithData = timeMachineImages.map(img => ({
+        imageUrl: img.url,
+        eventId: img.eventId,
+        eventData: img.eventData,
+        correctCategory: img.correctCategory
+      }));
+      
+      console.log(`🕰️ Serving ${timeMachineImages.length} images from time range: ${new Date(currentTimeRange.start).toLocaleString()} - ${new Date(currentTimeRange.end).toLocaleString()}`);
       
       return html(
-        <Layout title="Visual Nostr Discovery">
-          <DiscoveryFeed items={feedItems} cachedImagesWithData={cachedImagesWithData} />
+        <Layout title="Visual Nostr Discovery - Image Time Machine">
+          <ModernDiscoveryFeed 
+            items={feedItems} 
+            cachedImagesWithData={cachedImagesWithData}
+            displayMode={displayMode}
+            timeMachineData={{
+              currentTimeRange,
+              availablePeriods,
+              totalImages: timeMachine.getTotalImageCount()
+            }}
+          />
         </Layout>
       );
     },
@@ -55,12 +80,131 @@ Bun.serve({
       }
     },
 
+    "/api/time-travel": {
+      POST: async (req) => {
+        try {
+          const body = await req.json();
+          let result = null;
+
+          switch (body.action) {
+            case 'backwards':
+              result = nostrService.travelBackwards(body.minutes || 60);
+              break;
+            case 'forwards':
+              result = nostrService.travelForwards(body.minutes || 60);
+              break;
+            case 'now':
+              result = nostrService.jumpToNow();
+              break;
+            case 'goto':
+              if (body.timestamp) {
+                const date = new Date(body.timestamp);
+                result = nostrService.travelToDate(date, body.timespanMinutes || 60);
+              }
+              break;
+            case 'set-window':
+              if (body.timeRange) {
+                result = nostrService.travelToTimeRange(body.timeRange);
+              }
+              break;
+            default:
+              return new Response(JSON.stringify({ success: false, error: 'Invalid action' }), {
+                status: 400,
+                headers: { "Content-Type": "application/json" }
+              });
+          }
+
+          console.log(`🕰️ Time travel ${body.action} completed, found ${result ? result.length : 0} images`);
+
+          return new Response(JSON.stringify({ 
+            success: true, 
+            imageCount: result ? result.length : 0,
+            timeRange: nostrService.getCurrentTimeRange()
+          }), {
+            headers: { "Content-Type": "application/json" }
+          });
+        } catch (error) {
+          console.error('Time travel API error:', error);
+          return new Response(JSON.stringify({ success: false, error: error.message }), {
+            status: 500,
+            headers: { "Content-Type": "application/json" }
+          });
+        }
+      }
+    },
+
+    "/api/time-machine-status": {
+      GET: async (req) => {
+        const timeRange = nostrService.getCurrentTimeRange();
+        const periods = nostrService.getTimeMachinePeriods();
+        const totalImages = timeMachine.getTotalImageCount();
+        
+        return new Response(JSON.stringify({
+          currentTimeRange: timeRange,
+          availablePeriods: periods,
+          totalImages: totalImages,
+          timeSpan: timeMachine.getTimeRange()
+        }), {
+          headers: { "Content-Type": "application/json" }
+        });
+      }
+    },
+
+    "/api/time-machine-images": {
+      POST: async (req) => {
+        try {
+          const body = await req.json();
+          const timeRange = body.timeRange;
+          
+          if (!timeRange || !timeRange.start || !timeRange.end) {
+            return new Response(JSON.stringify({ success: false, error: 'Invalid time range' }), {
+              status: 400,
+              headers: { "Content-Type": "application/json" }
+            });
+          }
+
+          // Get images for the specified time range
+          const images = nostrService.getTimeMachineImages(timeRange);
+          
+          console.log(`🎬 Fetched ${images.length} images for timerange: ${new Date(timeRange.start).toLocaleString()} - ${new Date(timeRange.end).toLocaleString()}`);
+
+          return new Response(JSON.stringify({
+            success: true,
+            images: images,
+            timeRange: timeRange,
+            count: images.length
+          }), {
+            headers: { "Content-Type": "application/json" }
+          });
+        } catch (error) {
+          console.error('Time machine images API error:', error);
+          return new Response(JSON.stringify({ success: false, error: error.message }), {
+            status: 500,
+            headers: { "Content-Type": "application/json" }
+          });
+        }
+      }
+    },
+
     "/nostr/post/:eventId": {
       GET: async (req) => {
         const eventId = req.params.eventId;
-        const event = nostrService.getEvents().find(e => e.id === eventId);
+        
+        // First try to find in current events
+        let event = nostrService.getEvents().find(e => e.id === eventId);
+        
+        // If not found, search in ALL time machine storage (not just current range)
+        if (!event) {
+          const imageWithEvent = nostrService.findImageByEventId(eventId);
+          
+          if (imageWithEvent && imageWithEvent.eventData) {
+            event = imageWithEvent.eventData;
+            console.log(`📸 Found event in time machine: ${eventId.slice(0, 8)}`);
+          }
+        }
         
         if (!event) {
+          console.log(`❌ Post not found: ${eventId.slice(0, 8)}`);
           return new Response("Post not found", { status: 404 });
         }
 
@@ -89,6 +233,14 @@ Bun.serve({
         
         return new Response(file, {
           headers: { 'Content-Type': contentType }
+        });
+      }
+    },
+
+    "/favicon.ico": {
+      GET: () => {
+        return new Response(Bun.file("public/favicon.ico"), {
+          headers: { "Content-Type": "image/x-icon" }
         });
       }
     },

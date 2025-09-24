@@ -1,7 +1,7 @@
 {
-  "name": "visual-nostr-feed",
-  "description": "Interactive visual Nostr client with dual-layout and AI-powered image categorization",
-  "version": "1.0.0",
+  "name": "nostr-image-time-machine",
+  "description": "Professional image time machine for Nostr feeds with video editor-style timeline controls",
+  "version": "2.0.0",
   "module": "index.tsx",
   "type": "module",
   "private": true,
@@ -9,7 +9,8 @@
     "dev": "PORT=4420 bun --hot index.tsx",
     "start": "bun run index.tsx",
     "build": "bun build index.tsx --outdir ./dist",
-    "config": "echo 'Edit src/config.ts to adjust timing and behavior settings'"
+    "config": "echo 'Edit src/config.ts to adjust timeline and behavior settings'",
+    "clean": "rm -f *.json && echo 'Cleared time machine storage'"
   },
   "devDependencies": {
     "@types/bun": "latest"
