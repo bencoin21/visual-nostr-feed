@@ -1,6 +1,123 @@
 {
   "images": [
     {
+      "url": "https://i.gyazo.com/fea3b4c69e43d01cc167b38d1c43d091.jpg",
+      "timestamp": 1758709263000,
+      "eventId": "295bbef31c123333b200466d8f6fc80c0bd25777d51a1c7d3ba8b9513603bcf8",
+      "eventData": {
+        "id": "295bbef31c123333b200466d8f6fc80c0bd25777d51a1c7d3ba8b9513603bcf8",
+        "pubkey": "07804b786c6a3b400b7b20d9bfc945035f3ad213da797b0c50954767c375c543",
+        "content": "ばく〜😋 https://i.gyazo.com/fea3b4c69e43d01cc167b38d1c43d091.jpg",
+        "created_at": 1758709263
+      },
+      "correctCategory": "art",
+      "category": "tech"
+    },
+    {
+      "url": "https://thebitcoinblockclock.com/blockstr/000000000000000000005fd0e835b0155209f1272137a75c8b11750b8e81c4c2.png",
+      "timestamp": 1758709250000,
+      "eventId": "8cf20792197519238fa1b4c573380cacba7a91f8cd9efbf9497396ae8bdd878d",
+      "eventData": {
+        "id": "8cf20792197519238fa1b4c573380cacba7a91f8cd9efbf9497396ae8bdd878d",
+        "pubkey": "3fdf8b43d2e6eb59fc399f7cb1b81923d1dff0215d45a11e1c1f279827eaaad8",
+        "content": "#Bitcoin Block Art by Blockstr!\nHeight: 916169\nWeight: 3993293\nhttps://thebitcoinblockclock.com/blockstr/000000000000000000005fd0e835b0155209f1272137a75c8b11750b8e81c4c2.png",
+        "created_at": 1758709250
+      },
+      "correctCategory": "tech",
+      "category": "nature"
+    },
+    {
+      "url": "https://www.danas.rs/wp-content/uploads/2024/12/1734889303-sara-2-1024x576-1-e1734889725120-300x169.jpg",
+      "timestamp": 1758709244000,
+      "eventId": "b89562c2d8e197f402326e9fb562a8dbad50cf8ea84585677c705510c9f54d06",
+      "eventData": {
+        "id": "b89562c2d8e197f402326e9fb562a8dbad50cf8ea84585677c705510c9f54d06",
+        "pubkey": "de1abdd3127788ab39fb6f558233067d7cf07e8165598738c9a46a9cff3979a0",
+        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqc5ey5g685p7rmhq7njvlf62uvhpudz0u0qsm0z6e3t0575af5a9sqj9dkx\nWHAT IF THE BELARUSIAN SCENARIO IS PRETENTIOUS IF STUDENTS AND THE OPPOSITION DO NOT AGREE?\n\nhttps://www.danas.rs/wp-content/uploads/2024/12/1734889303-sara-2-1024x576-1-e1734889725120-300x169.jpg\n--\n✍️  The coordination between students and opposition is slowing down the path to extraordinary elections, which does not buy additional time for the government.\n--\n👉 Coordination between students and opposition is slowing down the path to extraordinary elections\n👉 Process of agreeing on a common candidate is taking longer than expected\n👉 Government is trying to use the delay to its advantage\n\n--\n#politics\n--\nnostr:nevent1qvzqqqqqqypzp3fjfg350gru8hwpa8ye7n54cewrc6ylc7ppk794nzklfaf6nf6tqyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqmv3kuet5eq42a3td8kyk860qjsefa4zdww660f9k6w275rhkv62qr8ngtt  \n  ",
+        "created_at": 1758709244
+      },
+      "correctCategory": "art",
+      "category": "tech"
+    },
+    {
+      "url": "https://ichef.bbci.co.uk/news/1024/branded_news/595b/live/eddd8800-992a-11f0-858a-a904eacbef23.jpg",
+      "timestamp": 1758709230000,
+      "eventId": "b4edeef3c3fa42ff958bbf7638b9a99e1c5c2683fc67ff9614ad50cfb486dacc",
+      "eventData": {
+        "id": "b4edeef3c3fa42ff958bbf7638b9a99e1c5c2683fc67ff9614ad50cfb486dacc",
+        "pubkey": "d771f820697df1b1150207429a7052ca3e4a3427abd12ee6b363c303dd86d4bb",
+        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpq6aclsgrf0hcmz9gzqapf5uzjegly5dp840gjae4nv0ps8hvx6jas684m22\nhttps://ichef.bbci.co.uk/news/1024/branded_news/595b/live/eddd8800-992a-11f0-858a-a904eacbef23.jpg\nSocial media footage showed the massive crater in Thailand's capital leaving cars teetering on the edge.\nhttps://www.bbc.com/news/videos/cqjeg47v0k4o?at_medium=RSS&at_campaign=rss",
+        "created_at": 1758709230
+      },
+      "correctCategory": "tech",
+      "category": "nature"
+    },
+    {
+      "url": "https://www.danas.rs/wp-content/uploads/2022/11/0104fotoFoNet-Milica-Vuckovic-e1752155397411-300x169.jpg",
+      "timestamp": 1758709230000,
+      "eventId": "a538c2e9f9c0da026fd2879b0b4d90c15fb87b8f195d802e2117a4b3190c8499",
+      "eventData": {
+        "id": "a538c2e9f9c0da026fd2879b0b4d90c15fb87b8f195d802e2117a4b3190c8499",
+        "pubkey": "c5324a2347a07c3ddc1e9c99f4e95c65c3c689fc7821b78b598adf4f53a9a74b",
+        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqc5ey5g685p7rmhq7njvlf62uvhpudz0u0qsm0z6e3t0575af5a9sqj9dkx\nhttps://www.danas.rs/wp-content/uploads/2022/11/0104fotoFoNet-Milica-Vuckovic-e1752155397411-300x169.jpg\nDragan Šutanovac's photos with Aleksandar Vučić in New York sparked fierce comments on social network X.\nhttps://www.danas.rs/vesti/politika/sutanovac-uz-vucica-u-njujorku-kako-se-komentarise/",
+        "created_at": 1758709230
+      },
+      "correctCategory": "nature",
+      "category": "tech"
+    },
+    {
+      "url": "https://blossom.mymt.casa/7882cb8d92d35d29fe99c6988b3a80c5d5685d67227114b963b4b25e0c0be588.jpg",
+      "timestamp": 1758709232000,
+      "eventId": "cf1d82ac1878f06813b617fb897328bf229e8f1deb37f8af48d63e4688164da1",
+      "eventData": {
+        "id": "cf1d82ac1878f06813b617fb897328bf229e8f1deb37f8af48d63e4688164da1",
+        "pubkey": "df8f0a640c3ffd09e293999acfa399d0574c8501fcdabceca5072ee2057d87a5",
+        "content": "お昼は洗面器に入った麺\nhttps://blossom.mymt.casa/7882cb8d92d35d29fe99c6988b3a80c5d5685d67227114b963b4b25e0c0be588.jpg",
+        "created_at": 1758709232
+      },
+      "correctCategory": "art",
+      "category": "art"
+    },
+    {
+      "url": "https://res.cloudinary.com/db5i3inqr/image/upload/v1750699343/nostr-posts/xrp-chart-0.jpg",
+      "timestamp": 1758709230000,
+      "eventId": "3f2eaddd183406b3d2560bbc558e9ef9463a5ae4bcf490f45fa32fd0afcf9dbb",
+      "eventData": {
+        "id": "3f2eaddd183406b3d2560bbc558e9ef9463a5ae4bcf490f45fa32fd0afcf9dbb",
+        "pubkey": "ff9f3daff5dcc42bfd719209593f547bd484ddc33f54b032b75b8c785d3be9a5",
+        "content": "🚀 #MorganStanley nombra a #Ripple como una clave alternativa global a SWIFT, anticipando un posible futuro para los pagos internacionales. Mientras, los analistas observan una bandera alcista en $XRP con el objetivo em los $4.2.\n\nhttps://res.cloudinary.com/db5i3inqr/image/upload/v1750699343/nostr-posts/xrp-chart-0.jpg",
+        "created_at": 1758709230
+      },
+      "correctCategory": "art",
+      "category": "tech"
+    },
+    {
+      "url": "https://mf.b37mrtl.ru/russian/images/2025.09/thumbnail/68d3c5deae5ac95ffe6934c3.jpg",
+      "timestamp": 1758709026000,
+      "eventId": "9ec8c88c06261c137212d948f833b12fb5b4c7c28764edf4db343cb7c7d722d7",
+      "eventData": {
+        "id": "9ec8c88c06261c137212d948f833b12fb5b4c7c28764edf4db343cb7c7d722d7",
+        "pubkey": "9811a6e16d30beeffd156c4bbae25861fc45d8e95f726ea2c632ac44504d55c9",
+        "content": "В Армении во время стрельбы убит оппозиционный политик Григорян\n\n<img alt=\"Preview\" align=\"left\" src=\"https://mf.b37mrtl.ru/russian/images/2025.09/thumbnail/68d3c5deae5ac95ffe6934c3.jpg\"/> В ходе стрельбы в Армении был убит оппозиционный политик, глава общины села Мердзаван Володя Григорян. Об этом сообщает Armenia Today со ссылкой на правоохранителей. https://russian.rt.com/ussr/news/1538248-armeniya-ubiistvo-grigoryan?utm_source=rss&utm_medium=rss&utm_campaign=RSS\n\n\nhttps://mf.b37mrtl.ru/russian/images/2025.09/thumbnail/68d3c5deae5ac95ffe6934c3.jpg\n\nhttps://russian.rt.com/ussr/news/1538248-armeniya-ubiistvo-grigoryan?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "created_at": 1758709026
+      },
+      "correctCategory": "tech",
+      "category": "memes"
+    },
+    {
+      "url": "https://mf.b37mrtl.ru/russian/images/2025.09/thumbnail/68d3c5deae5ac95ffe6934c3.jpg",
+      "timestamp": 1758709026000,
+      "eventId": "9ec8c88c06261c137212d948f833b12fb5b4c7c28764edf4db343cb7c7d722d7",
+      "eventData": {
+        "id": "9ec8c88c06261c137212d948f833b12fb5b4c7c28764edf4db343cb7c7d722d7",
+        "pubkey": "9811a6e16d30beeffd156c4bbae25861fc45d8e95f726ea2c632ac44504d55c9",
+        "content": "В Армении во время стрельбы убит оппозиционный политик Григорян\n\n<img alt=\"Preview\" align=\"left\" src=\"https://mf.b37mrtl.ru/russian/images/2025.09/thumbnail/68d3c5deae5ac95ffe6934c3.jpg\"/> В ходе стрельбы в Армении был убит оппозиционный политик, глава общины села Мердзаван Володя Григорян. Об этом сообщает Armenia Today со ссылкой на правоохранителей. https://russian.rt.com/ussr/news/1538248-armeniya-ubiistvo-grigoryan?utm_source=rss&utm_medium=rss&utm_campaign=RSS\n\n\nhttps://mf.b37mrtl.ru/russian/images/2025.09/thumbnail/68d3c5deae5ac95ffe6934c3.jpg\n\nhttps://russian.rt.com/ussr/news/1538248-armeniya-ubiistvo-grigoryan?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "created_at": 1758709026
+      },
+      "correctCategory": "tech",
+      "category": "tech"
+    },
+    {
       "url": "https://static.eporner.com/thumbs/static4/1/14/145/14593390/13_360.jpg",
       "timestamp": 1758708860000,
       "eventId": "e6ee8b422d430e74c53a2821761ef8ad277ff93d2b1dd722f94767bad725320e",
@@ -11,7 +128,7 @@
         "created_at": 1758708860
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "nature"
     },
     {
       "url": "https://images2.imgbox.com/58/18/t9qOroO6_o.jpg",
@@ -24,7 +141,7 @@
         "created_at": 1758709189
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://images2.imgbox.com/a9/8d/P6DQAvQe_o.jpg",
@@ -37,7 +154,7 @@
         "created_at": 1758709189
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2025/09/24/7b33da51-f39c-40c0-8bd4-3c92b1c7220a_73cb3657.jpg",
@@ -50,7 +167,7 @@
         "created_at": 1758709096
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2025/09/24/fa6174f7-ab65-44b6-9b69-77c9268430cf_8ffc4f38.jpg",
@@ -63,7 +180,7 @@
         "created_at": 1758709130
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "art"
     },
     {
       "url": "https://image.nostr.build/97c594be803f56f6752a73a69543cc6f386c52cacb31cc23ec16768252bbdeb7.jpg",
@@ -76,7 +193,7 @@
         "created_at": 1758709164
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "memes"
     },
     {
       "url": "https://images.impresa.pt/expresso/2025-09-24-04c-2023-070_the_rolling_stones_g_group_car_0113-srgb.jpg",
@@ -89,7 +206,7 @@
         "created_at": 1758708568
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "nature"
     },
     {
       "url": "https://mb.web.sapo.io/0cc591842696fd8710cb5990b106c520afd1b534.jpg",
@@ -115,7 +232,7 @@
         "created_at": 1758708377
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2025/09/img_2270.jpg",
@@ -128,7 +245,7 @@
         "created_at": 1758708790
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "memes"
     },
     {
       "url": "https://64.media.tumblr.com/ab203477ac959367ce8cfeeaa029aacd/tumblr_oob5weq53w1vov69vo1_500.jpg",
@@ -167,7 +284,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://blossom.primal.net/e8aaceb05020a707cc49e3316795bb87244a0f73b1d7b7d707815347da2fe946.jpg",
@@ -193,7 +310,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://blossom.primal.net/304792a62daf9a4455d6983ffad4a5645bcc4f17eb5a04bb2894bd73b459b3ba.jpg",
@@ -206,7 +323,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://blossom.primal.net/36afec109546418c43c83ad6b70dccf9a03f4d5771618c59f730dbfe2f18d346.jpg",
@@ -219,7 +336,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "memes"
     },
     {
       "url": "https://blossom.primal.net/219ad6c39ab53e822583dd72da3919b591fa9b8b743ade6e5c8a2363262e38a7.jpg",
@@ -232,7 +349,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://blossom.primal.net/dc4cba46293321724ea1646ebb7d20e11405675daa4c196d8ab51698b64ca18c.jpg",
@@ -245,7 +362,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://blossom.primal.net/3022c2b604bc1d68cc958ffce04820d6a10b2bf770e2dc24170c3967d927768f.jpg",
@@ -258,7 +375,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://blossom.primal.net/ce6551bdc12e7c9e645e272a4d2bf2bf4b31eafce47d305bda54e15f22e0874a.jpg",
@@ -284,7 +401,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "nature"
     },
     {
       "url": "https://blossom.primal.net/c84eae2516d314f943087f3643950621cc88dccba784e9cca8879a470ddb4530.jpg",
@@ -297,7 +414,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "art"
     },
     {
       "url": "https://blossom.primal.net/23917b8f979067907e4b6cb0cacee8383ab4c39d034b165912a93a4322f8f479.jpg",
@@ -310,7 +427,7 @@
         "created_at": 1758709148
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "memes"
     },
     {
       "url": "https://share.yabu.me/fe9edd5d5c635dd2900f1f86a872e81ce1d6e20bd4e06549f133ae6bf158913b/7409c0eec8e84f37c91e4797e4bceb277451a731fa2f1922c0c43cbd15980e46.webp",
@@ -336,7 +453,7 @@
         "created_at": 1758709085
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2025/08/12132332/afp-20240817-36eb494-v1-preview-ukrainerussiaconflictwar.jpg",
@@ -362,7 +479,7 @@
         "created_at": 1758709050
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "memes"
     },
     {
       "url": "https://www.danas.rs/wp-content/uploads/2025/09/6c6e3450-9915-11f0-ac38-4964594604b1-2-300x169.jpg",
@@ -388,7 +505,7 @@
         "created_at": 1758709065
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://blossom.primal.net/a880e975f364d9f5a351bafca409c9bccc19960227fba39afc12a8ffb11b68bd.png",
@@ -401,7 +518,7 @@
         "created_at": 1758709033
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://files.catbox.moe/wmag0o.jpg",
@@ -414,7 +531,7 @@
         "created_at": 1758709011
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://s.abcnews.com/images/International/wirestory_b898f8664b82701f1e87012a4a4d3f5f_4x3_384.jpg",
@@ -466,7 +583,7 @@
         "created_at": 1758708922
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "art"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1755915056/hwtgx7w5dg49iru1f9so.jpg",
@@ -479,7 +596,7 @@
         "created_at": 1758708918
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://i.4cdn.org/his/1758624091531936s.jpg",
@@ -492,7 +609,7 @@
         "created_at": 1758708915
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "https://cdn.nostrcheck.me/0406b1bbbe74fac9d4c4b464ddd236f416682c80cff54ce8096445a9f38dc16e/835a55c4195f8a542817aa15926ba138c239c2ac64c301ea879ea050f45a9748.webp",
@@ -505,7 +622,7 @@
         "created_at": 1758708910
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://cdn.nostrcheck.me/0406b1bbbe74fac9d4c4b464ddd236f416682c80cff54ce8096445a9f38dc16e/6fc79c71ac536fef626578cb81a7407e95bee0b3153fdf5c47737e371f0bb88d.webp",
@@ -518,7 +635,7 @@
         "created_at": 1758708910
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "food"
     },
     {
       "url": "https://i.4cdn.org/pol/1758697339479660s.jpg",
@@ -531,7 +648,7 @@
         "created_at": 1758708909
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "nature"
     },
     {
       "url": "https://i.4cdn.org/pol/1758690395264961s.jpg",
@@ -557,7 +674,7 @@
         "created_at": 1758708857
       },
       "correctCategory": "nature",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "https://image.nostr.build/3b8cc84c55502cff3ce80874b29f58d927a771c4983bfc1ec129f023b92ffbcf.jpg",
@@ -570,7 +687,7 @@
         "created_at": 1758708847
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "memes"
     },
     {
       "url": "https://cdn.nos.nl/image/2025/09/20/1273461/1024x576a.jpg",
@@ -583,7 +700,7 @@
         "created_at": 1758708821
       },
       "correctCategory": "nature",
-      "category": "art"
+      "category": "memes"
     },
     {
       "url": "https://img.mako.co.il/2025/09/24/sportFive_1605591_I.jpg",
@@ -596,7 +713,7 @@
         "created_at": 1758708810
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "https://image.cnbcfm.com/api/v1/image/108203155-1758705032246-gettyimages-2208693336-AFP_39MG7PL.jpeg?v=1758705069&w=1920&h=1080",
@@ -609,7 +726,7 @@
         "created_at": 1758708780
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://blossom.primal.net/9910555ac000a5dafc5518480ad18a35ef49ded11ef5decbafc5eca3cef74be5.jpg",
@@ -635,7 +752,7 @@
         "created_at": 1758708759
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://image.nostr.build/718349f0c7da3a3357f6ad303db80b4ea13d1c7115167087258643d9386cb18e.jpg",
@@ -648,7 +765,7 @@
         "created_at": 1758708753
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "memes"
     },
     {
       "url": "https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2024/05/29075012/mega-sena-2.webp",
@@ -674,20 +791,7 @@
         "created_at": 1758708738
       },
       "correctCategory": "tech",
-      "category": "tech"
-    },
-    {
-      "url": "https://i.guim.co.uk/img/media/a958a1857ff07d422584b4cd21fad2ff78ddce27/1371_39_4406_3525/master/4406.jpg?width=140&quality=85&auto=format&fit=max&s=de85c3de86f630f38790497d3b9ac214",
-      "timestamp": 1758708720000,
-      "eventId": "7fc3daf87657c5339141dfbd52388470b6e908714d70bcafb060c9f60862284d",
-      "eventData": {
-        "id": "7fc3daf87657c5339141dfbd52388470b6e908714d70bcafb060c9f60862284d",
-        "pubkey": "9d3345095e986ded9af724d26a8c5bee050bfd615c32fc5e76981a089c72008e",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqn5e52z27npk7mxhhynfx4rzmaczshltptse0chnknqdq38rjqz8q3cttcd\nhttps://i.guim.co.uk/img/media/a958a1857ff07d422584b4cd21fad2ff78ddce27/1371_39_4406_3525/master/4406.jpg?width=140&quality=85&auto=format&fit=max&s=de85c3de86f630f38790497d3b9ac214\nReform UK leader says he has ‘no idea’ if US president is right to tell women to avoid drug during pregnancyUK politics live – latest updatesNigel Farage has refused to criticise Donald Trump’s claims that paracetamol, sold in the US as Tylenol, could cause autism, insisting “science is never settled” and he would never “side with” medical experts.The Reform UK leader said he had “no idea” if the US president was right to tell pregnant women to avoid taking acetaminophen, also known as Tylenol and paracetamol, and suggesting that those who could not “tough it out” should limit their intake. Continue reading...\nhttps://www.theguardian.com/politics/2025/sep/24/farage-refuses-criticise-trump-paracetamol-health-experts-dismiss-autism-claims",
-        "created_at": 1758708720
-      },
-      "correctCategory": "tech",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://image.nostr.build/caecd0dd8ea37762886a92c85a4fe65f9333d71b46b9dd31061770f26dcb82ba.png",
@@ -700,7 +804,20 @@
         "created_at": 1758708744
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "art"
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/a958a1857ff07d422584b4cd21fad2ff78ddce27/1371_39_4406_3525/master/4406.jpg?width=140&quality=85&auto=format&fit=max&s=de85c3de86f630f38790497d3b9ac214",
+      "timestamp": 1758708720000,
+      "eventId": "7fc3daf87657c5339141dfbd52388470b6e908714d70bcafb060c9f60862284d",
+      "eventData": {
+        "id": "7fc3daf87657c5339141dfbd52388470b6e908714d70bcafb060c9f60862284d",
+        "pubkey": "9d3345095e986ded9af724d26a8c5bee050bfd615c32fc5e76981a089c72008e",
+        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqn5e52z27npk7mxhhynfx4rzmaczshltptse0chnknqdq38rjqz8q3cttcd\nhttps://i.guim.co.uk/img/media/a958a1857ff07d422584b4cd21fad2ff78ddce27/1371_39_4406_3525/master/4406.jpg?width=140&quality=85&auto=format&fit=max&s=de85c3de86f630f38790497d3b9ac214\nReform UK leader says he has ‘no idea’ if US president is right to tell women to avoid drug during pregnancyUK politics live – latest updatesNigel Farage has refused to criticise Donald Trump’s claims that paracetamol, sold in the US as Tylenol, could cause autism, insisting “science is never settled” and he would never “side with” medical experts.The Reform UK leader said he had “no idea” if the US president was right to tell pregnant women to avoid taking acetaminophen, also known as Tylenol and paracetamol, and suggesting that those who could not “tough it out” should limit their intake. Continue reading...\nhttps://www.theguardian.com/politics/2025/sep/24/farage-refuses-criticise-trump-paracetamol-health-experts-dismiss-autism-claims",
+        "created_at": 1758708720
+      },
+      "correctCategory": "tech",
+      "category": "food"
     },
     {
       "url": "https://i.guim.co.uk/img/media/d2568ad0eaaf4cd58c4a997db09e5ab51f448630/293_0_2915_2333/master/2915.jpg?width=140&quality=85&auto=format&fit=max&s=c3be81826879d29d232d408cb81fd9d2",
@@ -726,7 +843,7 @@
         "created_at": 1758708729
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "nature"
     },
     {
       "url": "https://images2.imgbox.com/14/1b/tfCP9peH_o.jpg",
@@ -752,7 +869,7 @@
         "created_at": 1758708729
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://media.townhall.com/cdn/hodl/2025/266/81f5e112-bbfc-4e2d-bad6-b3a3e5463eb0-1052x615.jpg",
@@ -791,7 +908,7 @@
         "created_at": 1758708690
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://ichef.bbci.co.uk/news/1024/branded_news/9dae/live/e8b65f20-991e-11f0-85dd-bf0234260a08.jpg",
@@ -804,7 +921,7 @@
         "created_at": 1758708705
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "memes"
     },
     {
       "url": "https://www.danas.rs/wp-content/uploads/2025/07/0301foto-BETAPHOTO-DRAGAN-GOJIC-1-e1753779737926-300x169.jpg",
@@ -817,7 +934,7 @@
         "created_at": 1758708691
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://blossom.primal.net/814aa97c2305c7d8bb16ebde72b7435f813cc7c4f210e0bf24e6de9e5712d228.jpg",
@@ -830,7 +947,7 @@
         "created_at": 1758708703
       },
       "correctCategory": "nature",
-      "category": "nature"
+      "category": "memes"
     },
     {
       "url": "https://thebitcoinblockclock.com/blockstr/00000000000000000000158f239f02d2e9956869fbb88780fb2790b969fa8b85.png",
@@ -843,7 +960,7 @@
         "created_at": 1758708697
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://image.nostr.build/463a706e2d82ce6cf088d6574b6c9fd7cd34fe98a48d4d8366bff512aa05c3ec.jpg",
@@ -856,7 +973,7 @@
         "created_at": 1758708671
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "nature"
     },
     {
       "url": "https://image.nostr.build/868c683cc590096e793a1be5315283c0a5f4f0ecdea396077775c4308b50aa8b.jpg",
@@ -869,7 +986,7 @@
         "created_at": 1758708671
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://images2.imgbox.com/85/28/lNZI6VK3_o.jpg",
@@ -882,7 +999,7 @@
         "created_at": 1758708649
       },
       "correctCategory": "memes",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://coinjournal.net/wp-content/uploads/2025/09/ZECUSD_2025-09-24_12-23-42.png",
@@ -895,7 +1012,7 @@
         "created_at": 1758708630
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://s.abcnews.com/images/US/wirestory_364ed00a26d163bd75c056fb6b6d7b0a_4x3_384.jpg",
@@ -908,7 +1025,7 @@
         "created_at": 1758708620
       },
       "correctCategory": "nature",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://thebitcoinblockclock.com/blockstr/00000000000000000000727f7bc671e45a227164ad4f910efaa98be521fe3728.png",
@@ -921,7 +1038,7 @@
         "created_at": 1758708632
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "https://s.abcnews.com/images/International/wirestory_20c70ec00d9502189bba87f93521b09f_4x3_384.jpg",
@@ -934,7 +1051,7 @@
         "created_at": 1758708629
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "memes"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1753200296/lcir6y1lhxjghs0gstxy.jpg",
@@ -947,7 +1064,7 @@
         "created_at": 1758708619
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://images.wcdn.co.il/f_auto,q_auto,w_300/3/9/5/3/3953863-46.jpeg",
@@ -960,7 +1077,7 @@
         "created_at": 1758708591
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://blossom.primal.net/a3946b07c7c8e4bd9bec08ab6e7ba89925e6ca4a827d118aa9167e4d3fa343ff.png",
@@ -973,7 +1090,7 @@
         "created_at": 1758708595
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://bitcoinist.com/wp-content/uploads/2025/09/best-wallet-crypto-launchpad_325630.png?w=640&#038;resize=700%2C291",
@@ -986,7 +1103,7 @@
         "created_at": 1758708571
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20250924/1454643.jpg",
@@ -999,7 +1116,7 @@
         "created_at": 1758708541
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://images2.imgbox.com/ed/98/rQo4Ejhu_o.jpg",
@@ -1012,46 +1129,7 @@
         "created_at": 1758708528
       },
       "correctCategory": "memes",
-      "category": "art"
-    },
-    {
-      "url": "https://insiderpaper.com/wp-content/uploads/2025/09/aksh-yadav-bY4cqxp7vos-unsplash-1024x591.jpg",
-      "timestamp": 1758708041000,
-      "eventId": "ad91a417b9a22c4ec3553d06119c479778e79ee45b2505b48fac0131ae416e4c",
-      "eventData": {
-        "id": "ad91a417b9a22c4ec3553d06119c479778e79ee45b2505b48fac0131ae416e4c",
-        "pubkey": "e2df1120f0bc224d293da5203af38ebd7c86bf0d65e5ca7cd4595fc2c4922e33",
-        "content": "USA Cricket suspended by world governing body ICC\n\n<img width=\"1024\" height=\"591\" src=\"https://insiderpaper.com/wp-content/uploads/2025/09/aksh-yadav-bY4cqxp7vos-unsplash-1024x591.jpg\"/>The International Cricket Council has suspended USA Cricket’s membership in the sport’s world governing body with immediate effect, but the country’s teams will still able to play in the run-up to the 2028 Los Angeles Olympics. The ICC Board agreed to suspend USA Cricket after “repeated and continued breaches of its obligations as an ICC […]\nThe post https://insiderpaper.com/usa-cricket-suspended-by-world-governing-body-icc/\n.\n\n\nhttps://insiderpaper.com/usa-cricket-suspended-by-world-governing-body-icc/",
-        "created_at": 1758708041
-      },
-      "correctCategory": "art",
-      "category": "art"
-    },
-    {
-      "url": "https://i2-prod.walesonline.co.uk/incoming/article32539039.ece/ALTERNATES/s615/0_Cane-Corso-dog.jpg",
-      "timestamp": 1758707964000,
-      "eventId": "431f191c24b88359918ada6836071ff8eab9879498d37d837c79200990be327c",
-      "eventData": {
-        "id": "431f191c24b88359918ada6836071ff8eab9879498d37d837c79200990be327c",
-        "pubkey": "c3ea28c9037a55ffd9564f919e8461ed0732a8ec075f367a54465796bd65b04c",
-        "content": "Ministers confirm whether cane corso breed to be added to Dangerous Dogs act\n\nCane Corso dogs are a powerful breed requiring experienced owners and firm training\n\nhttps://i2-prod.walesonline.co.uk/incoming/article32539039.ece/ALTERNATES/s615/0_Cane-Corso-dog.jpg\n\nhttps://www.walesonline.co.uk/news/real-life/ministers-confirm-whether-cane-corso-32539165",
-        "created_at": 1758707964
-      },
-      "correctCategory": "tech",
-      "category": "nature"
-    },
-    {
-      "url": "https://i2-prod.walesonline.co.uk/incoming/article32539686.ece/ALTERNATES/s615/0_White-Stuff-Gilet1JPG.jpg",
-      "timestamp": 1758708068000,
-      "eventId": "a3696f259a13a45a24bea53c1e112d265b1a0904aa120bc4e6ac0243de5fd3c2",
-      "eventData": {
-        "id": "a3696f259a13a45a24bea53c1e112d265b1a0904aa120bc4e6ac0243de5fd3c2",
-        "pubkey": "c3ea28c9037a55ffd9564f919e8461ed0732a8ec075f367a54465796bd65b04c",
-        "content": "White Stuff's 'soft, comfy and classy' borg gilet that's 'like a warm hug' now on sale\n\nThe womens borg gilet is on sale at White Stuff and shoppers are racing to snag it in all colours\n\nhttps://i2-prod.walesonline.co.uk/incoming/article32539686.ece/ALTERNATES/s615/0_White-Stuff-Gilet1JPG.jpg\n\nhttps://www.walesonline.co.uk/whats-on/shopping/white-stuffs-soft-comfy-classy-32538761",
-        "created_at": 1758708068
-      },
-      "correctCategory": "art",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://img.rtvcdn.si/_up/upload/2025/09/24/66967695.jpg",
@@ -1064,7 +1142,7 @@
         "created_at": 1758708374
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://blossom.primal.net/bda6ce7fe3ed2a64a71bdc1b04d2965e570b4ac47244745430aef20137487fb6.jpg",
@@ -1077,7 +1155,7 @@
         "created_at": 1758708462
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "food"
     },
     {
       "url": "https://image.nostr.build/53dffaa7d1a19ce3575dde8583f0be6ce7dc20a8953aa3c236e182dd06d13bfc.jpg",
@@ -1093,58 +1171,6 @@
       "category": "food"
     },
     {
-      "url": "https://www.sueddeutsche.de/2025/09/24/15565f16-b44f-438b-8a3b-1005c31abcfd.jpg",
-      "timestamp": 1758707686000,
-      "eventId": "19bb45aac6b67727c5dbed79a17aada049a23a128f33533f2e03ef8e24625c44",
-      "eventData": {
-        "id": "19bb45aac6b67727c5dbed79a17aada049a23a128f33533f2e03ef8e24625c44",
-        "pubkey": "3b53d7c142cf0ca909961432b30c5195a14b9d424ee97b401b584b26e04f1f23",
-        "content": "Generaldebatte im Bundestag: „Wir brauchen echte Reformen“\n\nhttps://www.sueddeutsche.de/2025/09/24/15565f16-b44f-438b-8a3b-1005c31abcfd.jpg\nFriedrich Merz sieht die Zustimmung zu Neuerungen wachsen, vor allem im Sozialbereich. Die Opposition kritisiert seine Schuldenpolitik und fragt, warum der Kanzler nicht bei den Vereinten Nationen ist. Fünf Erkenntnisse aus der Generaldebatte.\n\nhttps://www.sueddeutsche.de/politik/bundestag-generaldebatte-merz-haushalt-afd-trump-li.3316164",
-        "created_at": 1758707686
-      },
-      "correctCategory": "art",
-      "category": "art"
-    },
-    {
-      "url": "https://www.sueddeutsche.de/2025/09/24/46ea0554-16ef-49e6-9e79-602ceb74f4a3.jpg",
-      "timestamp": 1758707820000,
-      "eventId": "2ffe1c897e75470553d2f4c9f71933da9b01069c9a44dcfe799d4cecdaa6e7b8",
-      "eventData": {
-        "id": "2ffe1c897e75470553d2f4c9f71933da9b01069c9a44dcfe799d4cecdaa6e7b8",
-        "pubkey": "3b53d7c142cf0ca909961432b30c5195a14b9d424ee97b401b584b26e04f1f23",
-        "content": "Krieg in der Ukraine: Russland erhöht Mehrwertsteuer, um Krieg zu finanzieren\n\nhttps://www.sueddeutsche.de/2025/09/24/46ea0554-16ef-49e6-9e79-602ceb74f4a3.jpg\nSie soll von 20 auf 22 Prozent steigen. Der ukrainische Präsident Selenskij zeigt sich überrascht über die angekündigte Kehrtwende von US-Präsident Trump in seiner Russlandpolitik.\n\nhttps://www.sueddeutsche.de/politik/ukraine-krieg-newsblog-russland-mehrwertsteuer-erhoehung-li.3315548",
-        "created_at": 1758707820
-      },
-      "correctCategory": "tech",
-      "category": "food"
-    },
-    {
-      "url": "https://www.sueddeutsche.de/2025/09/23/230cf061-53b8-4398-bec0-eee15d28be7d.jpg",
-      "timestamp": 1758707992000,
-      "eventId": "031c533fc067c55a7b5d2a16b29636491d1ab0fb3bf8ba074064b5c730468773",
-      "eventData": {
-        "id": "031c533fc067c55a7b5d2a16b29636491d1ab0fb3bf8ba074064b5c730468773",
-        "pubkey": "3b53d7c142cf0ca909961432b30c5195a14b9d424ee97b401b584b26e04f1f23",
-        "content": "Münchner Literaturstipendien: Förderung für elf Buchprojekte\n\nhttps://www.sueddeutsche.de/2025/09/23/230cf061-53b8-4398-bec0-eee15d28be7d.jpg\nDie Stadt München vergibt zehn Stipendien für vielversprechende Schreibprojekte, dazu den Leonhard- und Ida-Wolf-Gedächtnispreis.\n\nhttps://www.sueddeutsche.de/muenchen/muenchner-literaturstipendien-2025-li.3316712",
-        "created_at": 1758707992
-      },
-      "correctCategory": "art",
-      "category": "memes"
-    },
-    {
-      "url": "https://substack-post-media.s3.amazonaws.com/public/images/cd917979-afb3-406e-9b30-874d2754a660_1500x844.jpeg",
-      "timestamp": 1758708130000,
-      "eventId": "cd9c322a2026db72594914a24ac85097fed7eb7a7abae6d42eb328d2980e779f",
-      "eventData": {
-        "id": "cd9c322a2026db72594914a24ac85097fed7eb7a7abae6d42eb328d2980e779f",
-        "pubkey": "379a2a97037b716f152a6794e4a8be6597de70b021d4e97b96ff2bf6cb4998a4",
-        "content": "Kamala’s Score Settling. Trump’s Terrible Autism Press Conference. Plus. . . \n\nThe former VP’s very bitter book. ‘The most irresponsible public health press conference in history’? Mike Pompeo on Palestinian statehood. A debate on gene editing. And more.\n\nhttps://substack-post-media.s3.amazonaws.com/public/images/cd917979-afb3-406e-9b30-874d2754a660_1500x844.jpeg\n\nhttps://www.thefp.com/p/kamalas-score-settling-trumps-terrible",
-        "created_at": 1758708130
-      },
-      "correctCategory": "art",
-      "category": "memes"
-    },
-    {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316270_403.jpg",
       "timestamp": 1758708399000,
       "eventId": "d4ff8c9b542057978835c89cd07a92da1e54bad5102ff8344efb83e78bf7a9ed",
@@ -1155,7 +1181,7 @@
         "created_at": 1758708399
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316269_483.jpg",
@@ -1168,7 +1194,20 @@
         "created_at": 1758708391
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "food"
+    },
+    {
+      "url": "https://www.clarin.com/img/2025/09/24/3qt5z-Ae5_2000x1500__1.jpg",
+      "timestamp": 1758708391000,
+      "eventId": "15f7039245a6970f3af828c43edf03dc665773202f9f322f10898448f511f6e1",
+      "eventData": {
+        "id": "15f7039245a6970f3af828c43edf03dc665773202f9f322f10898448f511f6e1",
+        "pubkey": "de1abdd3127788ab39fb6f558233067d7cf07e8165598738c9a46a9cff3979a0",
+        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqvejautz6yk89kylfjhyfu7wx55qcxvpa9afmhsu9j353xt6703gqtl50g7\nRIVER WANTS TO FIND SOLUTIONS IN THE LEAST EXPECTED PLACE: THEY'RE GOING FOR THE COMEBACK AGAINST PALMEIRAS TO REACH THE COPA LIBERTADORES SEMIS\n\nhttps://www.clarin.com/img/2025/09/24/3qt5z-Ae5_2000x1500__1.jpg\n--\n✍️  River Plate is set to play a crucial match against Palmeiras in San Pablo, Brazil, to determine its fate in the Copa Libertadores.\n--\n👉 River Plate needs to win by at least one goal to advance in the Copa Libertadores\n👉 Palmeiras has not been performing well at home, with seven consecutive draws\n👉 River Plate's coach Marcelo Gallardo is under pressure to find a solution to the team's struggles\n👉 Palmeiras' coach Abel Ferreira is facing criticism from fans for his team's recent performances\n\n--\n#MarceloGallardo #AbelFerreira #SanPablo #Brazil #AllianzParque #Monumental #sports\n--\nnostr:nevent1qvzqqqqqqypzqen9mck95fvwtvf7n9wgneuudfgpsvcr6t6nh0pct9rfzvh4ulzsqyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpq3x0m3wdyp745p4qy305vkas0l35jnplfdqp3qy2nws57amszrh8q69aq6x  \n  ",
+        "created_at": 1758708391
+      },
+      "correctCategory": "tech",
+      "category": "art"
     },
     {
       "url": "https://media.wired.com/photos/68c4b49cd4888e5648506551/master/pass/Politics-List-main-1.gif",
@@ -1181,33 +1220,20 @@
         "created_at": 1758708380
       },
       "correctCategory": "tech",
-      "category": "nature"
-    },
-    {
-      "url": "https://www.clarin.com/img/2025/09/24/3qt5z-Ae5_2000x1500__1.jpg",
-      "timestamp": 1758708160000,
-      "eventId": "899fb8b9a40fab40d4048be8cb760ffc692987e968031011537429eeee021dce",
-      "eventData": {
-        "id": "899fb8b9a40fab40d4048be8cb760ffc692987e968031011537429eeee021dce",
-        "pubkey": "6665de2c5a258e5b13e995c89e79c6a50183303d2f53bbc3859469132f5e7c50",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqvejautz6yk89kylfjhyfu7wx55qcxvpa9afmhsu9j353xt6703gqtl50g7\nhttps://www.clarin.com/img/2025/09/24/3qt5z-Ae5_2000x1500__1.jpg\nThe fans grab onto the epic and statistics: they even trust the so-called 'Alario Index'. Gallardo is still unsure about the scheme to reverse the 1-2 defeat he suffered at the Monumental. What time and where is the quarterfinal rematch played?\nhttps://www.clarin.com/deportes/river-quiere-encontrar-soluciones-lugar-pensado-va-remontada-palmeiras-llegar-semis-copa-libertadores_0_eZNDm7RcWz.html",
-        "created_at": 1758708160
-      },
-      "correctCategory": "art",
       "category": "tech"
     },
     {
-      "url": "https://uploads.diariodopoder.com.br/2025/03/bf10baa9-cartao-corporativo-governo-federal-pagamento-cartoes-cpgf-foto-banco-de-brasil-bb.jpeg",
-      "timestamp": 1758707921000,
-      "eventId": "a85d2044fe598b0e5136009d569722ac92b3ca25673bb9cf00545bf1f4da836b",
+      "url": "https://www.clarin.com/img/2025/09/23/HEyV0a0uV_2000x1500__1.jpg",
+      "timestamp": 1758708377000,
+      "eventId": "f0837985057685e28c1fea59a6b2accaa149f98701931303f8abb3b4ca703a2b",
       "eventData": {
-        "id": "a85d2044fe598b0e5136009d569722ac92b3ca25673bb9cf00545bf1f4da836b",
-        "pubkey": "534bdce8d72fbc40f0a07a4cb5a438da012e9c4c7e7f54d1af0ad134df308bf1",
-        "content": "Governo petista já gastou R$66,7 milhões com cartão ‘corporativo’\n\n<img width=\"549\" height=\"347\" src=\"https://uploads.diariodopoder.com.br/2025/03/bf10baa9-cartao-corporativo-governo-federal-pagamento-cartoes-cpgf-foto-banco-de-brasil-bb.jpeg\" alt=\"\"/>O pagador de impostos já foi obrigado a bancar, só este ano, mais de R$66,3…\n\nhttps://diariodopoder.com.br/politica/ttc-politica/governo-petista-ja-gastou-r667-milhoes-com-cartao-corporativo",
-        "created_at": 1758707921
+        "id": "f0837985057685e28c1fea59a6b2accaa149f98701931303f8abb3b4ca703a2b",
+        "pubkey": "de1abdd3127788ab39fb6f558233067d7cf07e8165598738c9a46a9cff3979a0",
+        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqvejautz6yk89kylfjhyfu7wx55qcxvpa9afmhsu9j353xt6703gqtl50g7\nESCAPE TO THE HOT SPRINGS IN SPRING: 10 COMPLEXES WITH POOLS IN BUENOS AIRES, ENTRE RÍOS, AND CORRIENTES.\n\nhttps://www.clarin.com/img/2025/09/23/HEyV0a0uV_2000x1500__1.jpg\n--\n✍️  The article highlights 10 thermal complexes in the provinces of Buenos Aires and Entre Ríos, offering a variety of services and activities for relaxation and recreation.\n--\n👉 10 thermal complexes in Buenos Aires and Entre Ríos\n👉 Variety of services and activities for relaxation and recreation\n👉 Scenic views of the Uruguay River\n👉 Therapeutic properties of the thermal waters\n👉 Accommodation options and prices\n\n--\n#Dolores #Tapalqué #GeneralBelgrano #Gualeguaychú #Colón #ConcepcióndelUruguay #Federación #VillaElisa #Chajarí #MonteCaseros #travel\n--\nnostr:nevent1qvzqqqqqqypzqen9mck95fvwtvf7n9wgneuudfgpsvcr6t6nh0pct9rfzvh4ulzsqyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpq254e426ylzjscc47mmqfexa87g344a5258rqtvvd6qzc2uzx34ksy0lfjz  \n  ",
+        "created_at": 1758708377
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316203_238.jpeg",
@@ -1220,7 +1246,7 @@
         "created_at": 1758708377
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316091_238.jpg",
@@ -1233,20 +1259,7 @@
         "created_at": 1758708377
       },
       "correctCategory": "art",
-      "category": "art"
-    },
-    {
-      "url": "https://www.clarin.com/img/2025/09/23/HEyV0a0uV_2000x1500__1.jpg",
-      "timestamp": 1758708160000,
-      "eventId": "552b9aab44f8a50c62bedec09c9ba7f2235af68aa1c605b18dd0058570468d6d",
-      "eventData": {
-        "id": "552b9aab44f8a50c62bedec09c9ba7f2235af68aa1c605b18dd0058570468d6d",
-        "pubkey": "6665de2c5a258e5b13e995c89e79c6a50183303d2f53bbc3859469132f5e7c50",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqvejautz6yk89kylfjhyfu7wx55qcxvpa9afmhsu9j353xt6703gqtl50g7\nhttps://www.clarin.com/img/2025/09/23/HEyV0a0uV_2000x1500__1.jpg\nProposals to consider in the provinces of Buenos Aires, Entre Ríos, and Corrientes. How to get there from the capital, what services they offer, rates, and accommodation options.\nhttps://www.clarin.com/viajes/escapada-termas-primavera-10-complejos-piletas-buenos-aires-rios-corrientes_0_D628AqDcnZ.html",
-        "created_at": 1758708160
-      },
-      "correctCategory": "tech",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://images2.imgbox.com/8f/04/Enn0Kh9l_o.gif",
@@ -1259,20 +1272,7 @@
         "created_at": 1758708410
       },
       "correctCategory": "memes",
-      "category": "tech"
-    },
-    {
-      "url": "https://image.nostr.build/bd810568c0f68788e2b95e803839e7494b374ddc2b78b1b40f07989a32923ba6.jpg",
-      "timestamp": 1758708418000,
-      "eventId": "969276171f419058d5b503c078eb8fe5f35f90db3b3346ed0be516dd96110e7a",
-      "eventData": {
-        "id": "969276171f419058d5b503c078eb8fe5f35f90db3b3346ed0be516dd96110e7a",
-        "pubkey": "ee6ea13ab9fe5c4a68eaf9b1a34fe014a66b40117c50ee2a614f4cda959b6e74",
-        "content": "It’s shenanigans season.\nhttps://image.nostr.build/bd810568c0f68788e2b95e803839e7494b374ddc2b78b1b40f07989a32923ba6.jpg",
-        "created_at": 1758708418
-      },
-      "correctCategory": "art",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://www.clarin.com/img/2024/09/18/adpBv-8ce_2000x1500__1.jpg",
@@ -1288,6 +1288,19 @@
       "category": "nature"
     },
     {
+      "url": "https://image.nostr.build/bd810568c0f68788e2b95e803839e7494b374ddc2b78b1b40f07989a32923ba6.jpg",
+      "timestamp": 1758708418000,
+      "eventId": "969276171f419058d5b503c078eb8fe5f35f90db3b3346ed0be516dd96110e7a",
+      "eventData": {
+        "id": "969276171f419058d5b503c078eb8fe5f35f90db3b3346ed0be516dd96110e7a",
+        "pubkey": "ee6ea13ab9fe5c4a68eaf9b1a34fe014a66b40117c50ee2a614f4cda959b6e74",
+        "content": "It’s shenanigans season.\nhttps://image.nostr.build/bd810568c0f68788e2b95e803839e7494b374ddc2b78b1b40f07989a32923ba6.jpg",
+        "created_at": 1758708418
+      },
+      "correctCategory": "art",
+      "category": "food"
+    },
+    {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1754755277/rlzz9kh4lqzrmeomru2l.jpg",
       "timestamp": 1758708379000,
       "eventId": "04f5ab576dcf4b4687ab5ddc8f6d9c2dde22f217dce575bbf9b78c4279d908d0",
@@ -1298,7 +1311,7 @@
         "created_at": 1758708379
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://www.danas.rs/wp-content/uploads/2025/07/Beta-4khkisdy1m-scaled-e1757918954358-300x169.jpg",
@@ -1311,7 +1324,7 @@
         "created_at": 1758708355
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "nature"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316285_917.jpg",
@@ -1328,16 +1341,16 @@
     },
     {
       "url": "https://www.clarin.com/img/2025/09/24/9VaJ_9rtd_2000x1500__1.jpg",
-      "timestamp": 1758708160000,
-      "eventId": "a873a51fbbcf793fba4c78b725c91e4a182ed16ababd07411a4e6b3eb7530e64",
+      "timestamp": 1758708361000,
+      "eventId": "d2982179e2a8e46ad45db6d14adb01b6a243ead0109cda364468a0a16a0ae648",
       "eventData": {
-        "id": "a873a51fbbcf793fba4c78b725c91e4a182ed16ababd07411a4e6b3eb7530e64",
-        "pubkey": "6665de2c5a258e5b13e995c89e79c6a50183303d2f53bbc3859469132f5e7c50",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqvejautz6yk89kylfjhyfu7wx55qcxvpa9afmhsu9j353xt6703gqtl50g7\nhttps://www.clarin.com/img/2025/09/24/9VaJ_9rtd_2000x1500__1.jpg\nThe officialdom believes it will win on October 26th and thinks that will create a very positive situation. It believes there will be no more currency shocks.\nhttps://www.clarin.com/economia/escenario-postelectoral-gobierno-dolar-baja-inflacion-controlada-anabolicos-reservas_0_xjLe49ydcH.html",
-        "created_at": 1758708160
+        "id": "d2982179e2a8e46ad45db6d14adb01b6a243ead0109cda364468a0a16a0ae648",
+        "pubkey": "de1abdd3127788ab39fb6f558233067d7cf07e8165598738c9a46a9cff3979a0",
+        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqvejautz6yk89kylfjhyfu7wx55qcxvpa9afmhsu9j353xt6703gqtl50g7\nTHE POST-ELECTORAL SCENARIO, ACCORDING TO THE GOVERNMENT: DOLLAR DOWN, INFLATION UNDER CONTROL, AND NO 'ANABOLICS' FOR THE RESERVES\n\nhttps://www.clarin.com/img/2025/09/24/9VaJ_9rtd_2000x1500__1.jpg\n--\n✍️  The Argentine government is optimistic about its chances of winning the upcoming legislative elections, which could lead to a positive scenario for the country's economy.\n--\n👉 Government expects to win the legislative elections\n👉 Inflation expected to remain within 1-2% range\n👉 Dollar's value expected to stabilize\n👉 Country's reserves expected to increase by at least $7 billion\n👉 Government looking to reduce fiscal deficit by lowering taxes on exports\n\n--\n#JavierMilei #DonaldTrump #politics\n--\nnostr:nevent1qvzqqqqqqypzqen9mck95fvwtvf7n9wgneuudfgpsvcr6t6nh0pct9rfzvh4ulzsqyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpq4pe628ameaunlwjv0zmjtjg7fgvza5t2h27swsg6fe4nad6npejqt7rn40  \n  ",
+        "created_at": 1758708361
       },
-      "correctCategory": "art",
-      "category": "art"
+      "correctCategory": "tech",
+      "category": "nature"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55315959_213.jpg",
@@ -1350,7 +1363,20 @@
         "created_at": 1758708364
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "art"
+    },
+    {
+      "url": "https://www.clarin.com/img/2025/09/22/HLYBNdNka_2000x1500__1.jpg",
+      "timestamp": 1758708363000,
+      "eventId": "7b0e2a305b2788a9558684dfd4297efc2b780ccb4b999bcbf522ad361b1d193c",
+      "eventData": {
+        "id": "7b0e2a305b2788a9558684dfd4297efc2b780ccb4b999bcbf522ad361b1d193c",
+        "pubkey": "de1abdd3127788ab39fb6f558233067d7cf07e8165598738c9a46a9cff3979a0",
+        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqvejautz6yk89kylfjhyfu7wx55qcxvpa9afmhsu9j353xt6703gqtl50g7\nLIN-MANUEL MIRANDA AND HAMILTON, THE CINEMATIC EVENT OF THE YEAR OF THE MUSICAL THEATER, SUNG IN HIP-HOP AND RAP\n\nhttps://www.clarin.com/img/2025/09/22/HLYBNdNka_2000x1500__1.jpg\n--\n✍️  El musical de Lin-Manuel Miranda, Hamilton, llega a los cines de Argentina después de 10 años en Broadway. La película es una filmación en vivo de la obra, con un trabajo de edición y dirección del mismo equipo que la obra original.\n--\n👉 La película es una filmación en vivo de la obra musical Hamilton\n👉 La obra cuenta la historia de Alexander Hamilton, uno de los Padres Fundadores de los Estados Unidos\n👉 La película fue candidata a 16 premios Tony y ganó 11, incluyendo mejor musical\n👉 La filmación se realizó en junio de 2016 y se utilizó más de 100 micrófonos y seis cámaras para capturar cada actuación\n\n--\n#Lin-ManuelMiranda #ThomasKail #RyanCoogler #RobMarshall #DaveedDiggs #HughLaurie #Eminem #GeorgeWashington #AlexanderHamilton #MaríaReynolds #MelBrooks #DorisKearnsGoodwin #StevenSpielberg #JonathanGroff #RoryO'Malley #Broadway #RichardRodgers #TeatroPúblicodeNuevaYork #Argentina #EstadosUnidos #NuevaYork #entertainment\n--\nnostr:nevent1qvzqqqqqqypzqen9mck95fvwtvf7n9wgneuudfgpsvcr6t6nh0pct9rfzvh4ulzsqyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqzhcxyhtn20l23p6ql2xqgt52llm34tlqtw9azg6swv4pzjs8nqjqtjpkty  \n  ",
+        "created_at": 1758708363
+      },
+      "correctCategory": "tech",
+      "category": "nature"
     },
     {
       "url": "https://www.clarin.com/img/2025/09/23/CE7uJTvS8_2000x1500__1.jpg",
@@ -1376,7 +1402,7 @@
         "created_at": 1758708362
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316063_676.jpg",
@@ -1392,97 +1418,6 @@
       "category": "food"
     },
     {
-      "url": "https://www.clarin.com/img/2025/09/22/HLYBNdNka_2000x1500__1.jpg",
-      "timestamp": 1758708160000,
-      "eventId": "15f0625d7353fea88740fa8c042e8afff71aafe05b8bd12350732a114a079824",
-      "eventData": {
-        "id": "15f0625d7353fea88740fa8c042e8afff71aafe05b8bd12350732a114a079824",
-        "pubkey": "6665de2c5a258e5b13e995c89e79c6a50183303d2f53bbc3859469132f5e7c50",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqvejautz6yk89kylfjhyfu7wx55qcxvpa9afmhsu9j353xt6703gqtl50g7\nhttps://www.clarin.com/img/2025/09/22/HLYBNdNka_2000x1500__1.jpg\nThe filming of the musical, winner of 11 Tony Awards on Broadway, arrives in Argentine cinemas this Thursday. Secrets of a shoot, and of a performance, that is a major event.\nhttps://www.clarin.com/espectaculos/lin-manuel-miranda-hamilton-evento-cinematografico-ano-teatro-musical-cantado-hip-hop-rap_0_p10ep7JETb.html",
-        "created_at": 1758708160
-      },
-      "correctCategory": "art",
-      "category": "tech"
-    },
-    {
-      "url": "https://s2-g1.glbimg.com/57CKesDgO3Lbf4UH1TFaKx7gQkY=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/Y/H/okY8sDRXa59olBrYXVeA/vlcsnap-2025-09-24-06h46m52s539.png",
-      "timestamp": 1758707635000,
-      "eventId": "5f6b81e30c1f1d3eb4ab9aafff5687f2b37f060d802ccfd4ed8fc4cef53e32a9",
-      "eventData": {
-        "id": "5f6b81e30c1f1d3eb4ab9aafff5687f2b37f060d802ccfd4ed8fc4cef53e32a9",
-        "pubkey": "9cb53e080594d6e1eb4c0d84c93baa1964819b6b67c82a36180466d2a9a20efa",
-        "content": "Caminhão tomba na Rodovia Fernão Dias e interdita via em Itaguara, na Grande BH\n\n https://s2-g1.glbimg.com/57CKesDgO3Lbf4UH1TFaKx7gQkY=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/Y/H/okY8sDRXa59olBrYXVeA/vlcsnap-2025-09-24-06h46m52s539.png\n     Caminhão tomba na Rodovia Fernão Dias e interdita via em Itaguara, na Grande BH\nUm caminhão dos Correios tombou na manhã desta quarta-feira (24), na Rodovia Fernão Dias, altura do KM 568 em Itaguara, na Região Metropolitana de Belo Horizonte.\nDe acordo com a Arteris, responsável pela rodovia, o acidente ocorreu por volta das 05h48, no sentido à capital mineira.\nAinda segundo a empresa, o motorista do caminhão não se feriu e recusou atendimento médico.\nNo momento, a pista segue interditada, com 3 quilômetros de fila. É aguardado um caminhão guincho para retirar o veículo da pista.\nCaminhão tomba na Rodovia Fernão Dias e interdita via em Itaguara, na Grande BH\nRedes Sociais/Reprodução\n\nhttps://g1.globo.com/mg/minas-gerais/noticia/2025/09/24/caminhao-tomba-na-rodovia-fernao-dias-e-interdita-via-em-itaguara-na-grande-bh.ghtml",
-        "created_at": 1758707635
-      },
-      "correctCategory": "tech",
-      "category": "art"
-    },
-    {
-      "url": "https://s2-g1.glbimg.com/eqyeh7kCwg08v1DcecPUPczj8Gw=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/v/7/Vi6yZBRpSSarOBlLRqJg/202309151627316504b02360a3a-2-1-.jpg",
-      "timestamp": 1758707737000,
-      "eventId": "8d676b5c94ed4eca09cc5625883bc6c28faad2a8a88c72afac7084c797ed4848",
-      "eventData": {
-        "id": "8d676b5c94ed4eca09cc5625883bc6c28faad2a8a88c72afac7084c797ed4848",
-        "pubkey": "9cb53e080594d6e1eb4c0d84c93baa1964819b6b67c82a36180466d2a9a20efa",
-        "content": "Alto Tietê conta com mais de 6 mil vagas de emprego nesta quarta-feira; confira\n\n https://s2-g1.glbimg.com/eqyeh7kCwg08v1DcecPUPczj8Gw=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/v/7/Vi6yZBRpSSarOBlLRqJg/202309151627316504b02360a3a-2-1-.jpg\n     Alto Tietê tem mais de 6 mil oportunidades de emprego nesta quarta-feira\nDivulgação / PMMC\nO Alto Tietê tem 6.104 oportunidades de emprego nesta quarta-feira (24). As vagas estão em Mogi das Cruzes, Suzano, Itaquaquecetuba, Guararema e Arujá (confira a lista completa abaixo). \n✅ Clique para seguir o canal do g1 Mogi das Cruzes e Suzano no WhatsApp\nAs colocações são para diversas áreas de atuação e graus de escolaridade. Elas são oferecidas pelos programas municipais. Os interessados podem se candidatar tanto on-line quanto presencialmente.\nMogi das Cruzes\nEm Mogi das Cruzes são 803 vagas e os interessados devem acessar a plataforma Mogi Conecta para participar e saber mais detalhes.\nClique aqui para acessar a plataforma\nMais informações pelos telefones 4699-1900, 4699-2784 ou 4798-6315.\nVagas disponíveis em Mogi das Cruzes\nSuzano\nNo Mais Emprego em Suzano são  1.245 vagas e os interessados devem se cadastrar através do site e seguir todas as instruções fornecidas. Em caso de dúvidas, o telefone é o 4745-2264.\nCadastre-se aqui\nA unidade do Centro Unificado de Serviços (Centrus) central fica na avenida Paulo Portela, 210, no Jardim Paulista. E o Centrus Norte está na avenida Francisco Marengo, 2.301, no Jardim Dona Benta.\nVagas disponíveis em Suzano\nItaquaquecetuba\nEm Itaquaquecetuba o programa Itaquá Mais Emprego tem 3.790 vagas disponíveis para diversas áreas e escolaridades. Os interessados devem cadastrar o seu currículo pelo formulário disponibilizado pela prefeitura para se candidatar para as vagas.\nCadastre seu currículo e candidate-se\nAlém do atendimento online, também pode ser efetuado presencialmente na sede do programa, que fica na rua Dom Thomaz Frey, 89, Centro.\nVagas disponíveis no Itaquá Mais Emprego\nGuararema\nO Serviço de Atendimento ao Trabalhador (SAT) tem 254 vagas de emprego disponíveis. Os interessados podem se candidatar as oportunidades por meio da plataforma da prefeitura.\nClique aqui para se cadastrar;\nOs postos de trabalho são nas áreas de  auxiliar de produção, ajudante de acabamento de fundição, ajudante geral, copeiro, cozinheira, forneiro e operador de loja. \nTambém estão disponíveis vagas estágio para as áreas de Arquitetura, Engenharia e Direito.\nA Secretaria Municipal de Emprego e Desenvolvimento Econômico, responsável pelo programa, fica na rua 19 de Setembro, 127, no Centro. Em caso de dúvidas e para mais informações, os telefones são 4693-1717 ou 4693-143.\nArujá\nNo site do programa Arujá Emprega são disponibilizadas 12 vagas e os interessados devem se cadastrar pelo site da plataforma para participar e saber mais detalhes.\nClique aqui para se cadastrar;\nA sede do programa Arujá Emprega fica na rua Adhemar de Barros, 60, no Jardim Modelo.\nVagas disponíveis em Arujá\nEm caso de dúvidas e para mais informações, o telefone é o 4653-4057.\nComerciantes do Alto Tietê se preparam para o fim de ano\nAssista a mais notícias sobre o Alto Tietê\n\nhttps://g1.globo.com/sp/mogi-das-cruzes-suzano/concursos-e-emprego/noticia/2025/09/24/alto-tiete-conta-com-mais-de-6-mil-vagas-de-emprego-nesta-quarta-feira-confira.ghtml",
-        "created_at": 1758707737
-      },
-      "correctCategory": "tech",
-      "category": "art"
-    },
-    {
-      "url": "https://s2-g1.glbimg.com/b7UU5hPB9BbSKIxdPRtDS3QhxH0=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/3/0/QDZDLzRRWbTZpVAAQpZQ/fugitivo-mar-7.jpg",
-      "timestamp": 1758707836000,
-      "eventId": "c7cd04dd7f5427199432c22cc6a09c44f163b1825fd2e7cc381e3b84f0692d96",
-      "eventData": {
-        "id": "c7cd04dd7f5427199432c22cc6a09c44f163b1825fd2e7cc381e3b84f0692d96",
-        "pubkey": "9cb53e080594d6e1eb4c0d84c93baa1964819b6b67c82a36180466d2a9a20efa",
-        "content": "Foragido é preso após tentar fugir nadando pelo mar em Fortaleza; vídeo\n\n https://s2-g1.glbimg.com/b7UU5hPB9BbSKIxdPRtDS3QhxH0=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/3/0/QDZDLzRRWbTZpVAAQpZQ/fugitivo-mar-7.jpg\n     Foragido da polícia é preso após tentar fugir nadando pelo mar de Fortaleza\nUm homem que estava sendo procurado pela polícia foi preso após tentar fugir nadando pelo mar na Praia de Iracema, em Fortaleza, na tarde desta terça-feira (23).\nLeonardo Cunha da Silva, de 27 anos, estava foragido desde julho deste ano, quando fugiu da Unidade Prisional Professor José Sobreira de Amorim (UP-Sobreira Amorim), em Itaitinga, na Região Metropolitana de Fortaleza.\n✅ Clique e siga o canal do g1 Ceará no WhatsApp\nLeonardo Cunha da Silva, de 27 anos, era fugitivo de um presídio e foi preso após tentar fugir pelo mar da Praia de Iracema, em Fortaleza.\nReprodução\nNo momento da abordagem, o suspeito tentou escapar pelo mar, porém, foi cercado com a ajuda de policiais militares, uma aeronave da Coordenadoria Integrada de Operações (Ciopaer) e agentes do Corpo de Bombeiros.\nSegundo a Secretaria da Administração Penitenciária (SAP), o criminoso é membro do Comando Vermelho e já era monitorado pelos setores de Inteligência do órgão e da Polícia Militar. Ele possui antecedentes criminais por roubo e tráfico de drogas.\nFuga de presídio\nCriminosos quebraram uma grade de proteção e escalaram o muro com o auxílio de uma corda artesanal feita com lençóis, conhecida popularmente como \"teresa\", para fugir do presídio.\nReprodução\nLeonardo Cunha fugiu do presídio em 7 de julho deste ano, acompanhado de outros quatro detentos da mesma facção criminosa.\nPara sair da unidade, o grupo quebrou uma grade de proteção e escalou o muro do presídio com o auxílio de uma corda artesanal feita com lençóis, conhecida entre detentos como \"teresa\".\nCom a prisão de Leonardo, sobe para três o número de recapturados após a fuga. Os outros presos detidos são Natan Vaz dos Santos e Francisco Hicaro de Almeida da Costa.\nPermanecem foragidos: Antônio Alex Sousa Castro e Danier Rocha de Almeida.\nAssista aos vídeos mais vistos do Ceará:\n\nhttps://g1.globo.com/ce/ceara/noticia/2025/09/24/foragido-e-preso-apos-tentar-fugir-nadando-pelo-mar-em-fortaleza-video.ghtml",
-        "created_at": 1758707836
-      },
-      "correctCategory": "tech",
-      "category": "food"
-    },
-    {
-      "url": "https://s2-g1.glbimg.com/L8ORBXrGZMgFMlbLT8N5iYf_DxY=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/U/Y/IlegpRQbuq5UbE2K1eAA/bale-folclorico-da-bahia-apresenta-o-espetaculo-o-bale-que-voce-nao-ve-foto-celia-santos.jpg",
-      "timestamp": 1758707757000,
-      "eventId": "2dbd608f6311eb43df9492a376ce5e43ae8decb0a8b1de02d582f7d8ff25568b",
-      "eventData": {
-        "id": "2dbd608f6311eb43df9492a376ce5e43ae8decb0a8b1de02d582f7d8ff25568b",
-        "pubkey": "9cb53e080594d6e1eb4c0d84c93baa1964819b6b67c82a36180466d2a9a20efa",
-        "content": "Veja tudo o que você precisa saber sobre a 14ª Bienal Sesc de Dança, que começa nesta quinta-feira\n\n https://s2-g1.glbimg.com/L8ORBXrGZMgFMlbLT8N5iYf_DxY=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/U/Y/IlegpRQbuq5UbE2K1eAA/bale-folclorico-da-bahia-apresenta-o-espetaculo-o-bale-que-voce-nao-ve-foto-celia-santos.jpg\n     Balé Folclórico da Bahia apresenta espetáculo \"O Balé Que Você Não Vê”\nDivulgação\nA 14ª Bienal Sesc de Dança começa nesta quinta-feira (25), em Campinas (SP) e segue até o dia 5 de outubro. A edição celebra uma década do festival na cidade, com cerca de 80 atividades que vão desde espetáculos, instalações e performances até ações formativas de dança contemporânea. Participam do evento dançarinos de 18 países e 10 estados brasileiros. \nO evento traz ações formativas como uma novidade para programação de 2025. Serão oferecidas oficinas, intervenções em espaços públicos e atividades voltadas ao público infantil e familiar. \nUm dos destaques é o espetáculo \"O Balé que Você Não Vê\", do Balé Folclórico da Bahia, que abre o festival. A apresentação conta a história de resistência da dança afrobaiana no Brasil. \nEm paralelo à sua programação em Campinas, a 14ª Bienal Sesc de Dança amplia o festival para a cidade de São Paulo, entre 27 de setembro e 10 de outubro. A metrópole recebe uma seleção de obras nacionais e internacionais que discutem memória, ancestralidade, identidade e novas estéticas da dança contemporânea.\nHá ainda a instalação \"Cosmologias Ballroom\", que tem visitação gratuita no espaço expositivo do Sesc Campinas. A obra reúne fotografias e performances, de diferentes artistas que reafirmam a força estética e política da cena ballroom, marcada pela forte influência na comunidade LGBTQIAPN+.\nOs ingressos variam de R$ 40 (inteira), R$ 20 (idosos, estudantes e professores da rede pública de ensino) a R$ 12 (credencial plena Sesc), e podem ser adquiridos pelo site do Sesc. \n📲 Participe do canal do g1 Campinas no WhatsApp\n🌟 Destaques internacionais\nEm 2025, Campinas recebe artistas de 10 estados brasileiros e 18 países diferentes. São eles: África do Sul, Angola, Áustria, Bélgica, Brasil, Chile, Colômbia, Estados Unidos, França, Guadalupe, Holanda, Inglaterra, Japão, Líbano, México, Portugal, Ruanda e Suíça.\nA bailarina e coreógrafa francesa Lēnablou também está entre os destaques. Nascida em Guadalupe, território ultramarino francês, a artista apresenta \"Le Sacre du Sucre\" (O Rito do Açúcar), une crítica e dança para falar da colonização e da exploração nas Antilhas. Além do espetáculo, Lēnablou faz dois encontros teórico-práticos com o público sobre seus temas de pesquisa e suas técnicas de dança.\nOutra performance de destaque é \"Dandyism\" (Dandismo, em português), uma colaboração entre Ruanda e Brasil, que abarca o tema da identidade e expressão. Nele, intérpretes ruandenses e brasileiros fazem uma versão abrasileirada o espetáculo criado pelo artista Ziza Patrick. A proposta é repercutir o movimento cultural africano \"La Sape\", no qual pessoas utilizam peças de roupas semelhantes às de seus colonizadores como forma de resistência. \nConfira a programação completa do festival aqui. \n💃🏾 Das ruas ao teatro\nA programação traz atividades no Sesc Campinas e em outros espaços da cidade. Confira os locais abaixo: \nSesc Campinas – Rua Dom José I, 270/333, Bonfim\nCIS Guanabara – Armazém, Gare, Rua Mário Siqueira, 829, Botafogo \nEstação Cultura – Praça Marechal Floriano Peixoto, Centro\nLargo das Andorinhas – Travessa São Vicente de Paula, Av. Anchieta, Centro \nPraça Bento Quirino – Entre a Rua Barreto Leme, Rua Barão de Jaguara e Avenida Benjamin Constant, Centro  \nPraça Rui Barbosa – Rua 13 de maio, Centro (próximo ao nº 159) \nPraça Carlos Gomes – Rua Irmã Serafina, Cambuí \nRodoviária – Rua Dr. Pereira Lima, 60/140, Vila Industrial \nSenac Campinas – Rua Sacramento, 490, Centro\nTeatro Municipal José de Castro Mendes - Rua Conselheiro Gomide, 62, Vila Industrial \nUnicamp – Cidade Universitária Zeferino Vaz, Barão Geraldo\nServiçp\n14ª Bienal Sesc de Dança\nData: de 25 de setembro a 5 de outubro\nIngressos: a partir de R$12 pelo site do Sesc\n'Em Cena': começa edição da Bienal Sesc de dança em Campinas\nVÍDEOS: Tudo sobre Campinas e Região\nVeja mais notícias da região no g1 Campinas\n\nhttps://g1.globo.com/sp/campinas-regiao/em-cena/noticia/2025/09/24/veja-tudo-o-que-voce-precisa-saber-sobre-a-14a-bienal-sesc-de-danca-que-comeca-nesta-quinta-feira.ghtml",
-        "created_at": 1758707757
-      },
-      "correctCategory": "art",
-      "category": "art"
-    },
-    {
-      "url": "https://s2-g1.glbimg.com/OcE2CQKHBEUpe1C3Ae--AMjvanU=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/T/X/8ArsG9TSWEn6sOYhiQwA/imagens-g1-2025-09-22t103605.730.png",
-      "timestamp": 1758707866000,
-      "eventId": "a4f6f2b31b875084aa3dc0f2ff0ff08d30d818abbb9ce65b965d5251526bcc97",
-      "eventData": {
-        "id": "a4f6f2b31b875084aa3dc0f2ff0ff08d30d818abbb9ce65b965d5251526bcc97",
-        "pubkey": "9cb53e080594d6e1eb4c0d84c93baa1964819b6b67c82a36180466d2a9a20efa",
-        "content": "Suspeito de esfaquear e matar vascaíno no DF se entrega para a polícia\n\n https://s2-g1.glbimg.com/OcE2CQKHBEUpe1C3Ae--AMjvanU=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/T/X/8ArsG9TSWEn6sOYhiQwA/imagens-g1-2025-09-22t103605.730.png\n     Flamenguistas fogem após briga em ônibus que resultou na morte de torcedor do Vasco.\nO suspeito de esfaquear e matar o vascaíno Eumar Vaz, em um ônibus no Distrito Federal, se entregou para a Polícia Civil na noite desta terça-feira (24).\nO autor é menor de idade e se apresentou na Delegacia da Criança e do Adolescente II.\nSegundo Polícia Civil, outros suspeitos de participar do ataque já foram identificados e são procurados.\n✅ Clique aqui para seguir o canal do g1 DF no WhatsApp.\nEumar Vaz foi esfaqueado na noite de domingo (21). Ele morreu no hospital, na manhã de segunda (22).\nConhecido como Dark, ele tinha 34 anos e foi agredido dentro de um ônibus em Samambaia, quando retornava para casa depois do jogo entre Vasco e Flamengo. \nA partida foi disputada no Maracanã, a mais de mil quilômetros do DF, e terminou empatada em 1 a 1.\nEumar Vaz, torcedor do Vasco que foi morto por torcedores do Flamengo no DF\nreprodução\nEumar vivia no Riacho Fundo II e, de acordo com familiares e amigos, trabalhava como motorista. \nEle deixou dois filhos, de 3 e 13 anos.\nComo foi o ataque \nVídeos mostram torcedor do Vasco sendo agredido por torcedores do Flamengo no DF\nFlamengo e Vasco se enfrentaram em partida válida pelo Campeonato Brasileiro na tarde de domingo. O jogo terminou empatado. \nEumar assistiu ao clássico carioca com amigos no Guará — cerca de 25 minutos de distância de onde ele morava.\nO torcedor vascaíno estava retornando para casa em um ônibus da linha 812.1 da Urbi, quando se envolveu em uma confusão com torcedores do time rival.\nCerca de 20 flamenguistas que também estavam no ônibus, sendo 16 homens e quatro mulheres, agrediram o vascaíno depois que ele se recusou a tirar a camisa do Vasco.\nEm imagens obtidas pela reportagem, é possível ver um homem de camisa laranja guardando uma faca na cintura (veja o vídeo acima) e, em outro registro, um segundo homem segura um pedaço de madeira na mão.\nA vítima aparece caída no ônibus, enquanto sangra no peito. Segundo familiares, Eumar foi esfaqueado no peito e braço.\nApós os ataques, Eumar Vaz chegou a ser encaminhado ao Hospital Regional de Ceilândia (HRC), mas não resistiu aos ferimentos.\nLEIA TAMBÉM:\nMORTE DE VASCAÍNO: Polícia Civil deve pedir que Justiça feche torcida jovem do Flamengo no DF\nSEIS MORTOS: vítima de incêndio em clínica ilegal no DF morre em hospital, diz avó\nLeia mais notícias sobre a região no g1 DF.\n\nhttps://g1.globo.com/df/distrito-federal/noticia/2025/09/24/suspeito-de-esfaquear-e-matar-vascaino-no-df-se-entrega-para-a-policia.ghtml",
-        "created_at": 1758707866
-      },
-      "correctCategory": "tech",
-      "category": "art"
-    },
-    {
-      "url": "https://s2-g1.glbimg.com/9A6UQ4-1CDJn-9rE5eNq_gFBkdg=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/7/r/N94mQXQAWoulTARNBZfw/incendio-2.jpg",
-      "timestamp": 1758707864000,
-      "eventId": "11ad6f10e455cab84bb6d35d9cab978f8778244528c8899169709e958080fb48",
-      "eventData": {
-        "id": "11ad6f10e455cab84bb6d35d9cab978f8778244528c8899169709e958080fb48",
-        "pubkey": "9cb53e080594d6e1eb4c0d84c93baa1964819b6b67c82a36180466d2a9a20efa",
-        "content": "Incêndio destrói tapiocaria tradicional no distrito do Cajá, em Caldas Brandão\n\n https://s2-g1.glbimg.com/9A6UQ4-1CDJn-9rE5eNq_gFBkdg=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/7/r/N94mQXQAWoulTARNBZfw/incendio-2.jpg\n     Incêndio atingiu Tapiocaria do Irmão Firmino, em Caldas Brandão\nReprodução/TV Cabo Branco\nUm incêndio destruiu, na manhã desta quarta-feira (24), a Tapiocaria do Irmão Firmino, localizada no distrito do Cajá, em Caldas Brandão. O estabelecimento fical localizado às margens da BR-230, no sentido Campina Grande-João Pessoa.\nDe acordo com informações repassadas pelo Corpo de Bombeiros, as chamas foram controladas e não houve registro de vítimas. Equipes permanecem no local realizando os procedimentos finais de segurança. \nA tapiocaria é conhecida por atrair motoristas e viajantes que passam pela região na BR-230. Ainda não há informações sobre o que teria provocado o incêndio.\nVídeos mais assistidos do g1 Paraíba\n\nhttps://g1.globo.com/pb/paraiba/noticia/2025/09/24/incendio-destroi-tapiocaria-tradicional-no-distrito-do-caja-em-caldas-brandao.ghtml",
-        "created_at": 1758707864
-      },
-      "correctCategory": "tech",
-      "category": "memes"
-    },
-    {
       "url": "https://witmaps.c-stellar.net/2520/202509241800.webp",
       "timestamp": 1758708361000,
       "eventId": "5498b3dd5e9ba81ac8c8760b4a3fa704da7f239d62eb2ae1511c204f1a43ce23",
@@ -1493,7 +1428,7 @@
         "created_at": 1758708361
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://cdn.oantagonista.com/uploads/2025/09/curiosidades-sobre-o-Quokka-1024x683-1.jpg",
@@ -1506,7 +1441,7 @@
         "created_at": 1758708291
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "https://thebitcoinblockclock.com/blockstr/00000000000000000001cf974d2853a0f5f1da85abeb7d5e4605237a0ed118e4.png",
@@ -1519,7 +1454,7 @@
         "created_at": 1758708357
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316191_624.jpg",
@@ -1545,7 +1480,7 @@
         "created_at": 1758708347
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55315677_878.jpg",
@@ -1558,7 +1493,7 @@
         "created_at": 1758708348
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316004_533.jpg",
@@ -1571,7 +1506,7 @@
         "created_at": 1758708347
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "https://substackcdn.com/image/fetch/$s_!-2_W!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1431471-1577-421c-aa94-e9471d504306_1320x30.png",
@@ -1600,32 +1535,6 @@
       "category": "nature"
     },
     {
-      "url": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2Fnewspress-collage-mqzkm8q07-1758663668584.jpg?quality%3D90%26strip%3Dall%261758649342",
-      "timestamp": 1758708000000,
-      "eventId": "ea617f028521cdd1b33b798cb9703f20940f08fa6eac4fdd3bda881e2212ea9c",
-      "eventData": {
-        "id": "ea617f028521cdd1b33b798cb9703f20940f08fa6eac4fdd3bda881e2212ea9c",
-        "pubkey": "6055812a337760bc4e8846fba85a28e2efa1b93a0fefb18a5f5619d33e7de489",
-        "content": "Silent disease could be a ticking time bomb for your legs — beware these red flags\n\nPeople \"may mistake symptoms like leg fatigue or discomfort for normal signs of aging,\" Jennifer Jones-McMeans, divisional vice president of global clinical affairs for Abbott's vascular business, told The Post.\n\nhttps://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2Fnewspress-collage-mqzkm8q07-1758663668584.jpg?quality%3D90%26strip%3Dall%261758649342\n\nhttps://nypost.com/2025/09/24/health/silent-disease-could-be-a-ticking-time-bomb-for-your-legs/",
-        "created_at": 1758708000
-      },
-      "correctCategory": "tech",
-      "category": "memes"
-    },
-    {
-      "url": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2Fnewspress-collage-mvwpse6xf-1758662298021.jpg?quality%3D90%26strip%3Dall%261758647913",
-      "timestamp": 1758708000000,
-      "eventId": "c3794ad7c5251dc486a037ce7f086582c6651e8e3c2fce7ae397481c9c342934",
-      "eventData": {
-        "id": "c3794ad7c5251dc486a037ce7f086582c6651e8e3c2fce7ae397481c9c342934",
-        "pubkey": "6055812a337760bc4e8846fba85a28e2efa1b93a0fefb18a5f5619d33e7de489",
-        "content": "Vivek Ramaswamy tells ‘Pod Force One’ US may have been ‘in decline’ for past 50 years: ‘It doesn’t have to stay that way’\n\nOhio gubernatorial hopeful Vivek Ramaswamy bemoaned that the country \"may have been a nation in decline for the last half-decade,\" but stressed that can be fixed during an exclusive interview on The Post's \"Pod Force One\" podcast out Wednesday.\n\nhttps://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2Fnewspress-collage-mvwpse6xf-1758662298021.jpg?quality%3D90%26strip%3Dall%261758647913\n\nhttps://nypost.com/2025/09/24/us-news/vivek-ramaswamy-tells-pod-force-one-us-may-have-been-in-decline-for-past-50-years-it-doesnt-have-to-stay-that-way/",
-        "created_at": 1758708000
-      },
-      "correctCategory": "art",
-      "category": "nature"
-    },
-    {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316198_841.jpg",
       "timestamp": 1758708335000,
       "eventId": "b31fd306cd9bee58570181f2b08e10330e1a50be0d7f7b3e6a67d8daf91fee33",
@@ -1636,7 +1545,7 @@
         "created_at": 1758708335
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316194_813.jpg",
@@ -1652,19 +1561,6 @@
       "category": "nature"
     },
     {
-      "url": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2F111982029.jpg?quality%3D90%26strip%3Dall",
-      "timestamp": 1758708000000,
-      "eventId": "870f529f60a10effa20345ba20064bc1c57e89ef6647cde84cf4b1b378fd1abb",
-      "eventData": {
-        "id": "870f529f60a10effa20345ba20064bc1c57e89ef6647cde84cf4b1b378fd1abb",
-        "pubkey": "6055812a337760bc4e8846fba85a28e2efa1b93a0fefb18a5f5619d33e7de489",
-        "content": "Vivek Ramaswamy describes ‘modern Apollo mission’ for US in ‘Pod Force One’ interview\n\nThe GOP frontrunner for the Ohio governor's race said that the US should be implementing \"curricular enhancements\" to counter its decades of decline in educational outcomes -- with one option being the adoption of math standards used in Singapore.\n\nhttps://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2F111982029.jpg?quality%3D90%26strip%3Dall\n\nhttps://nypost.com/2025/09/24/us-news/vivek-ramaswamy-describes-modern-apollo-mission-for-us-in-pod-force-one-interview/",
-        "created_at": 1758708000
-      },
-      "correctCategory": "tech",
-      "category": "nature"
-    },
-    {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316132_587.jpg",
       "timestamp": 1758708341000,
       "eventId": "594216ffd249b27e97a76a077859cf692628e88c1e8c5cb7228f61699652fbf8",
@@ -1675,7 +1571,7 @@
         "created_at": 1758708341
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316207_975.png",
@@ -1688,7 +1584,7 @@
         "created_at": 1758708335
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55314783_581.jpg",
@@ -1701,32 +1597,6 @@
         "created_at": 1758708334
       },
       "correctCategory": "tech",
-      "category": "tech"
-    },
-    {
-      "url": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2F111989883.jpg?quality%3D90%26strip%3Dall",
-      "timestamp": 1758708000000,
-      "eventId": "eec281c2405143dbc80582d7412797bf2e2b51521a8381af48fc2ced70010a8b",
-      "eventData": {
-        "id": "eec281c2405143dbc80582d7412797bf2e2b51521a8381af48fc2ced70010a8b",
-        "pubkey": "6055812a337760bc4e8846fba85a28e2efa1b93a0fefb18a5f5619d33e7de489",
-        "content": "Vivek Ramaswamy tells ‘Pod Force One’ he was offered a cabinet position, dishes on DOGE split with ‘smart’ Elon Musk\n\nRamaswamy left the Trump administration before the 47th president was officially sworn in.\n\nhttps://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2F111989883.jpg?quality%3D90%26strip%3Dall\n\nhttps://nypost.com/2025/09/24/us-news/vivek-ramaswamy-tells-pod-force-one-he-was-offered-a-cabinet-position-dishes-on-doge-split-with-smart-elon-musk/",
-        "created_at": 1758708000
-      },
-      "correctCategory": "art",
-      "category": "art"
-    },
-    {
-      "url": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2Fnewspress-collage-zvwuk8up8-1758657911853.jpg?quality%3D90%26strip%3Dall%261758648540",
-      "timestamp": 1758708000000,
-      "eventId": "30ce78f31695ae7e04b0addb4beaf2ce60f21917583ac138569d354f8404e946",
-      "eventData": {
-        "id": "30ce78f31695ae7e04b0addb4beaf2ce60f21917583ac138569d354f8404e946",
-        "pubkey": "6055812a337760bc4e8846fba85a28e2efa1b93a0fefb18a5f5619d33e7de489",
-        "content": "These 3 signs will have their strength tested by Mars square Pluto\n\nThe planet of drive and desire is forming a tense square with our luminary of death and transformation this week.\n\nhttps://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F09%2Fnewspress-collage-zvwuk8up8-1758657911853.jpg?quality%3D90%26strip%3Dall%261758648540\n\nhttps://nypost.com/2025/09/24/astrology/3-signs-rocked-out-of-routine-by-mars-square-pluto-this-week/",
-        "created_at": 1758708000
-      },
-      "correctCategory": "art",
       "category": "art"
     },
     {
@@ -1740,7 +1610,7 @@
         "created_at": 1758708320
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55315976_753.jpg",
@@ -1756,19 +1626,6 @@
       "category": "nature"
     },
     {
-      "url": "https://feddit.org/pictrs/image/0477e15e-883a-4ad5-99d8-93acab67a977.jpeg",
-      "timestamp": 1758707640000,
-      "eventId": "817101be80d745849c94b711a81c5fa7b164d130fdb9ae05ae59a11f573c2b12",
-      "eventData": {
-        "id": "817101be80d745849c94b711a81c5fa7b164d130fdb9ae05ae59a11f573c2b12",
-        "pubkey": "bb9513710a854f4ea66108581cebcf2a1b19c90f37eb55075bd5d5c35388fd9c",
-        "content": "\"So viel Karton und alles für mich\"\n\nsubmitted by https://feddit.org/u/Bathamster\n\n\nhttps://feddit.org/pictrs/image/0477e15e-883a-4ad5-99d8-93acab67a977.jpeg\n\nhttps://lemmy.world/post/36392513",
-        "created_at": 1758707640
-      },
-      "correctCategory": "art",
-      "category": "art"
-    },
-    {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316122_744.jpg",
       "timestamp": 1758708306000,
       "eventId": "a0cde2e8f1aee7722605dd98ce55eac5fbac498406eddce2350f1379ae1c2c6a",
@@ -1779,7 +1636,7 @@
         "created_at": 1758708306
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://i.guim.co.uk/img/media/06bf0a3ee67044c4d3596b7d8c207c9d7b594086/375_0_3750_3000/master/3750.jpg?width=140&quality=85&auto=format&fit=max&s=d95e5ab29b40c391f0c70fcfcb4be049",
@@ -1792,7 +1649,7 @@
         "created_at": 1758708290
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "nature"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1753700763/bmrcbtk77m2ey3u2yrks.jpg",
@@ -1808,19 +1665,6 @@
       "category": "nature"
     },
     {
-      "url": "https://al-sharq.com/get/maximage/20250816_1755340297-530.jpg?t=1755340297",
-      "timestamp": 1758707530000,
-      "eventId": "526d855c892a16cc94b5a653cb7b565c709ca61310846b5eef8cc2d0f30598ca",
-      "eventData": {
-        "id": "526d855c892a16cc94b5a653cb7b565c709ca61310846b5eef8cc2d0f30598ca",
-        "pubkey": "581bc12e8b87020171b942d22b5310301c20997ba854f72c760b41bb249f83b7",
-        "content": "مجموعة QNB تعلن عن إصدار افتتاحي لسندات خضراء بقيمة 750 مليون يورو\n\n\n\nhttps://al-sharq.com/get/maximage/20250816_1755340297-530.jpg?t=1755340297\n\nhttps://al-sharq.com/article/24/09/2025/مجموعة-qnb-تعلن-عن-إصدار-افتتاحي-لسندات-خضراء-بقيمة-750-مليون-يورو",
-        "created_at": 1758707530
-      },
-      "correctCategory": "art",
-      "category": "nature"
-    },
-    {
       "url": "https://image.nostr.build/29e184f2850ee23b3b3ae832330616e5689c90a1bf2b0f86ca4fc393f68966ea.png",
       "timestamp": 1758708317000,
       "eventId": "edb014294df68936539133b748467058b7b67b4ec5df82c2360fe71215d6d43c",
@@ -1831,7 +1675,7 @@
         "created_at": 1758708317
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://mf.b37mrtl.ru/russian/images/2025.09/thumbnail/68d2bd5102e8bd4dbf6d641f.jpg",
@@ -1844,7 +1688,7 @@
         "created_at": 1758708276
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "nature"
     },
     {
       "url": "https://mf.b37mrtl.ru/russian/images/2025.09/thumbnail/68d2bd5102e8bd4dbf6d641f.jpg",
@@ -1883,7 +1727,7 @@
         "created_at": 1758708305
       },
       "correctCategory": "nature",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316159_408.jpg",
@@ -1896,7 +1740,7 @@
         "created_at": 1758708304
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "art"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316152_680.jpg",
@@ -1909,7 +1753,7 @@
         "created_at": 1758708304
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "art"
     },
     {
       "url": "https://i.guim.co.uk/img/media/35b06669aa51187e4cb1eb6504fa6d355bceb509/0_0_3000_2400/master/3000.jpg?width=140&quality=85&auto=format&fit=max&s=fea404b4a1658d368a1adf534fe3b75b",
@@ -1922,7 +1766,7 @@
         "created_at": 1758708302
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "nature"
     },
     {
       "url": "https://i.guim.co.uk/img/media/7fb53b93424ac7531520128729b87207fd5ce79e/34_0_3431_2745/master/3431.jpg?width=140&quality=85&auto=format&fit=max&s=ecd7b4970d9508d89966ef187ebd2ac2",
@@ -1935,7 +1779,7 @@
         "created_at": 1758708290
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316166_518.png",
@@ -1961,7 +1805,7 @@
         "created_at": 1758708299
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://i.guim.co.uk/img/media/89100be94372278454cac9d17e88ef1e96ea881e/302_0_3003_2403/master/3003.jpg?width=140&quality=85&auto=format&fit=max&s=59d724334ea14b4eb5c22778f7922019",
@@ -1974,7 +1818,7 @@
         "created_at": 1758708290
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316123_600.jpg",
@@ -1987,20 +1831,7 @@
         "created_at": 1758708297
       },
       "correctCategory": "tech",
-      "category": "memes"
-    },
-    {
-      "url": "https://static.eporner.com/thumbs/static4/1/14/145/14590043/14_360.jpg",
-      "timestamp": 1758707649000,
-      "eventId": "836431fc08bf87e99eb416a44ea3964139c966eaa8e8233f3c42182c6bcc2dc6",
-      "eventData": {
-        "id": "836431fc08bf87e99eb416a44ea3964139c966eaa8e8233f3c42182c6bcc2dc6",
-        "pubkey": "044536c57cdcbe174ce23f0154956c95d461931a151a761156b7345ef8c80e46",
-        "content": "Squad Goal\n\nbig ass, big dick, big tits,  , group sex, handjob, teens, interracial, hardcore, blowjob, blonde\n\nhttps://static.eporner.com/thumbs/static4/1/14/145/14590043/14_360.jpg\n\nhttps://www.eporner.com/video-habpPYnzmTD/squad-goal/",
-        "created_at": 1758707649
-      },
-      "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316089_624.jpg",
@@ -2026,7 +1857,7 @@
         "created_at": 1758708293
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "art"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316012_683.png",
@@ -2039,7 +1870,7 @@
         "created_at": 1758708287
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316021_913.jpg",
@@ -2052,7 +1883,7 @@
         "created_at": 1758708287
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "https://cdn.nostrcheck.me/0406b1bbbe74fac9d4c4b464ddd236f416682c80cff54ce8096445a9f38dc16e/f58f669c6a06b944e6b715b31acf712e27c93952feb2829930fc9f6d6c783e5d.webp",
@@ -2065,33 +1896,7 @@
         "created_at": 1758708291
       },
       "correctCategory": "art",
-      "category": "nature"
-    },
-    {
-      "url": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2025/09/24/e270c7a2-60fa-4547-ba4c-f88099c3557b_27b53c31.jpg",
-      "timestamp": 1758707822000,
-      "eventId": "df08696f0e4563b15c50aa87ac308cdc0a79f0a168d87136a638566119d875a9",
-      "eventData": {
-        "id": "df08696f0e4563b15c50aa87ac308cdc0a79f0a168d87136a638566119d875a9",
-        "pubkey": "d05b983378dd376292ae177e31c2a4ef7f9f3affcbf48efb31e32ebd43f4689f",
-        "content": "Singapore’s Wong warns against exploiting race and religion in future elections\n\nWhile Singaporeans rejected calls to vote along racial and religious lines in the May General Election, the temptation to play this card will grow as polls become more tightly contested, Prime Minister Lawrence Wong said on Wednesday.\nHe said the country’s unity depends on how it conducts its politics, and that a constructive way forward must include welcoming opposition views in parliament. The government will also do more to engage and involve Singaporeans outside the House, Wong added.\nHe was...\n\nhttps://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2025/09/24/e270c7a2-60fa-4547-ba4c-f88099c3557b_27b53c31.jpg\n\nhttps://www.scmp.com/news/asia/southeast-asia/article/3326699/singapore-pm-lawrence-wong-warns-unity-stake-racial-and-religious-divides-rise?utm_source=rss_feed",
-        "created_at": 1758707822
-      },
-      "correctCategory": "tech",
-      "category": "memes"
-    },
-    {
-      "url": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2025/09/17/b85f1fbe-0125-4017-bc3c-cc2d72198252_c4f42e60.jpg",
-      "timestamp": 1758708013000,
-      "eventId": "8e694aeda07e8f00c576f3b1f8bdcf8f41023c94bff6599d16a5537405224e79",
-      "eventData": {
-        "id": "8e694aeda07e8f00c576f3b1f8bdcf8f41023c94bff6599d16a5537405224e79",
-        "pubkey": "d05b983378dd376292ae177e31c2a4ef7f9f3affcbf48efb31e32ebd43f4689f",
-        "content": "Frugal China PhD student in Switzerland lives on cheap meals, eats cat food\n\nAn overseas PhD student who calls himself “the most frugal Chinese in Switzerland” has gone viral after revealing that he meets his protein needs by eating cat food.\nThe student survives on meagre rations so that he can fund his medical doctorate. He even donates blood to get a free meal.\nKnown online as “The Artful Cheapskate”, he has attracted more than 12,000 followers on social media.\nAfter graduating from medical school in China and saving 300,000 yuan (US$42,000) while working in Shanghai,...\n\nhttps://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2025/09/17/b85f1fbe-0125-4017-bc3c-cc2d72198252_c4f42e60.jpg\n\nhttps://www.scmp.com/news/people-culture/trending-china/article/3325863/frugal-china-phd-student-switzerland-lives-cheap-meals-gets-protein-cat-food?utm_source=rss_feed",
-        "created_at": 1758708013
-      },
-      "correctCategory": "food",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2025/09/24/2d55cf42-a319-4b41-b1a2-e21939c82052_4355aef2.jpg",
@@ -2130,7 +1935,7 @@
         "created_at": 1758708279
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316096_209.png",
@@ -2156,7 +1961,7 @@
         "created_at": 1758708276
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://www.iribnews.ir/client/themes/fa/main/img/mail_logo.gif",
@@ -2169,7 +1974,7 @@
         "created_at": 1758708272
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316232_407.jpg",
@@ -2182,7 +1987,7 @@
         "created_at": 1758708260
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316055_819.jpg",
@@ -2221,7 +2026,7 @@
         "created_at": 1758708259
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55315997_933.jpg",
@@ -2234,7 +2039,7 @@
         "created_at": 1758708259
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316050_842.jpg",
@@ -2247,32 +2052,6 @@
         "created_at": 1758708266
       },
       "correctCategory": "tech",
-      "category": "nature"
-    },
-    {
-      "url": "https://images.aeonmedia.co/images/fa7af7d1-a224-48eb-bf48-717ba43dbfb0/the-ethical-dilemma-of-deathbed-wishes-landscape-1.jpg",
-      "timestamp": 1758708060000,
-      "eventId": "f8edfca87a9c98152ac9252429affb6a61ed4f740a1fa30ce48318349b9242ed",
-      "eventData": {
-        "id": "f8edfca87a9c98152ac9252429affb6a61ed4f740a1fa30ce48318349b9242ed",
-        "pubkey": "fde57f5de988bcf55aa485c29319ba0b501a6105d16e054ff2154c399dc96252",
-        "content": "The ethical dilemma of deathbed wishes\n\nhttps://images.aeonmedia.co/images/fa7af7d1-a224-48eb-bf48-717ba43dbfb0/the-ethical-dilemma-of-deathbed-wishes-landscape-1.jpg\nShould you never make promises you don’t intend to keep? What philosophers say about the ethics of breaking your word- by Aeon Videohttps://aeon.co/videos/a-deathbed-scenario-raises-the-question-how-much-power-should-a-promise-hold?utm_source=rss-feed\n\n\nhttps://aeon.co/videos/a-deathbed-scenario-raises-the-question-how-much-power-should-a-promise-hold?utm_source=rss-feed",
-        "created_at": 1758708060
-      },
-      "correctCategory": "nature",
-      "category": "nature"
-    },
-    {
-      "url": "https://cdn.mos.cms.futurecdn.net/FmFiuM63g9qVaYWKruV3TZ-1280-80.jpg",
-      "timestamp": 1758708000000,
-      "eventId": "67b49405b039a864c4435a414346d12655136317a5685b6fae940c5fb0bf6e77",
-      "eventData": {
-        "id": "67b49405b039a864c4435a414346d12655136317a5685b6fae940c5fb0bf6e77",
-        "pubkey": "6bd8dd5b5e245a97ec08161bc35a5141cdac388b9736e0f2152bfaf7169f36e5",
-        "content": " Could astronauts travel to Mars on nuclear-powered rockets? These scientists want to make it happen \n\n The team's design uses fission reactions involving uranium to heat propellant. \n\nhttps://cdn.mos.cms.futurecdn.net/FmFiuM63g9qVaYWKruV3TZ-1280-80.jpg\n\nhttps://www.space.com/space-exploration/could-astronauts-travel-to-mars-on-nuclear-powered-rockets-these-scientists-want-to-make-it-happen",
-        "created_at": 1758708000
-      },
-      "correctCategory": "art",
       "category": "memes"
     },
     {
@@ -2286,7 +2065,7 @@
         "created_at": 1758708259
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "tech"
     },
     {
       "url": "https://bitcoinist.com/wp-content/uploads/2025/09/chart_1ee00f.png?resize=980%2C439",
@@ -2299,20 +2078,7 @@
         "created_at": 1758708253
       },
       "correctCategory": "tech",
-      "category": "memes"
-    },
-    {
-      "url": "https://www.hessenschau.de/sport/fussball/eintracht-frankfurt/eintracht-gladbach-136~_t-1758707614243_v-16to9.jpg",
-      "timestamp": 1758707614000,
-      "eventId": "4c30008e00b26947a02d0d2a1c34747c8e9966e62d93df956a4f8d96e22e46dd",
-      "eventData": {
-        "id": "4c30008e00b26947a02d0d2a1c34747c8e9966e62d93df956a4f8d96e22e46dd",
-        "pubkey": "4212138cd2a0d789ee47140675a16969badf79fb8ac722a0e6dfe2c70802ba44",
-        "content": "Eintracht Frankfurt peilt in Gladbach Druckabbau vor Hammer-Wochen an\n\nNoch ist der Eintracht-Saisonstart nicht richtig zu greifen. Auf das Fußballfest gegen Galatasaray folgte zuletzt der Stimmungsdämpfer gegen Union. Nun geht's zur Gladbacher Borussia. Ein Gegner, der der vermeintlich leichteste der kommenden Wochen ist.\n\nhttps://www.hessenschau.de/sport/fussball/eintracht-frankfurt/eintracht-gladbach-136~_t-1758707614243_v-16to9.jpg\n\nhttps://www.hessenschau.de/sport/fussball/eintracht-frankfurt/eintracht-frankfurt-peilt-in-gladbach-druckabbau-vor-hammer-wochen-an-v1,eintracht-gladbach-134.html",
-        "created_at": 1758707614
-      },
-      "correctCategory": "tech",
-      "category": "tech"
+      "category": "nature"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316003_822.jpg",
@@ -2325,7 +2091,7 @@
         "created_at": 1758708245
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55315988_667.png",
@@ -2338,7 +2104,7 @@
         "created_at": 1758708231
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316000_960.jpg",
@@ -2351,84 +2117,6 @@
         "created_at": 1758708236
       },
       "correctCategory": "art",
-      "category": "food"
-    },
-    {
-      "url": "https://cdn.entekhab.ir/files/fa/news/1404/7/2/2044267_553.jpg",
-      "timestamp": 1758708152000,
-      "eventId": "699fec611ed924ec4e6f9119970ffe5f0b29be8973d02a736182e27515f45c0e",
-      "eventData": {
-        "id": "699fec611ed924ec4e6f9119970ffe5f0b29be8973d02a736182e27515f45c0e",
-        "pubkey": "fe8450725b5bfa4feebc57838a1f0f004345b63dec6fafdc30134538bc3317c4",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpql6z9qujmt0aylm4u27pc58c0qpp5td3aa3h6lhpszdzn30pnzlzq3ayla7\nhttps://cdn.entekhab.ir/files/fa/news/1404/7/2/2044267_553.jpg\nGhalibaf said: If we were in Syria today, the recent Israeli regime's attack on Iran would not have occurred, and we would have been fighting the regime there. Now that the 12-day war has ended, look at the analysis of some media outlets. These individuals understand that unity is important, but they want to create hesitation in the fields of defense, confrontation, steadfastness, and resistance.\nhttps://www.entekhab.ir/fa/news/886414/%D9%82%D8%A7%D9%84%DB%8C%D8%A8%D8%A7%D9%81-%D8%A7%DA%AF%D8%B1-%D9%85%D8%A7-%D8%A7%D9%85%D8%B1%D9%88%D8%B2-%D8%AF%D8%B1-%D8%B3%D9%88%D8%B1%DB%8C%D9%87-%D8%A8%D9%88%D8%AF%DB%8C%D9%85-%D9%82%D8%B7%D8%B9%D8%A7-%D8%AD%D9%85%D9%84%D9%87-%D8%A7%D8%AE%DB%8C%D8%B1-%D8%B1%DA%98%DB%8C%D9%85-%D8%B5%D9%87%DB%8C%D9%88%D9%86%DB%8C%D8%B3%D8%AA%DB%8C-%D8%A8%D9%87-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%B1%D8%AE-%D9%86%D9%85%DB%8C%E2%80%8C%D8%AF%D8%A7%D8%AF-%D9%85%D8%A7-%D9%87%D9%85%D8%A7%D9%86-%D8%AC%D8%A7-%D8%A8%D8%A7-%D8%B1%DA%98%DB%8C%D9%85-%D9%85%DB%8C-%D8%AC%D9%86%DA%AF%DB%8C%D8%AF%DB%8C%D9%85",
-        "created_at": 1758708152
-      },
-      "correctCategory": "tech",
-      "category": "nature"
-    },
-    {
-      "url": "https://cdn.entekhab.ir/files/fa/news/1404/7/2/2044263_405.jpg",
-      "timestamp": 1758708152000,
-      "eventId": "435368ba003caa5c0cc364cbad629ac15b2b2104538cdea1f113c6048e639cad",
-      "eventData": {
-        "id": "435368ba003caa5c0cc364cbad629ac15b2b2104538cdea1f113c6048e639cad",
-        "pubkey": "fe8450725b5bfa4feebc57838a1f0f004345b63dec6fafdc30134538bc3317c4",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpql6z9qujmt0aylm4u27pc58c0qpp5td3aa3h6lhpszdzn30pnzlzq3ayla7\nhttps://cdn.entekhab.ir/files/fa/news/1404/7/2/2044263_405.jpg\nGhalibaf said about whether members of the government had any doubt about the promises made in the Security Council meetings, 'There was no doubt at all.'\nhttps://www.entekhab.ir/fa/news/886412/%D9%82%D8%A7%D9%84%DB%8C%D8%A8%D8%A7%D9%81-%D8%A7%D8%B9%D8%B6%D8%A7%DB%8C-%D8%AF%D9%88%D9%84%D8%AA-%D8%AF%D8%B1-%D8%AC%D9%84%D8%B3%D8%A7%D8%AA-%D8%B4%D9%88%D8%B1%D8%A7%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D9%88%D8%B9%D8%AF%D9%87-%D8%B5%D8%A7%D8%AF%D9%82-%DB%B2-%D8%AA%D8%B1%D8%AF%DB%8C%D8%AF%DB%8C-%D9%86%D8%AF%D8%A7%D8%B4%D8%AA%D9%86%D8%AF-%D8%B1%D8%A6%DB%8C%D8%B3-%D8%AC%D9%85%D9%87%D9%88%D8%B1-%D9%84%D8%AD%D8%B8%D9%87%E2%80%8C%D8%A7%DB%8C-%D9%87%DB%8C%DA%86%DA%AF%D8%A7%D9%87-%D8%AF%D8%B1-%D8%AD%D9%85%D8%A7%DB%8C%D8%AA-%D8%A7%D8%B2-%D9%86%DB%8C%D8%B1%D9%88%D9%87%D8%A7%DB%8C-%D9%85%D8%B3%D9%84%D8%AD-%D8%AF%D8%B1%D9%86%DA%AF-%D9%86%DA%A9%D8%B1%D8%AF",
-        "created_at": 1758708152
-      },
-      "correctCategory": "tech",
-      "category": "food"
-    },
-    {
-      "url": "https://cdn.entekhab.irhttps://cdn.entekhab.ir/files/fa/news/1404/7/2/2044277_831.jpg",
-      "timestamp": 1758708152000,
-      "eventId": "069656ee4d140a00014f30b50cff13c1eb6868f7701200bb756d32e61fe79cb0",
-      "eventData": {
-        "id": "069656ee4d140a00014f30b50cff13c1eb6868f7701200bb756d32e61fe79cb0",
-        "pubkey": "fe8450725b5bfa4feebc57838a1f0f004345b63dec6fafdc30134538bc3317c4",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpql6z9qujmt0aylm4u27pc58c0qpp5td3aa3h6lhpszdzn30pnzlzq3ayla7\nhttps://cdn.entekhab.irhttps://cdn.entekhab.ir/files/fa/news/1404/7/2/2044277_831.jpg\nThe National Bank of Iran, after a significant welcome of the 'National Kindness' plan, has taken a new step in the path of serving the people and supporting the country's economic growth by introducing a new plan called 'National Credit'.\nhttps://www.entekhab.ir/fa/news/886418/%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF-%D9%85%D8%B1%D8%AF%D9%85-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%D8%A8%DB%8C%E2%80%8C%D9%BE%D8%A7%DB%8C%D8%A7%D9%86-%D8%A8%D8%A7%D9%86%DA%A9-%D9%85%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A2%D8%BA%D8%A7%D8%B2-%D8%AF%D9%88%D8%B1-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%B7%D8%B1%D8%AD-%D8%A7%D8%B9%D8%AA%D8%A8%D8%A7%D8%B1-%D9%85%D9%84%DB%8C-%D8%A8%D8%A7-%D8%AA%D8%B3%D9%87%DB%8C%D9%84%D8%A7%D8%AA-%DB%B7%DB%B0%DB%B0-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%AA%D9%88%D9%85%D8%A7%D9%86%DB%8C",
-        "created_at": 1758708152
-      },
-      "correctCategory": "art",
-      "category": "tech"
-    },
-    {
-      "url": "https://crypto.news/app/uploads/2025/07/crypto-news-mining-option19.webp",
-      "timestamp": 1758708224000,
-      "eventId": "4571bf9a923c886611dc419983e7c9ab235e71502d44c4a765b6fb1ac140955a",
-      "eventData": {
-        "id": "4571bf9a923c886611dc419983e7c9ab235e71502d44c4a765b6fb1ac140955a",
-        "pubkey": "de1abdd3127788ab39fb6f558233067d7cf07e8165598738c9a46a9cff3979a0",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqfupvkfgd5pazlt7lr0zqhmsnvrd87xmgwec5y356qnctzdmkvz9qjj8vg8\nFIND MINING POSITIONS ITSELF AS GLOBAL CLOUD MINING SERVICE\n\nhttps://crypto.news/app/uploads/2025/07/crypto-news-mining-option19.webp\n--\n✍️  Find Mining is a cloud mining service that allows investors to participate in mining without purchasing hardware or managing technical setups, offering a unique opportunity for US-based crypto enthusiasts.\n--\n👉 Legal and regulated by the Financial Conduct Authority\n👉 No hardware investment required\n👉 USD profit settlement\n👉 Substantial daily returns of $6,400 to $8,900 per day\n👉 Trusted by over 9.4 million registered users in 175 countries and regions\n\n--\n#UK #technology\n--\nnostr:nevent1qvzqqqqqqypzqnczevjsmgr697ha7x7yp0hpxcx60udksan3gfrf5p8skymhvcy2qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqeclmldpm8t2gkwml75xdvna7arsqcnqarfqq5rxphw9j8pyqgx2qlpmxae  \n  ",
-        "created_at": 1758708224
-      },
-      "correctCategory": "tech",
-      "category": "art"
-    },
-    {
-      "url": "https://media.crypto.news/2025/09/crypto-news-Corporate-Bitcoin-treasuries-option04.webp",
-      "timestamp": 1758708160000,
-      "eventId": "2604266b466bc421a744dd93942ea0c6c100dff6732535c381d44cc4844ed49f",
-      "eventData": {
-        "id": "2604266b466bc421a744dd93942ea0c6c100dff6732535c381d44cc4844ed49f",
-        "pubkey": "4f02cb250da07a2fafdf1bc40bee1360da7f1b68767142469a04f0b13776608a",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqfupvkfgd5pazlt7lr0zqhmsnvrd87xmgwec5y356qnctzdmkvz9qjj8vg8\nhttps://media.crypto.news/2025/09/crypto-news-Corporate-Bitcoin-treasuries-option04.webp\nBitcoin price managed to make its way above the $112,000 threshold, holding slightly below $113,000. After dropping below $110,000 amidst a sharp decline due to liquidations, is there still hope for a rally? Bitcoin price took a massive hit when…\nhttps://crypto.news/bitcoin-price-hikes-above-112k-could-btc-rally/",
-        "created_at": 1758708160
-      },
-      "correctCategory": "tech",
-      "category": "art"
-    },
-    {
-      "url": "https://www.theblaze.com/media-library/charlie-kirk-thrived-on-truth-and-virtue-over-grievance-mongering.jpg?id=61638317&width=1245&height=700&coordinates=0%2C53%2C0%2C54",
-      "timestamp": 1758708210000,
-      "eventId": "1562060294c087657e7d0a838565fe43252d06a61c02a33d82c49fb5328bdbd0",
-      "eventData": {
-        "id": "1562060294c087657e7d0a838565fe43252d06a61c02a33d82c49fb5328bdbd0",
-        "pubkey": "681bfafd923b76f3a388d93b76eb5e00ea0398370e8f303ae726fbe310c6a2e9",
-        "content": "nostr:nprofile1qyd8wumn8ghj7ctjw35kxmr9wvhxcctev4erxtnwv4mhxqpqdqdl4lvj8dm08gugmyahd667qr4q8xphp68nqwh8yma7xyxx5t5stlhfrz\nhttps://www.theblaze.com/media-library/charlie-kirk-thrived-on-truth-and-virtue-over-grievance-mongering.jpg?id=61638317&width=1245&height=700&coordinates=0%2C53%2C0%2C54\nThe average American parent has no idea who Ta-Nehisi Coates is — and that would normally be a blessing. His writings on race offer nothing new or edifying. He is a darling of the intellectual left who advances its racialist philosophy through anecdote and grievance.But his recent denunciation of Charlie Kirk in Vanity Fair should prompt parents to take notice. If your kids plan to attend a university — especially a public one — they will be taught Coates’ worldview: that America is a systemically racist nation steeped in “heteronormativity” and “exclusion.”Coates substitutes personal narrative for reasoned debate, even as he cashes checks and accepts awards from the very nation he condemns.Much of my career has been spent exposing the radical left’s capture of the humanities. The method is always the same: sweeping declarations, superficial evidence, and endless personal stories of mistreatment that become excuses for remaking the world. Coates’ work fits the pattern perfectly. It is not inspirational. It is self-pity repackaged as wisdom.Caricaturing CharlieIn his postmortem of Kirk, Coates warns that memorializing him might overlook his faults. At first, that sounds like a truism — we all fall short. But funerals are not for airing grievances. They are for remembering what we loved in the departed. The “bad things” fade into insignificance, and the dead cannot defend themselves against unfair caricature.Yet caricature is exactly what Coates serves up. He repeats leftist talking points with such confidence that casual readers may mistake them for facts. They are not. They are distortions that reveal the low academic rigor of today’s radical left. For Coates, everything revolves around feelings of “hate,” never truth or argument.Feelings over reasonThis has always been Coates’ style. He substitutes personal narrative for reasoned debate, even as he cashes checks and accepts awards from the very nation he condemns. The hypocrisy is obvious. Consider Ibram X. Kendi, another star in Coates’ circle, exposed for wasting millions meant to “end racism” while achieving nothing of the kind. The pattern is grievance rewarded, not results delivered.What Coates really offers is a window into a mind shaped by anger, envy, and resentment. A man showered with praise and wealth should rejoice in the opportunities America provided and use his platform to inspire others. Instead, he insists that structural racism explains every hardship. He never considers alternative interpretations or the role of moral choices in shaping outcomes.Staying in school, avoiding drugs, marrying before having children — these choices matter. The statistics are clear. None of them hinge on “structural racism.”Kirk understood this. When confronted by students claiming that poverty forces crime, he rejected the premise. That view dehumanizes the poor, excuses immorality, and reduces human life to material conditions. Kirk countered with a vision rooted in responsibility, virtue, and perseverance.Coates, by contrast, repeats the falsehood that Kirk hated immigrants and LGBTQ people. He didn’t. He hated the sins that enslave people. He loved them as fellow humans and wanted them freed through Christ. He urged compliance with immigration laws not out of hate but out of respect for the rule of law — the same standard applied to Americans abroad. These facts are easily verifiable if one is willing to look.The hypocrisy goes deeper. When Jimmy Kimmel was recently suspended, comedian Jim Gaffigan urged people to read his words directly rather than rely on secondhand distortions. Good advice. Why won’t the left follow it when it comes to Charlie Kirk? President Barack Obama claimed he never censored opponents, but his record shows otherwise. For decades, the left has policed speech, thought, and hiring.A grievance paradeCoates claims to fear that American history is being covered up. What he really fears is that his interpretation of history has been challenged and found wanting.He dwells on slavery but ignores the hundreds of thousands of young men who died to end it and the countless Christians who fought for abolition. He invokes Jim Crow and redlining but skips over the Democratic Party’s role in enforcing them. He wields “racism” as a bludgeon against dissent. But that weapon has lost its power.RELATED: Joy Reid said the quiet part out loud — and it’s ugly                                Photo by Eugene Gologursky/Getty Images for Fast CompanyAmerican history is human history — the story of sinners, yes, but also of a nation shaped by Christians who proclaimed that true freedom comes only through Christ. Charlie Kirk preached that message. He affirmed the dignity of his opponents by debating them. He loved his country, he upheld its laws, he wanted its people to flourish — but above all, he loved Christ and urged students to turn to Him as Savior.That is what we should remember. And that is what Coates cannot understand.\nhttps://www.theblaze.com/columns/opinion/charlie-kirk-thrived-on-truth-and-virtue-over-grievance-mongering",
-        "created_at": 1758708210
-      },
-      "correctCategory": "tech",
       "category": "tech"
     },
     {
@@ -2442,7 +2130,7 @@
         "created_at": 1758708214
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://cdn.entekhab.ir/files/fa/news/1404/7/2/2044269_835.jpg",
@@ -2455,7 +2143,7 @@
         "created_at": 1758708215
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://media.crypto.news/2025/09/crypto-news-exchange-Ethereum-option01.webp",
@@ -2468,7 +2156,7 @@
         "created_at": 1758708160
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://cdn.entekhab.ir/files/fa/news/1404/7/2/2044279_756.jpg",
@@ -2481,7 +2169,7 @@
         "created_at": 1758708152
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://media.crypto.news/2025/09/crypto-news-bull-market-option10.webp",
@@ -2494,7 +2182,7 @@
         "created_at": 1758708160
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://cdn.entekhab.ir/files/fa/news/1404/7/2/2044271_801.jpg",
@@ -2507,7 +2195,7 @@
         "created_at": 1758708216
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://crypto.news/app/uploads/2024/09/crypto-news-cardano-trading-chart-option01.webp",
@@ -2533,7 +2221,7 @@
         "created_at": 1758708152
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "nature"
     },
     {
       "url": "https://media.crypto.news/2025/09/crypto-news-DeFi-option09.webp",
@@ -2546,7 +2234,7 @@
         "created_at": 1758708209
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://blossom.primal.net/de38874e746e23ee567185f1a4e85901447b2a10e5dfe635b5b11b4e7ad66d02.jpg",
@@ -2559,7 +2247,7 @@
         "created_at": 1758708214
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "memes"
     },
     {
       "url": "https://newsmedia.tasnimnews.com/Tasnim/Uploaded/Image/1404/06/17/1404061711412396233948264.jpg",
@@ -2572,7 +2260,7 @@
         "created_at": 1758708202
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "memes"
     },
     {
       "url": "https://cdn.entekhab.ir/files/fa/news/1404/7/2/2044281_168.jpg",
@@ -2585,7 +2273,7 @@
         "created_at": 1758708152
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://cdn.entekhab.ir/files/fa/news/1404/7/2/2044285_286.jpg",
@@ -2611,7 +2299,7 @@
         "created_at": 1758708198
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://newsmedia.tasnimnews.com/Tasnim/Uploaded/Image/1404/05/29/1404052912211723333752304.jpg",
@@ -2624,7 +2312,7 @@
         "created_at": 1758708151
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://www.emaratalyoum.com/polopoly_fs/1.1974914.1758706845!/image/image.JPG",
@@ -2650,7 +2338,7 @@
         "created_at": 1758708151
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://media.mehrnews.com/d/2025/08/12/4/5634323.jpg?ts=1754969443866",
@@ -2676,7 +2364,7 @@
         "created_at": 1758708184
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://resizer.glanacion.com/resizer/v2/JECMCJNFOFEDHLJATJCAWERKZY.jpg?auth=d6b59c672db06221b467a524df19d71c82935b4ad5731157b256c29420f43ed6&smart=true&width=2000&height=1333",
@@ -2689,7 +2377,7 @@
         "created_at": 1758708151
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://resizer.glanacion.com/resizer/v2/6JN3M4AATNBS7JK2RWDI6VFJAU.jpg?auth=42523b0b6cbf41862624a49d0806a9d2705302e958ee073e85611d00347b4539&smart=true&width=2000&height=1333",
@@ -2702,7 +2390,7 @@
         "created_at": 1758708151
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://resizer.glanacion.com/resizer/v2/OWUI2NT7UBE7NMFXLTUF3LJYZU.JPG?auth=ddb5d0fe6335c7d38933c59b215a3af0d9971a33d783fb7268929e14de4257e1&smart=true&width=2000&height=1333",
@@ -2741,7 +2429,7 @@
         "created_at": 1758708186
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "nature"
     },
     {
       "url": "https://resizer.glanacion.com/resizer/v2/ZHQL5QSUGRAUHFRCADCASRAK4E.JPEG?auth=4df655ff674d3dbf9c41912e304a0514cd7627b084122d01d6c43c1bd55db41b&smart=true&width=1200&height=800",
@@ -2754,7 +2442,7 @@
         "created_at": 1758708172
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316094_265.jpg",
@@ -2793,7 +2481,7 @@
         "created_at": 1758708169
       },
       "correctCategory": "food",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://resizer.glanacion.com/resizer/v2/ULUGW3SZG5HGXJS4SC6NEP55QI.jpg?auth=abf3907bb0ef73d3be1c51d4ea4251edfadfe71c3859aee054156b73cefe4cdc&smart=true&width=1620&height=1080",
@@ -2806,7 +2494,7 @@
         "created_at": 1758708151
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "https://www.iribnews.ir/files/fa/news/1404/7/2/55316044_192.jpg",
@@ -2819,7 +2507,7 @@
         "created_at": 1758708167
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "art"
     },
     {
       "url": "https://resizer.glanacion.com/resizer/v2/W5FIPE7555HWTOMDHVCCNJ3X2U.jpg?auth=67d78272af0784d696d56e0ab4c9bade97f9c2a8ed0a4f1def27adcad79fa8c2&smart=true&width=2000&height=1217",
@@ -2832,7 +2520,7 @@
         "created_at": 1758708168
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://resizer.glanacion.com/resizer/v2/ZS7V2MNBFZFPRA37U4UW7OMKUY.JPG?auth=35a85ff1fb8554e7cf5831c35a3ae104df2942a3786ba02182d8bb5ffc8a0460&smart=true&width=2000&height=1333",
@@ -2845,7 +2533,7 @@
         "created_at": 1758708166
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://resizer.glanacion.com/resizer/v2/44AOW7ZD5REYTG6E4PHFD4CCJQ.jpg?auth=d57384736e188d5f7cd88d82463d2b2c662f888f959f52a001ef6b72f23a7d5f&smart=true&width=2000&height=1333",
@@ -2858,7 +2546,7 @@
         "created_at": 1758708151
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "art"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1747547818/lrgtivgpidstdrcrqizf.jpg",
@@ -2871,7 +2559,7 @@
         "created_at": 1758708139
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "food"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1746500563/yeadwznpwdj7erhkl5v4.jpg",
@@ -2910,7 +2598,7 @@
         "created_at": 1758708131
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://images.theconversation.com/files/692236/original/file-20250922-66-dg1vnl.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format&amp;w=754&amp;fit=clip",
@@ -2923,7 +2611,7 @@
         "created_at": 1758708110
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "memes"
     },
     {
       "url": "https://blossom.primal.net/e28fd7adb2e022c5629436bbdaaec81e7513d289634be0a34920d9d1ca0ff40b.gif",
@@ -2936,7 +2624,7 @@
         "created_at": 1758708123
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://image.cnbcfm.com/api/v1/image/108148105-1747763002538-108148105-1747758171199-NUP_207730_02334.JPG?v=1747763009&w=1920&h=1080",
@@ -2949,7 +2637,7 @@
         "created_at": 1758708110
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "art"
     },
     {
       "url": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/9f57/live/3d767a90-98b6-11f0-97ac-f7b1eb4c1aa8.jpg",
@@ -2962,7 +2650,7 @@
         "created_at": 1758708108
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://assets2.cbsnewsstatic.com/hub/i/r/2025/09/23/3be48484-841b-4937-a13b-f122d93f024f/thumbnail/1200x630g2/be127722b6904062695e72831781e06f/gettyimages-2233090452.jpg",
@@ -2975,7 +2663,7 @@
         "created_at": 1758708105
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "art"
     },
     {
       "url": "https://blossom.primal.net/e5f8ee00a36e4dea85cd2976059e897d76037e74947752e5368f9de132f82184.gif",
@@ -3001,7 +2689,7 @@
         "created_at": 1758708107
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "tech"
     },
     {
       "url": "https://blossom.primal.net/0cf0cc12b0acc3d6203aef2b314a82efe8c199204f767edbd9db62fee1ee6a68.gif",
@@ -3014,7 +2702,7 @@
         "created_at": 1758708099
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1755478939/vedmaej1xrfropets3go.jpg",
@@ -3027,7 +2715,7 @@
         "created_at": 1758708079
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "tech"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1752015683/s68ls2kgrx4qkuq773f8.jpg",
@@ -3040,7 +2728,7 @@
         "created_at": 1758708079
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://image.nostr.build/f009c66117dc9b4257cee5f6925de8f96aa8d8544d8fa1b090463bbfd554686e.jpg",
@@ -3053,7 +2741,7 @@
         "created_at": 1758708065
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "nature"
     },
     {
       "url": "https://image.nostr.build/2292d23bc401ae0c52da7ff099758144281647b895609a58b7d65ab5e8115490.jpg",
@@ -3079,7 +2767,7 @@
         "created_at": 1758708057
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://image.nostr.build/a7b55e6b83986a29bc6ed99fef2b621410a991e04ac832f1a0a98260a2c1acca.jpg",
@@ -3092,7 +2780,7 @@
         "created_at": 1758708054
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "https://techcrunch.com/wp-content/uploads/2024/08/GettyImages-664337446.jpeg?resize=1200,800",
@@ -3105,7 +2793,7 @@
         "created_at": 1758708044
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "https://bitcoinist.com/wp-content/uploads/2025/06/Bitcoin-Hyper-logo.jpg?resize=64%2C64",
@@ -3144,7 +2832,7 @@
         "created_at": 1758708023
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://image.nostr.build/fad6cee816c26a3cb867e51e3eb4e2dea874497eb4412a007187447424addd07.png",
@@ -3157,7 +2845,7 @@
         "created_at": 1758708025
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://mars.nasa.gov/msl-raw-images/msss/04032/mcam/4032ML1050440161206800B00_DXXX.jpg",
@@ -3170,7 +2858,7 @@
         "created_at": 1758708021
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "memes"
     },
     {
       "url": "https://image.nostr.build/496e4ca26feed1d96926a34922ed6a6d415e2ac66e1a9b69f5291585b55fe361.jpg",
@@ -3196,7 +2884,7 @@
         "created_at": 1758708006
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "art"
     },
     {
       "url": "https://hitony.com/images/everycolor/AB7A57.png",
@@ -3209,7 +2897,7 @@
         "created_at": 1758708005
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "tech"
     },
     {
       "url": "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg",
@@ -3222,7 +2910,7 @@
         "created_at": 1758708002
       },
       "correctCategory": "nature",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://images.pexels.com/photos/33976332/pexels-photo-33976332.jpeg",
@@ -3235,7 +2923,7 @@
         "created_at": 1758708002
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "tech"
     },
     {
       "url": "https://external-preview.redd.it/5cW3fUtlYoZT5Yf__OaNuZC8T_FPRR2gZwL4WHmhx7I.gif?format=png8&s=4b029d52716a91feb3b4ab17a5375c87569b06bb",
@@ -3248,7 +2936,7 @@
         "created_at": 1758708002
       },
       "correctCategory": "memes",
-      "category": "nature"
+      "category": "food"
     },
     {
       "url": "https://hodl.camp/api/img/sats_per_dollar/885.png",
@@ -3261,7 +2949,7 @@
         "created_at": 1758708000
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "art"
     },
     {
       "url": "https://www.danas.rs/wp-content/uploads/2025/09/Festival-Braca-Manaki-foto-Festival-Braca-Manaki-promo-e1758707580831-300x169.jpg",
@@ -3274,7 +2962,7 @@
         "created_at": 1758707971
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "https://image.nostr.build/fabc96c7553c40ea57cc3b2f97f1dfdbe5a37fc9d675d6641b64832aaea4c142.jpg",
@@ -3287,7 +2975,7 @@
         "created_at": 1758707990
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1754874014/sua9yielcnya4unc8jmf.jpg",
@@ -3300,7 +2988,7 @@
         "created_at": 1758707960
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "memes"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1754755126/octa3lrbgepxbrmpslle.jpg",
@@ -3313,7 +3001,7 @@
         "created_at": 1758707959
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "nature"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1747547995/gxddnalg7vh1d1jc3dpc.jpg",
@@ -3326,7 +3014,7 @@
         "created_at": 1758707959
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "https://blossom.primal.net/e2f30f5ce12a23a1abf2fa15a254e1ca08def0915db3ee3c7ca8e47b5ee4a37b.jpg",
@@ -3339,7 +3027,7 @@
         "created_at": 1758707930
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "food"
     },
     {
       "url": "https://images2.imgbox.com/36/72/8WJIn8OW_o.jpg",
@@ -3352,7 +3040,7 @@
         "created_at": 1758707929
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1753059531/f8i9z5nyx205ej4q75nw.jpg",
@@ -3365,7 +3053,7 @@
         "created_at": 1758707899
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "memes"
     },
     {
       "url": "https://compote.slate.com/images/0c5a8414-1600-480f-85fc-c40b4cc9ae10.jpeg?width=1560",
@@ -3378,7 +3066,7 @@
         "created_at": 1758707891
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "memes"
     },
     {
       "url": "https://image.nostr.build/97765dab534e502ea27b780591377af6a05ce5bc837cb8e2109f832b7f0fcc89.jpg",
@@ -3391,7 +3079,7 @@
         "created_at": 1758707869
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1753501921/hrlh7tdsgc2hd1w8z7zn.jpg",
@@ -3404,7 +3092,7 @@
         "created_at": 1758707839
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://share.yabu.me/5aaccfdd2ed8f45eb0dfb9a8752bf0d50777a975ad24468f14dd457e747c5c90/2f5eb66146c7247667a1fc911ae2e6e2286cbed587a09cf4982a0cf51d5aa299.webp",
@@ -3430,7 +3118,7 @@
         "created_at": 1758707824
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "memes"
     },
     {
       "url": "https://blossom.primal.net/c5a105e186c9d4983f89459937f7836c2de3c572694679022f985956a804b7ad.jpg",
@@ -3443,7 +3131,7 @@
         "created_at": 1758707809
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1754873830/cztxcbgrbdwnkbtgpetn.jpg",
@@ -3456,7 +3144,7 @@
         "created_at": 1758707779
       },
       "correctCategory": "tech",
-      "category": "tech"
+      "category": "art"
     },
     {
       "url": "https://cdn.nos.nl/image/2025/09/24/1274691/1024x576a.jpg",
@@ -3469,7 +3157,7 @@
         "created_at": 1758707741
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "memes"
     },
     {
       "url": "http://res.cloudinary.com/dgiwhknxf/image/upload/v1757778689/eykinunxmapnqddqksal.jpg",
@@ -3482,7 +3170,7 @@
         "created_at": 1758707720
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "http://res.cloudinary.com/dgiwhknxf/image/upload/v1756741786/ec07rd8gdwzwogdmsksa.jpg",
@@ -3521,7 +3209,7 @@
         "created_at": 1758707702
       },
       "correctCategory": "art",
-      "category": "nature"
+      "category": "art"
     },
     {
       "url": "https://img.mako.co.il/2020/11/10/shutterstock_523957972_autoOrient_w.jpg",
@@ -3534,7 +3222,7 @@
         "created_at": 1758707687
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "tech"
     },
     {
       "url": "https://blossom.primal.net/9ed4665bffe989bdf5ae92cc16ffc1265dff03e779d9020e44ff25ea3128b33a.jpg",
@@ -3560,7 +3248,7 @@
         "created_at": 1758707659
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "memes"
     },
     {
       "url": "https://www.danas.rs/wp-content/uploads/2024/10/12544950-e1728125585240-300x169.jpg",
@@ -3573,7 +3261,7 @@
         "created_at": 1758707628
       },
       "correctCategory": "art",
-      "category": "memes"
+      "category": "nature"
     },
     {
       "url": "https://blossom.primal.net/7065244e934cab30afeeeb4911a6fe1acbfea40165b12535b69e5c9feebaa456.jpg",
@@ -3586,7 +3274,7 @@
         "created_at": 1758707628
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "https://blossom.primal.net/a5f8cab9bd9b90f359e36d1295a1acc84b93ac5c1722135e23541a332ef13ae2.jpg",
@@ -3612,7 +3300,7 @@
         "created_at": 1758707599
       },
       "correctCategory": "tech",
-      "category": "food"
+      "category": "art"
     },
     {
       "url": "https://image.nostr.build/62a55d97e6432660ae7ed897568a82f9cca8a970265e89e01c194ba9c83e448d.jpg",
@@ -3625,7 +3313,7 @@
         "created_at": 1758707597
       },
       "correctCategory": "art",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://image.nostr.build/dd5271123be38973779f66b86dcf3351a0dbcfa7abe98eba53f587e92167f1c9.png",
@@ -3638,7 +3326,7 @@
         "created_at": 1758707581
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "http://res.cloudinary.com/dgiwhknxf/image/upload/v1756270385/mrssyyaqk7vd5snrm5zb.jpg",
@@ -3651,7 +3339,7 @@
         "created_at": 1758707545
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "tech"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1753750352/jawuvggx1wuuriqjiwb3.jpg",
@@ -3664,7 +3352,7 @@
         "created_at": 1758707545
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1751417569/aykzlda7jk2g7n6bzkib.jpg",
@@ -3677,7 +3365,7 @@
         "created_at": 1758707544
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "food"
     },
     {
       "url": "https://blossom.primal.net/c5d8239868df22bea0e3e4b38f3615398ec5e225990fe80a53948ebfab6aeb27.jpg",
@@ -3690,7 +3378,7 @@
         "created_at": 1758707480
       },
       "correctCategory": "art",
-      "category": "food"
+      "category": "tech"
     },
     {
       "url": "https://image.nostr.build/0866ef6370b921eb1869a1f75e62c94f5869ff149590930e599a51a01d1a53a6.png",
@@ -3703,7 +3391,7 @@
         "created_at": 1758707471
       },
       "correctCategory": "tech",
-      "category": "memes"
+      "category": "food"
     },
     {
       "url": "http://res.cloudinary.com/df3bvpu0s/image/upload/v1753836699/bghwkeiqhhttxaiy31dm.jpg",
@@ -3716,7 +3404,7 @@
         "created_at": 1758707463
       },
       "correctCategory": "tech",
-      "category": "nature"
+      "category": "food"
     },
     {
       "url": "https://www.danas.rs/wp-content/uploads/2023/06/4-8-e1688384038858-300x169.jpg",
@@ -3729,7 +3417,7 @@
         "created_at": 1758707451
       },
       "correctCategory": "art",
-      "category": "tech"
+      "category": "memes"
     },
     {
       "url": "https://dickenscode.org/wp-content/uploads/2024/03/image.png",
@@ -3742,7 +3430,7 @@
         "created_at": 1758707442
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "nature"
     },
     {
       "url": "https://thebitcoinblockclock.com/blockstr/00000000000000000001f8680275ebb29117c31abf5b46a3e9c8149af3d9c244.png",
@@ -3755,7 +3443,7 @@
         "created_at": 1758707428
       },
       "correctCategory": "tech",
-      "category": "art"
+      "category": "memes"
     },
     {
       "url": "http://res.cloudinary.com/dgiwhknxf/image/upload/v1758555784/lxbhlggczzoybwhabwl7.jpg",
@@ -9218,5 +8906,5 @@
       "category": "memes"
     }
   ],
-  "timestamp": 1758709196421
+  "timestamp": 1758709264222
 }
