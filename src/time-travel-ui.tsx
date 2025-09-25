@@ -115,6 +115,80 @@ export function TimeTravelControls(props: TimeTravelControlsProps) {
             <span style={{ opacity: 0.6 }}>images</span>
           </div>
           
+          {/* Time Window Controls */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '4px',
+            padding: '2px 8px',
+            background: 'rgba(59,130,246,0.2)',
+            borderRadius: '16px',
+            border: '1px solid rgba(59,130,246,0.4)',
+            fontSize: '11px'
+          }}>
+            <span>⏱️</span>
+            <button onclick="adjustTimeWindow(30)" style={{
+              background: 'none',
+              border: 'none',
+              color: 'rgba(255,255,255,0.8)',
+              cursor: 'pointer',
+              padding: '2px 4px',
+              borderRadius: '4px',
+              fontSize: '10px'
+            }} 
+            onmouseenter="this.style.background='rgba(255,255,255,0.1)'"
+            onmouseleave="this.style.background='none'"
+            title="Set 30 minute window">30m</button>
+            <button onclick="adjustTimeWindow(60)" style={{
+              background: 'none',
+              border: 'none',
+              color: 'rgba(255,255,255,0.8)',
+              cursor: 'pointer',
+              padding: '2px 4px',
+              borderRadius: '4px',
+              fontSize: '10px'
+            }}
+            onmouseenter="this.style.background='rgba(255,255,255,0.1)'"
+            onmouseleave="this.style.background='none'"
+            title="Set 1 hour window">1h</button>
+            <button onclick="adjustTimeWindow(120)" style={{
+              background: 'none',
+              border: 'none',
+              color: 'rgba(255,255,255,0.8)',
+              cursor: 'pointer',
+              padding: '2px 4px',
+              borderRadius: '4px',
+              fontSize: '10px'
+            }}
+            onmouseenter="this.style.background='rgba(255,255,255,0.1)'"
+            onmouseleave="this.style.background='none'"
+            title="Set 2 hour window">2h</button>
+            <button onclick="adjustTimeWindow(180)" style={{
+              background: 'none',
+              border: 'none',
+              color: 'rgba(255,255,255,0.8)',
+              cursor: 'pointer',
+              padding: '2px 4px',
+              borderRadius: '4px',
+              fontSize: '10px'
+            }}
+            onmouseenter="this.style.background='rgba(255,255,255,0.1)'"
+            onmouseleave="this.style.background='none'"
+            title="Set 3 hour window">3h</button>
+            <button onclick="adjustTimeWindow(360)" style={{
+              background: 'none',
+              border: 'none',
+              color: 'rgba(255,255,255,0.8)',
+              cursor: 'pointer',
+              padding: '2px 4px',
+              borderRadius: '4px',
+              fontSize: '10px'
+            }}
+            onmouseenter="this.style.background='rgba(255,255,255,0.1)'"
+            onmouseleave="this.style.background='none'"
+            title="Set 6 hour window">6h</button>
+          </div>
+          
           <div style={{ 
             display: 'flex',
             alignItems: 'center',
@@ -386,6 +460,63 @@ export function TimeTravelControls(props: TimeTravelControlsProps) {
           .catch(console.error);
         };
 
+        // Time window adjustment function
+        window.adjustTimeWindow = function(minutes) {
+          console.log('⏱️ Adjusting time window to:', minutes, 'minutes');
+          
+          // Calculate center of current timespan
+          const currentCenter = (window.timeMachineState.currentTimeRange.start + window.timeMachineState.currentTimeRange.end) / 2;
+          const newDurationMs = minutes * 60 * 1000;
+          
+          const newTimeRange = {
+            start: currentCenter - (newDurationMs / 2),
+            end: currentCenter + (newDurationMs / 2)
+          };
+          
+          // Visual feedback
+          const buttons = document.querySelectorAll('[onclick*="adjustTimeWindow"]');
+          buttons.forEach(btn => {
+            btn.style.background = 'none';
+            btn.style.color = 'rgba(255,255,255,0.8)';
+          });
+          
+          // Highlight selected button
+          const selectedButton = document.querySelector('[onclick*="adjustTimeWindow(' + minutes + ')"]');
+          if (selectedButton) {
+            selectedButton.style.background = 'rgba(59,130,246,0.4)';
+            selectedButton.style.color = 'white';
+          }
+          
+          // Update visual immediately
+          updateTimespanVisual(newTimeRange);
+          currentTimespan = newTimeRange;
+          
+          // Update images
+          window.updateImagesForTimeRange(newTimeRange);
+          
+          // Save to server and reload to ensure persistence
+          fetch('/api/time-travel', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+              action: 'set-window', 
+              timeRange: newTimeRange
+            })
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              console.log('⏱️ Time window saved:', minutes + 'm - reloading to persist');
+              // Smooth transition and reload to ensure settings persist
+              document.body.style.opacity = '0.9';
+              setTimeout(() => {
+                window.location.reload();
+              }, 200);
+            }
+          })
+          .catch(console.error);
+        };
+
         window.handleTimelineClick = function(event) {
           const rect = event.currentTarget.getBoundingClientRect();
           const clickX = event.clientX - rect.left;
@@ -408,13 +539,16 @@ export function TimeTravelControls(props: TimeTravelControlsProps) {
             isNearNow: Math.abs(targetTimestamp - window.timeMachineState.now) < 600000
           });
           
+          // Calculate current window duration in minutes to preserve user's selection
+          const currentDurationMinutes = (window.timeMachineState.currentTimeRange.end - window.timeMachineState.currentTimeRange.start) / (60 * 1000);
+          
           fetch('/api/time-travel', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
               action: 'goto', 
               timestamp: targetTimestamp,
-              timespanMinutes: 60
+              timespanMinutes: currentDurationMinutes
             })
           })
           .then(response => response.json())
@@ -595,9 +729,10 @@ export function TimeTravelControls(props: TimeTravelControlsProps) {
                   break;
                   
                 case 'timeline':
-                  // Create new timespan at clicked position
+                  // Create new timespan at clicked position - use current window duration or default
                   const clickTimestamp = window.timeMachineState.timelineStart + (timelineRange * percentage);
-                  const defaultDuration = 60 * 60 * 1000; // 1 hour
+                  const currentDuration = currentTimespan.end - currentTimespan.start;
+                  const defaultDuration = currentDuration > 0 ? currentDuration : (60 * 60 * 1000); // Use current or 1 hour
                   newTimespan.start = clickTimestamp - (defaultDuration / 2);
                   newTimespan.end = clickTimestamp + (defaultDuration / 2);
                   break;
@@ -638,14 +773,16 @@ export function TimeTravelControls(props: TimeTravelControlsProps) {
                 targetTime: new Date(targetTimestamp).toLocaleString()
               });
               
-              // Navigate to new time
+              // Navigate to new time - preserve current window duration
+              const currentDurationMinutes = (currentTimespan.end - currentTimespan.start) / (60 * 1000);
+              
               fetch('/api/time-travel', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 
                   action: 'goto', 
                   timestamp: targetTimestamp,
-                  timespanMinutes: 60
+                  timespanMinutes: currentDurationMinutes
                 })
               })
               .then(response => response.json())
@@ -694,13 +831,16 @@ export function TimeTravelControls(props: TimeTravelControlsProps) {
               const timelineRange = window.timeMachineState.timelineEnd - window.timeMachineState.timelineStart;
               const targetTimestamp = window.timeMachineState.timelineStart + (timelineRange * percentage);
               
+              // Preserve current window duration for touch navigation
+              const currentDurationMinutes = (window.timeMachineState.currentTimeRange.end - window.timeMachineState.currentTimeRange.start) / (60 * 1000);
+              
               fetch('/api/time-travel', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 
                   action: 'goto', 
                   timestamp: targetTimestamp,
-                  timespanMinutes: 60
+                  timespanMinutes: currentDurationMinutes
                 })
               })
               .then(response => response.json())
@@ -799,8 +939,33 @@ export function TimeTravelControls(props: TimeTravelControlsProps) {
           }
         });
 
+        // Initialize window size button highlighting
+        function initializeWindowButtons() {
+          const currentDurationMinutes = (window.timeMachineState.currentTimeRange.end - window.timeMachineState.currentTimeRange.start) / (60 * 1000);
+          const roundedDuration = Math.round(currentDurationMinutes);
+          
+          // Find and highlight the matching button
+          const buttons = document.querySelectorAll('[onclick*="adjustTimeWindow"]');
+          buttons.forEach(btn => {
+            btn.style.background = 'none';
+            btn.style.color = 'rgba(255,255,255,0.8)';
+          });
+          
+          const matchingButton = document.querySelector('[onclick*="adjustTimeWindow(' + roundedDuration + ')"]');
+          if (matchingButton) {
+            matchingButton.style.background = 'rgba(59,130,246,0.4)';
+            matchingButton.style.color = 'white';
+          }
+          
+          console.log('⏱️ Current window:', roundedDuration + 'm', matchingButton ? '(button highlighted)' : '(custom duration)');
+        }
+        
+        // Initialize on page load
+        setTimeout(initializeWindowButtons, 100);
+
         console.log('🎬 Professional video editor timeline initialized');
         console.log('⌨️  Keyboard shortcuts: ← → (move), Shift+← → (extend), Space (jump to now)');
+        console.log('⏱️  Window controls: 30m, 1h, 2h, 3h, 6h buttons for quick adjustment');
       `}</script>
     </div>
   );

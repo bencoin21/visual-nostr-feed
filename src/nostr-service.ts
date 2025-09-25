@@ -1,17 +1,26 @@
 import { SimplePool, type Event as NostrEvent } from "nostr-tools";
-import { imageClassifier } from "./image-classifier.js";
+import { imageClassifier, MediaClassifier, type MediaItem, type ClassifiedContent } from "./image-classifier.js";
 import { CONFIG } from "./config.js";
-import { timeMachine, type TimeMachineImage } from "./time-machine.js";
+import { timeMachine, type TimeMachineMediaItem } from "./time-machine.js";
 
 export interface NostrFeedItem {
   id: string;
   pubkey: string;
   content: string;
   created_at: number;
+  media: {
+    images: MediaItem[];
+    videos: MediaItem[];
+    audio: MediaItem[];
+    documents: MediaItem[];
+    links: MediaItem[];
+    totalCount: number;
+  };
+  // Legacy compatibility
   images: Array<{
     url: string;
-    category: string; // Where it's currently placed
-    correctCategory: string; // Where it should be (for game)
+    category: string;
+    correctCategory: string;
   }>;
   author?: {
     name?: string;
@@ -132,12 +141,15 @@ export class NostrService {
       ], {
         onevent: async (event: NostrEvent) => {
           try {
-            // Skip duplicate events
+            // Aggressive duplicate prevention - skip immediately if seen
             if (this.seenEventIds.has(event.id)) {
+              // Don't log every duplicate to reduce noise
               return;
             }
             
             console.log("📡 New Nostr event received:", event.id.slice(0, 8));
+            
+            // Mark as seen immediately to prevent race conditions
             this.seenEventIds.add(event.id);
             
             // Update last event time for health monitoring
@@ -254,70 +266,121 @@ export class NostrService {
   private async eventToFeedItem(event: NostrEvent): Promise<NostrFeedItem | null> {
     if (!event.id || !event.pubkey || !event.content) return null;
 
-    // Extract images from content (expanded regex for more image types and formats)
-    const imageRegex = /(https?:\/\/[^\s]+\.(?:jpg|jpeg|png|gif|webp|bmp|svg|tiff|ico)(?:\?[^\s]*)?)/gi;
-    const allImages = event.content.match(imageRegex) || [];
+    // 🎬 NEW: Classify ALL media types from content
+    const classifiedContent = MediaClassifier.classifyContent(event.content);
+    
+    // Check if we have any NEW media (not just images)
+    const hasNewMedia = classifiedContent.totalCount > 0;
+    if (!hasNewMedia) return null;
 
-    // For continuous feed, be more permissive with "duplicates"
-    const newImageUrls = allImages.filter(img => {
-      // Only skip if we've seen this image very recently (within last 30 minutes)
-      const recentlySeen = Array.from(this.imageCache).find(cacheItem => 
-        cacheItem.url === img && 
-        (Date.now() - cacheItem.timestamp) < CONFIG.duplicateTimeWindow
-      );
-      
-      if (recentlySeen) {
-        return false;
-      }
-      
-      return true;
-    });
+    // Add all media types to time machine
+    const timestamp = event.created_at * 1000; // Convert to milliseconds
+    const eventData = {
+      id: event.id,
+      pubkey: event.pubkey,
+      content: event.content,
+      created_at: event.created_at
+    };
 
-    // ONLY return notes that have NEW images
-    if (newImageUrls.length === 0) return null;
-
-    // Classify each image and create structured data for the game
-    const classifiedImages = await Promise.all(
-      newImageUrls.map(async (imageUrl) => {
-        const correctCategory = await imageClassifier.classifyImage(imageUrl, event.content);
-        const placementZone = imageClassifier.getRandomPlacementZone(); // Random placement for game
-        return {
-          url: imageUrl,
-          category: placementZone, // Where it's placed (random)
-          correctCategory: correctCategory // What it should be (for game logic)
-        };
-      })
-    );
-
-    // Add new images to cache with event data and correct categories
-    classifiedImages.forEach(img => {
-      this.addToImageCache(img.url, event, img.correctCategory);
-      
-      // Also add to time machine
-      timeMachine.addImage({
-        url: img.url,
-        timestamp: event.created_at * 1000, // Convert to milliseconds
+    // Add images to time machine
+    for (const image of classifiedContent.images) {
+      const correctCategory = await imageClassifier.classifyImage(image.url, event.content);
+      timeMachine.addMediaItem({
+        url: image.url,
+        timestamp,
         eventId: event.id,
-        eventData: {
-          id: event.id,
-          pubkey: event.pubkey,
-          content: event.content,
-          created_at: event.created_at
-        },
-        correctCategory: img.correctCategory,
-        category: img.category
+        eventData,
+        type: 'image',
+        subtype: image.subtype,
+        title: image.title,
+        thumbnail: image.thumbnail,
+        category: correctCategory
       });
+    }
+
+    // Add videos to time machine
+    for (const video of classifiedContent.videos) {
+      timeMachine.addMediaItem({
+        url: video.url,
+        timestamp,
+        eventId: event.id,
+        eventData,
+        type: 'video',
+        subtype: video.subtype,
+        title: video.title,
+        thumbnail: video.thumbnail
+      });
+    }
+
+    // Add audio to time machine
+    for (const audio of classifiedContent.audio) {
+      timeMachine.addMediaItem({
+        url: audio.url,
+        timestamp,
+        eventId: event.id,
+        eventData,
+        type: 'audio',
+        subtype: audio.subtype,
+        title: audio.title
+      });
+    }
+
+    // Add documents to time machine
+    for (const doc of classifiedContent.documents) {
+      timeMachine.addMediaItem({
+        url: doc.url,
+        timestamp,
+        eventId: event.id,
+        eventData,
+        type: 'document',
+        subtype: doc.subtype,
+        title: doc.title
+      });
+    }
+
+    // Add links to time machine
+    for (const link of classifiedContent.links) {
+      timeMachine.addMediaItem({
+        url: link.url,
+        timestamp,
+        eventId: event.id,
+        eventData,
+        type: 'link',
+        title: link.title
+      });
+    }
+
+    // Legacy compatibility - create old format for images
+    const legacyImages = classifiedContent.images.map(img => ({
+      url: img.url,
+      category: imageClassifier.getRandomPlacementZone(),
+      correctCategory: 'art' // Default for now
+    }));
+
+    // Add to legacy cache for backward compatibility
+    legacyImages.forEach(img => {
+      this.addToImageCache(img.url, event, img.correctCategory);
     });
 
-    // Get author profile info (optional, since we're not showing text)
+    // Get author profile info
     const author = await this.getAuthorInfo(event.pubkey);
+
+    console.log(`🎬 New multi-media event: ${classifiedContent.images.length} images, ${classifiedContent.videos.length} videos, ${classifiedContent.audio.length} audio, ${classifiedContent.documents.length} docs, ${classifiedContent.links.length} links`);
 
     return {
       id: event.id,
       pubkey: event.pubkey,
       content: event.content,
       created_at: event.created_at,
-      images: classifiedImages, // Classified images with categories
+      media: {
+        images: classifiedContent.images,
+        videos: classifiedContent.videos,
+        audio: classifiedContent.audio,
+        documents: classifiedContent.documents,
+        links: classifiedContent.links,
+        totalCount: classifiedContent.totalCount
+      },
+      images: legacyImages, // Legacy compatibility
       author
     };
   }
@@ -344,7 +407,7 @@ export class NostrService {
 
       if (profiles.length > 0) {
         try {
-          const profileData = JSON.parse(profiles[0].content);
+          const profileData = JSON.parse(profiles[0]?.content || '{}');
           const profile = (profileData as any) || {};
           const authorInfo = {
             name: profile.name || profile.display_name,
@@ -492,12 +555,33 @@ export class NostrService {
     }
   }
 
-  // Time machine integration methods
-  getTimeMachineImages(timeRange?: { start: number; end: number }): TimeMachineImage[] {
+  // Multi-media time machine integration methods
+  getTimeMachineMedia(timeRange?: { start: number; end: number }, types?: string[]): TimeMachineMediaItem[] {
     if (timeRange) {
-      return timeMachine.getImagesForTimeRange(timeRange);
+      return timeMachine.getMediaForTimeRange(timeRange, types as any);
     }
-    return timeMachine.getCurrentImages();
+    return timeMachine.getCurrentMedia();
+  }
+
+  getMediaByType(type: string, timeRange?: { start: number; end: number }): TimeMachineMediaItem[] {
+    return timeMachine.getMediaByType(type as any, timeRange);
+  }
+
+  getMediaStats(): Record<string, number> {
+    return timeMachine.getMediaStats();
+  }
+
+  setActiveMediaTypes(types: string[]): void {
+    timeMachine.setActiveMediaTypes(types as any);
+  }
+
+  cleanupDuplicates(): void {
+    timeMachine.cleanupDuplicates();
+  }
+
+  // Legacy method
+  getTimeMachineImages(timeRange?: { start: number; end: number }): any[] {
+    return this.getTimeMachineMedia(timeRange, ['image']);
   }
 
   getTimeMachinePeriods(): Array<{start: number, end: number, count: number, label: string}> {
@@ -508,28 +592,130 @@ export class NostrService {
     return timeMachine.getCurrentTimeRange();
   }
 
-  travelToTimeRange(timeRange: { start: number; end: number }): TimeMachineImage[] {
+  travelToTimeRange(timeRange: { start: number; end: number }): any[] {
     return timeMachine.travelToTimeRange(timeRange);
   }
 
-  travelBackwards(minutes: number): TimeMachineImage[] {
+  travelBackwards(minutes: number): any[] {
     return timeMachine.travelBackwards(minutes);
   }
 
-  travelForwards(minutes: number): TimeMachineImage[] {
+  travelForwards(minutes: number): any[] {
     return timeMachine.travelForwards(minutes);
   }
 
-  jumpToNow(): TimeMachineImage[] {
+  jumpToNow(): any[] {
     return timeMachine.jumpToNow();
   }
 
-  travelToDate(date: Date, timespanMinutes: number = 60): TimeMachineImage[] {
+  travelToDate(date: Date, timespanMinutes: number = 60): any[] {
     return timeMachine.travelToDate(date, timespanMinutes);
   }
 
-  findImageByEventId(eventId: string): TimeMachineImage | null {
+  findImageByEventId(eventId: string): any {
     return timeMachine.findImageByEventId(eventId);
+  }
+
+  findMediaByEventId(eventId: string): any {
+    return timeMachine.findMediaByEventId(eventId);
+  }
+
+  getMediaByUser(pubkey: string): any[] {
+    return timeMachine.getMediaByUser(pubkey);
+  }
+
+  async searchUserPosts(pubkey: string, page: number = 0, limit: number = 20): Promise<any[]> {
+    try {
+      console.log(`🔍 Searching Nostr network for posts from ${pubkey.slice(0, 8)} (page ${page})`);
+      
+      // Calculate time range for search (last 7 days for faster search)
+      const now = Math.floor(Date.now() / 1000);
+      const sevenDaysAgo = now - (7 * 24 * 60 * 60);
+      const since = sevenDaysAgo - (page * 12 * 60 * 60); // Go back 12 hours per page
+      
+      return new Promise((resolve, reject) => {
+        const foundPosts: any[] = [];
+        let searchTimeout: any;
+        let relayCount = 0;
+        let completedRelays = 0;
+        
+        // Shorter timeout for better UX
+        searchTimeout = setTimeout(() => {
+          console.log(`⏰ Search timeout for ${pubkey.slice(0, 8)}: found ${foundPosts.length} posts from ${completedRelays}/${relayCount} relays`);
+          resolve(foundPosts.slice(0, limit));
+        }, 2000); // Reduced to 2 seconds
+        
+        // Use only fastest relays for user search
+        const fastRelays = this.relays.slice(0, 3); // Use only first 3 relays
+        relayCount = fastRelays.length;
+        
+        // Search specific relays for this user's posts
+        const sub = this.pool.subscribeManyEose(
+          fastRelays,
+          [
+            {
+              kinds: [1],
+              authors: [pubkey],
+              since: since,
+              limit: limit // Reduced limit for faster response
+            }
+          ],
+          {
+            onevent: (event: any) => {
+              // Skip if we already have this event
+              if (!foundPosts.some(p => p.id === event.id)) {
+                foundPosts.push(event);
+                console.log(`📡 Found user post: ${event.id.slice(0, 8)}`);
+              }
+              
+              // Early resolve if we have enough posts
+              if (foundPosts.length >= limit) {
+                clearTimeout(searchTimeout);
+                sub.close();
+                const sortedPosts = foundPosts
+                  .sort((a, b) => b.created_at - a.created_at)
+                  .slice(0, limit);
+                resolve(sortedPosts);
+              }
+            },
+            oneose: () => {
+              completedRelays++;
+              console.log(`🔍 Relay ${completedRelays}/${relayCount} complete for ${pubkey.slice(0, 8)}`);
+              
+              // Resolve when all relays are done
+              if (completedRelays >= relayCount) {
+                clearTimeout(searchTimeout);
+                
+                const sortedPosts = foundPosts
+                  .sort((a, b) => b.created_at - a.created_at)
+                  .slice(0, limit);
+                
+                console.log(`✅ Search complete: ${sortedPosts.length} posts found`);
+                resolve(sortedPosts);
+              }
+            }
+          }
+        );
+        
+        // Cleanup on timeout
+        setTimeout(() => {
+          try {
+            sub.close();
+          } catch (e) {
+            // Ignore close errors
+          }
+        }, 2500);
+        
+      });
+    } catch (error) {
+      console.error('User post search error:', error);
+      return [];
+    }
+  }
+
+  // Make eventToFeedItem public for API use
+  async processEventForMedia(event: any): Promise<any> {
+    return this.eventToFeedItem(event);
   }
 
   async cleanup() {

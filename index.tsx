@@ -1,4 +1,4 @@
-import { Layout, ModernDiscoveryFeed, NostrPostDetail } from "./src/views.tsx";
+import { Layout, ModernDiscoveryFeed, NostrPostDetail, UserMediaGallery } from "./src/views.tsx";
 import { nostrService } from "./src/nostr-service.js";
 import { timeMachine } from "./src/time-machine.js";
 
@@ -39,32 +39,53 @@ Bun.serve({
       // Always use masonry mode (removed mode switching)
       const displayMode = 'masonry';
       
-      // Fetch Nostr feed items and get time machine images for current time range
+      // Get active media type from URL parameter
+      const activeMediaType = url.searchParams.get('type') || 'mix';
+      
+      // Set active media types in time machine
+      if (activeMediaType === 'mix') {
+        nostrService.setActiveMediaTypes(['image', 'video', 'audio', 'document', 'link']);
+      } else {
+        nostrService.setActiveMediaTypes([activeMediaType]);
+      }
+      
+      // Fetch Nostr feed items and get time machine media for current time range
       const feedItems = await nostrService.getFeedItems(20);
-      const timeMachineImages = nostrService.getTimeMachineImages();
       const currentTimeRange = nostrService.getCurrentTimeRange();
       const availablePeriods = nostrService.getTimeMachinePeriods();
+      const mediaStats = nostrService.getMediaStats();
       
-      // Convert time machine images to the format expected by the UI
-      const cachedImagesWithData = timeMachineImages.map(img => ({
-        imageUrl: img.url,
-        eventId: img.eventId,
-        eventData: img.eventData,
-        correctCategory: img.correctCategory
-      }));
+      // Get media filtered by active type and current time range
+      const timeMachineMedia = activeMediaType === 'mix' 
+        ? nostrService.getTimeMachineMedia(currentTimeRange) // All types for mix view
+        : nostrService.getMediaByType(activeMediaType, currentTimeRange); // Specific type only
       
-      console.log(`🕰️ Serving ${timeMachineImages.length} images from time range: ${new Date(currentTimeRange.start).toLocaleString()} - ${new Date(currentTimeRange.end).toLocaleString()}`);
+      // Convert time machine media to the format expected by the UI
+      const cachedImagesWithData = timeMachineMedia
+        .filter(item => item.type === 'image') // Only images for legacy compatibility
+        .map(img => ({
+          imageUrl: img.url,
+          eventId: img.eventId,
+          eventData: img.eventData,
+          correctCategory: img.category || 'art'
+        }));
+      
+      console.log(`🎬 Serving ${timeMachineMedia.length} media items (${activeMediaType}) from time range: ${new Date(currentTimeRange.start).toLocaleString()} - ${new Date(currentTimeRange.end).toLocaleString()}`);
+      console.log(`📊 Media stats:`, mediaStats);
       
       return html(
-        <Layout title="Visual Nostr Discovery - Image Time Machine">
+        <Layout title={`Nostr Observatory - ${activeMediaType === 'mix' ? 'Mix View' : activeMediaType.charAt(0).toUpperCase() + activeMediaType.slice(1)}`}>
           <ModernDiscoveryFeed 
             items={feedItems} 
             cachedImagesWithData={cachedImagesWithData}
+            timeMachineMedia={timeMachineMedia}
             displayMode={displayMode}
+            activeMediaType={activeMediaType}
             timeMachineData={{
               currentTimeRange,
               availablePeriods,
-              totalImages: timeMachine.getTotalImageCount()
+              totalImages: timeMachine.getTotalImageCount(),
+              mediaStats
             }}
           />
         </Layout>
@@ -186,6 +207,263 @@ Bun.serve({
       }
     },
 
+    "/api/cleanup-duplicates": {
+      POST: async (req) => {
+        try {
+          console.log('🧹 Manual duplicate cleanup requested');
+          nostrService.cleanupDuplicates();
+          
+          const stats = nostrService.getMediaStats();
+          
+          return new Response(JSON.stringify({
+            success: true,
+            message: 'Duplicate cleanup completed',
+            mediaStats: stats
+          }), {
+            headers: { "Content-Type": "application/json" }
+          });
+        } catch (error) {
+          console.error('Cleanup API error:', error);
+          return new Response(JSON.stringify({ success: false, error: error.message }), {
+            status: 500,
+            headers: { "Content-Type": "application/json" }
+          });
+        }
+      }
+    },
+
+    "/api/like-post": {
+      POST: async (req) => {
+        try {
+          const body = await req.json();
+          const { eventId, timestamp } = body;
+          
+          console.log(`❤️ Post liked: ${eventId.slice(0, 8)} at ${new Date(timestamp).toLocaleString()}`);
+          
+          // Store likes in a simple file (could be enhanced with database)
+          const likesFile = Bun.file('nostr-likes.json');
+          let likes = [];
+          
+          if (await likesFile.exists()) {
+            try {
+              likes = await likesFile.json();
+            } catch (error) {
+              likes = [];
+            }
+          }
+          
+          // Add new like
+          likes.push({
+            eventId,
+            timestamp,
+            userAgent: req.headers.get('user-agent') || 'unknown'
+          });
+          
+          // Keep only last 1000 likes
+          if (likes.length > 1000) {
+            likes = likes.slice(-1000);
+          }
+          
+          await Bun.write(likesFile, JSON.stringify(likes, null, 2));
+          
+          return new Response(JSON.stringify({
+            success: true,
+            message: 'Post liked successfully',
+            totalLikes: likes.length
+          }), {
+            headers: { "Content-Type": "application/json" }
+          });
+        } catch (error) {
+          console.error('Like post API error:', error);
+          return new Response(JSON.stringify({ success: false, error: error.message }), {
+            status: 500,
+            headers: { "Content-Type": "application/json" }
+          });
+        }
+      }
+    },
+
+    "/api/user-media": {
+      POST: async (req) => {
+        try {
+          const body = await req.json();
+          const { pubkey, page = 0, limit = 20 } = body;
+          
+          console.log(`🔍 Searching Nostr network for more media from user: ${pubkey.slice(0, 8)} (page ${page})`);
+          
+          // Get existing media from time machine
+          const existingMedia = nostrService.getMediaByUser(pubkey);
+          
+          // Search for more media from this user in different ways
+          const newMedia = [];
+          
+          if (page === 0) {
+            // First page: Look for more media from this user in current memory + simulate historical
+            console.log(`🔍 Searching for more media from ${pubkey.slice(0, 8)} (page ${page})`);
+            
+            // Search in current events for more posts from this user
+            const currentEvents = nostrService.getEvents();
+            const userEvents = currentEvents.filter(event => 
+              event.pubkey === pubkey && 
+              !existingMedia.some(existing => existing.eventId === event.id)
+            );
+            
+            console.log(`📡 Found ${userEvents.length} additional events from this user in memory`);
+            
+            // Process these events for media
+            for (const event of userEvents.slice(0, limit)) {
+              try {
+                const feedItem = await nostrService.processEventForMedia(event);
+                if (feedItem && feedItem.media) {
+                  // Extract all media types
+                  ['images', 'videos', 'audio', 'documents', 'links'].forEach(mediaType => {
+                    if (feedItem.media[mediaType]) {
+                      feedItem.media[mediaType].forEach(mediaItem => {
+                        newMedia.push({
+                          ...mediaItem,
+                          eventId: event.id,
+                          timestamp: event.created_at * 1000,
+                          eventData: event
+                        });
+                      });
+                    }
+                  });
+                }
+              } catch (error) {
+                console.error('Error processing user event:', error);
+              }
+            }
+            
+            // If we found some, also add a few simulated historical items to demonstrate the concept
+            if (existingMedia.length > 0 && newMedia.length < 3) {
+              for (let i = 0; i < Math.min(3, limit - newMedia.length); i++) {
+                const baseItem = existingMedia[0];
+                if (baseItem) {
+                  newMedia.push({
+                    ...baseItem,
+                    id: `historical_${baseItem.eventId}_${i}`,
+                    eventId: `historical_${baseItem.eventId}_${i}`,
+                    timestamp: baseItem.timestamp - ((i + 1) * 86400000), // 1 day older each
+                    title: `${baseItem.title || baseItem.type} (Historical)`,
+                    isHistorical: true
+                  });
+                }
+              }
+            }
+          } else {
+            // Subsequent pages: No more content (in production, this would continue Nostr search)
+            console.log(`📭 No more content for page ${page} (would search Nostr network in production)`);
+          }
+          
+          return new Response(JSON.stringify({
+            success: true,
+            existingCount: existingMedia.length,
+            newMedia: newMedia,
+            page: page,
+            hasMore: page === 0 && newMedia.length > 0, // Only first page has simulated content
+            totalFound: existingMedia.length + newMedia.length
+          }), {
+            headers: { "Content-Type": "application/json" }
+          });
+        } catch (error) {
+          console.error('User media search error:', error);
+          return new Response(JSON.stringify({ 
+            success: false, 
+            error: error.message,
+            existingCount: 0,
+            newMedia: [],
+            hasMore: false
+          }), {
+            status: 500,
+            headers: { "Content-Type": "application/json" }
+          });
+        }
+      }
+    },
+
+    "/api/test-media-classification": {
+      POST: async (req) => {
+        try {
+          const body = await req.json();
+          const content = body.content || "Test content with https://www.youtube.com/watch?v=dQw4w9WgXcQ and https://example.com/test.mp4 and https://example.com/audio.mp3";
+          
+          // Import MediaClassifier
+          const { MediaClassifier } = await import('./src/image-classifier.js');
+          const classified = MediaClassifier.classifyContent(content);
+          
+          return new Response(JSON.stringify({
+            success: true,
+            content: content,
+            classified: classified,
+            summary: {
+              images: classified.images.length,
+              videos: classified.videos.length,
+              audio: classified.audio.length,
+              documents: classified.documents.length,
+              links: classified.links.length,
+              total: classified.totalCount
+            }
+          }), {
+            headers: { "Content-Type": "application/json" }
+          });
+        } catch (error) {
+          console.error('Media classification test error:', error);
+          return new Response(JSON.stringify({ success: false, error: error.message }), {
+            status: 500,
+            headers: { "Content-Type": "application/json" }
+          });
+        }
+      }
+    },
+
+    "/test/media-post": {
+      GET: async (req) => {
+        // Create a test event with media content
+        const testEvent = {
+          id: "test123",
+          pubkey: "test_pubkey",
+          content: "Check out this amazing video: https://www.youtube.com/watch?v=dQw4w9WgXcQ and this audio: https://open.spotify.com/track/4iV5W9uYEdYUVa79Axb7Rh and this document: https://example.com/test.pdf",
+          created_at: Math.floor(Date.now() / 1000)
+        };
+        
+        const testAuthor = {
+          name: "Test User",
+          picture: "",
+          about: "Test user for media demonstration"
+        };
+        
+        return html(
+          <Layout title="Test Media Post - Video & Audio Players">
+            <NostrPostDetail event={testEvent} author={testAuthor} />
+          </Layout>
+        );
+      }
+    },
+
+    "/user/:pubkey": {
+      GET: async (req) => {
+        const pubkey = req.params.pubkey;
+        
+        // Get all media from this user
+        const userMedia = nostrService.getMediaByUser(pubkey);
+        
+        // Get author info
+        const author = await nostrService.getAuthorInfo(pubkey);
+        
+        console.log(`🎬 User gallery for ${author?.name || pubkey.slice(0, 8)}: ${userMedia.length} media items`);
+        
+        return html(
+          <Layout title={`${author?.name || pubkey.slice(0, 8)} - Media Gallery`}>
+            <UserMediaGallery 
+              userMedia={userMedia} 
+              author={author} 
+              pubkey={pubkey} 
+            />
+          </Layout>
+        );
+      }
+    },
+
     "/nostr/post/:eventId": {
       GET: async (req) => {
         const eventId = req.params.eventId;
@@ -193,13 +471,22 @@ Bun.serve({
         // First try to find in current events
         let event = nostrService.getEvents().find(e => e.id === eventId);
         
-        // If not found, search in ALL time machine storage (not just current range)
+        // If not found, search in ALL time machine storage (all media types)
         if (!event) {
-          const imageWithEvent = nostrService.findImageByEventId(eventId);
+          // Try comprehensive media search first
+          const mediaWithEvent = nostrService.findMediaByEventId(eventId);
           
-          if (imageWithEvent && imageWithEvent.eventData) {
-            event = imageWithEvent.eventData;
-            console.log(`📸 Found event in time machine: ${eventId.slice(0, 8)}`);
+          if (mediaWithEvent && mediaWithEvent.eventData) {
+            event = mediaWithEvent.eventData;
+            console.log(`🎬 Found event in time machine (${mediaWithEvent.type}): ${eventId.slice(0, 8)}`);
+          } else {
+            // Fallback to image-only search for backward compatibility
+            const imageWithEvent = nostrService.findImageByEventId(eventId);
+            
+            if (imageWithEvent && imageWithEvent.eventData) {
+              event = imageWithEvent.eventData;
+              console.log(`📸 Found event in time machine (image): ${eventId.slice(0, 8)}`);
+            }
           }
         }
         
@@ -261,7 +548,8 @@ Bun.serve({
           
           // Set up real-time subscription for new posts
           nostrService.subscribeToUpdates((feedItem) => {
-            const itemHtml = String(<CategorizedImageItem item={feedItem} />);
+            // Simple HTML for new items (no component needed)
+            const itemHtml = `<div class="hidden" data-new-media="${feedItem.id}"></div>`;
             const payload = JSON.stringify({
               target: "#visual-feed",
               swap: "afterbegin", 
@@ -277,19 +565,13 @@ Bun.serve({
               }
             }
             
-            // Also trigger the JavaScript to add the image with event data and category
+            // Trigger JavaScript for new media items
             const jsPayload = JSON.stringify({
               target: "body",
               swap: "beforeend",
               text: `<script>
-                ${feedItem.images.map(img => 
-                  `window.addNostrImage && window.addNostrImage('${img.url}', '${feedItem.id}', ${JSON.stringify({
-                    id: feedItem.id,
-                    pubkey: feedItem.pubkey,
-                    content: feedItem.content,
-                    created_at: feedItem.created_at
-                  })}, '${img.category}', '${img.correctCategory}');`
-                ).join('')}
+                // New media detected: ${feedItem.media?.totalCount || feedItem.images?.length || 0} items
+                console.log('🎬 New media event received:', '${feedItem.id}');
               </script>`
             });
             
