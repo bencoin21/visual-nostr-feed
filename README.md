@@ -1,35 +1,52 @@
-# 🕰️ Visual Nostr Image Time Machine
+# 🎬 Hypermedia Nostr Experience
 
-A professional-grade image time machine for Nostr feeds with video editor-style timeline controls and real-time image updates.
+A complete hypermedia application for Nostr with AI content filtering, smooth media playback, and professional timeline controls.
 
 ## ✨ Features
 
-### 🎬 **Professional Video Editor Timeline**
-- **Advanced UI/UX**: Professional gradients, shadows, and smooth animations
-- **Real-time navigation**: Click, drag, and scroll through time without page reloads
-- **Precise controls**: Left/right drag handles for exact timespan adjustment
-- **Keyboard shortcuts**: Professional workflow with arrow keys and spacebar
-- **Visual feedback**: Waveform-style visualization showing image density over time
+### 🎥 **Complete Media Experience**
+- **Playable videos**: Integrated YouTube, HTML5, and Spotify players
+- **Audio playback**: Click-to-play audio with embedded controls
+- **Document preview**: PDF and document viewers with thumbnails
+- **Link expansion**: Smart link previews with metadata
+- **Smooth loading**: Fade-in animations prevent flickering and layout jumps
 
-### 🕰️ **Image Time Machine**
-- **Complete history**: Stores up to 10,000 images with precise timestamps
-- **Instant access**: Click any image to view its full Nostr post
-- **Time travel**: Navigate to any point in history with smooth transitions
-- **Persistent windows**: Custom time windows are remembered across sessions
-- **Smart behavior**: Timeline extends as new images arrive without interrupting your view
+### 🛡️ **AI Content Filtering**
+- **NSFWJS integration**: Real-time image classification for content safety
+- **Age rating system**: FSK/USK ratings (0/6/12/16/18+) with color-coded overlays
+- **Category detection**: Neutral, Drawing, Sexy, Porn, Hentai classification
+- **General topics**: Food, Animals, Sports, Vehicles, Nature, Technology, Fashion, Architecture
+- **Smart filtering**: URL-based instant classification with background AI processing
+- **Click-to-reveal**: Blur/overlay censoring with user confirmation
 
-### 🎯 **Advanced Timeline Controls**
-- **Click navigation**: Click anywhere on timeline to jump to that time period
-- **Handle dragging**: Drag left/right handles to adjust timespan start/end times
-- **Window dragging**: Drag center area to move entire time window
-- **Timeline extension**: Automatically grows to show new images are available
-- **Status indicators**: Clear visual feedback for past vs present viewing
+### 🏷️ **Smart Classification Tags**
+- **Safety tags**: Color-coded content safety indicators on every image
+- **Topic tags**: Emoji-coded general topic classification
+- **Confidence indicators**: AI confidence scores and detection methods
+- **Real-time display**: Instant tag updates as images load
+- **Persistent settings**: Filter preferences saved across sessions
 
-### 🔄 **Real-time Updates**
-- **Live timeline**: Extends automatically as new images arrive from Nostr relays
-- **Stable viewing**: Images only change when you actively navigate the timeline
-- **Immediate updates**: Images update instantly as you drag timeline controls
-- **No interruptions**: Your viewing window stays fixed until you choose to move it
+### 🕰️ **Professional Timeline**
+- **Video editor UI**: Professional gradients, shadows, and smooth animations
+- **Time machine**: Store and navigate through 10,000+ media items with timestamps
+- **User galleries**: Dedicated pages showing all media from specific users
+- **Infinite scroll**: Load more content from Nostr network with pagination
+- **Persistent windows**: Custom time windows remembered across sessions
+
+### 🎮 **User Interaction**
+- **HEART buttons**: Like posts with persistent tracking
+- **SHOW MORE**: Navigate to user-specific media galleries
+- **Click navigation**: Jump to any time period on the timeline
+- **Handle dragging**: Adjust timespan start/end times precisely
+- **Infinite scroll**: Load more content seamlessly as you scroll
+- **Filter controls**: Toggle content filters with visual feedback
+
+### 🌊 **Smooth Performance**
+- **Fade-in animations**: Elegant image loading without flickering
+- **Layout stability**: Pre-calculated dimensions prevent layout jumps
+- **Debounced reflow**: Smooth masonry layout recalculation
+- **Hardware acceleration**: GPU-optimized transitions and animations
+- **Background processing**: AI classification doesn't block the UI
 
 ## 🚀 Quick Start
 
@@ -88,18 +105,23 @@ bun run dev
 ## 📁 Project Structure
 
 ```
-├── index.tsx                 # Main server + API routes
+├── index.tsx                    # Main server + API routes
 ├── src/
-│   ├── views.tsx            # UI components + client-side logic
-│   ├── nostr-service.ts     # Nostr protocol integration
-│   ├── time-machine.ts      # Time machine core functionality
-│   ├── time-travel-ui.tsx   # Professional timeline UI components
-│   ├── image-classifier.ts  # AI image categorization
-│   ├── config.ts           # Configuration settings
-│   └── display-modes.ts    # Display mode utilities
-├── public/                  # Static assets
-│   └── static/fixi/        # Hypermedia enhancement library
-└── time-machine-images.json # Persistent image storage
+│   ├── views.tsx               # UI components with smooth loading & AI tags
+│   ├── nostr-service.ts        # Nostr protocol + multi-media processing
+│   ├── time-machine.ts         # Multi-media time machine storage
+│   ├── time-travel-ui.tsx      # Professional timeline UI components
+│   ├── image-classifier.ts     # AI image categorization
+│   └── config.ts              # Configuration settings
+├── public/
+│   ├── favicon.ico            # Site icon
+│   └── static/
+│       ├── content-filter.js  # NSFWJS content safety filtering
+│       ├── general-filter.js  # General topic classification
+│       └── fixi/             # Hypermedia enhancement library
+├── time-machine-*.json        # Persistent multi-media storage
+├── nostr-likes.json           # User likes tracking
+└── README.md                  # This documentation
 ```
 
 ## 🔧 Configuration
@@ -111,6 +133,13 @@ Edit `src/config.ts` to adjust:
 - **Animation timings**: Transition speeds, fade durations
 
 ## 🎯 API Endpoints
+
+### **Media & Posts**
+- `GET /` - Main application with timeline and media feed
+- `GET /nostr/post/:eventId` - View full post with playable media
+- `GET /user/:pubkey` - User media gallery with infinite scroll
+- `POST /api/like-post` - Like/unlike posts with persistent tracking
+- `POST /api/user-media` - Search for more user media from Nostr network
 
 ### **Time Travel API**
 - `POST /api/time-travel` - Navigate through time
@@ -124,8 +153,10 @@ Edit `src/config.ts` to adjust:
 - `GET /api/time-machine-status` - Get current timeline state
 - `POST /api/time-machine-images` - Get images for specific time range
 
-### **Nostr Posts**
-- `GET /nostr/post/:eventId` - View full Nostr post with images
+### **Content Filtering**
+- Client-side JavaScript filtering with NSFWJS
+- Real-time classification and tagging
+- Persistent filter settings via localStorage
 
 ## 🎨 Visual Design
 

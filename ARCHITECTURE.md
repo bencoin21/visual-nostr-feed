@@ -1,57 +1,67 @@
-# 🏗️ Image Time Machine Architecture
+# 🏗️ Hypermedia Nostr Experience Architecture
 
 ## 📁 Project Structure
 
 ```
-nostr-image-time-machine/
-├── index.tsx                    # Main server + API routes
-├── package.json                 # Dependencies and scripts
-├── tsconfig.json               # TypeScript configuration
-├── README.md                   # User documentation
-├── ARCHITECTURE.md             # This file - technical documentation
-├── bun.lock                    # Dependency lock file
-├── image-cache.json            # Legacy image cache (auto-migrated)
-├── time-machine-images.json    # Time machine storage
-├── time-machine-images-window.json # Window settings storage
+hypermedia-starter/
+├── index.tsx                        # Main server + API routes
+├── package.json                     # Dependencies and scripts  
+├── tsconfig.json                   # TypeScript configuration
+├── README.md                       # User documentation
+├── ARCHITECTURE.md                 # This file - technical documentation
+├── FEATURES.md                     # Complete feature documentation
+├── SUMMARY.md                      # Project summary
+├── bun.lock                        # Dependency lock file
+├── nostr-likes.json                # User likes tracking
+├── time-machine-*.json             # Multi-media storage files
 ├── src/
-│   ├── views.tsx              # UI components (Layout, Feed, PostDetail)
-│   ├── nostr-service.ts       # Nostr protocol integration + time machine methods
-│   ├── time-machine.ts        # Core time machine functionality
-│   ├── time-travel-ui.tsx     # Professional timeline UI components
-│   ├── image-classifier.ts    # AI image categorization
-│   └── config.ts              # Configuration settings
+│   ├── views.tsx                  # UI components with AI tags & smooth loading
+│   ├── nostr-service.ts           # Nostr protocol + multi-media processing
+│   ├── time-machine.ts            # Multi-media time machine storage
+│   ├── time-travel-ui.tsx         # Professional timeline UI components
+│   ├── image-classifier.ts        # AI image categorization
+│   └── config.ts                  # Configuration settings
 └── public/
-    ├── favicon.ico            # Site icon
-    └── static/fixi/           # Hypermedia enhancement library
-        ├── fixi.js           # Core hypermedia functionality
-        └── extensions.js     # SSE and other extensions
+    ├── favicon.ico                # Site icon
+    └── static/
+        ├── content-filter.js      # NSFWJS content safety filtering
+        ├── general-filter.js      # General topic classification
+        └── fixi/                  # Hypermedia enhancement library
+            ├── fixi.js           # Core hypermedia functionality
+            └── extensions.js     # SSE and other extensions
 ```
 
 ## 🎯 Core Components
 
-### **Time Machine Service** (`src/time-machine.ts`)
-- **Purpose**: Core time machine functionality
-- **Storage**: Manages up to 10,000 images with timestamps
+### **Multi-Media Time Machine** (`src/time-machine.ts`)
+- **Purpose**: Store and manage all media types with timestamps
+- **Storage**: Manages 10,000+ items (images, videos, audio, documents, links)
 - **Window management**: Tracks user-defined time windows
-- **Persistence**: Saves to JSON files for durability
+- **Persistence**: Multi-file JSON storage for different media types
 
-### **Time Travel UI** (`src/time-travel-ui.tsx`)
-- **Purpose**: Professional video editor-style timeline
-- **Features**: Drag handles, visual feedback, keyboard shortcuts
-- **Real-time**: Updates images immediately without page reloads
-- **Professional UX**: Video editor styling and interactions
+### **Enhanced Views** (`src/views.tsx`)
+- **Purpose**: Complete UI with AI classification and smooth loading
+- **Components**: ModernDiscoveryFeed, NostrPostDetail, UserMediaGallery
+- **Features**: Playable media, AI tags, smooth animations, filter controls
+- **Performance**: Fade-in loading, layout stability, hardware acceleration
 
-### **Nostr Service** (`src/nostr-service.ts`)
-- **Purpose**: Nostr protocol integration
-- **Features**: Real-time event subscription, image classification
-- **Time machine integration**: Automatically adds images to time machine
-- **Event lookup**: Searches both current events and time machine storage
+### **Advanced Nostr Service** (`src/nostr-service.ts`)
+- **Purpose**: Complete Nostr protocol integration with multi-media support
+- **Features**: Real-time events, media classification, user search
+- **Multi-media**: Processes images, videos, audio, documents, links
+- **User galleries**: Search and pagination for user-specific content
 
-### **Views** (`src/views.tsx`)
-- **Purpose**: Clean UI components for the application
-- **Components**: Layout, ModernDiscoveryFeed, NostrPostDetail
-- **Styling**: Masonry grid layout with professional timeline
-- **Simplified**: Removed legacy game mode and slider functionality
+### **Content Filtering** (`public/static/content-filter.js`)
+- **Purpose**: AI-powered content safety filtering with NSFWJS
+- **Features**: Age ratings (FSK 0/6/12/16/18), category detection
+- **Performance**: Background processing, non-blocking UI
+- **Persistence**: localStorage settings, cross-page functionality
+
+### **General Classification** (`public/static/general-filter.js`)
+- **Purpose**: General topic classification for content organization
+- **Categories**: Food, Animals, Sports, Vehicles, Nature, Technology, Fashion, Architecture
+- **Features**: URL-based instant classification, filter presets
+- **UI Integration**: Color-coded tags, filter panels, persistent settings
 
 ## 🔄 Data Flow
 
